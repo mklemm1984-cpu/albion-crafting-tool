@@ -89,3 +89,61 @@ def extract_base_row(item, category, iv_lookup, en_lookup):
         "focus_cost": float(variant.get("@craftingfocus", 0) or 0),
         "materials": materials,
     }
+
+
+def extract_enchant_rows_for_resource(base_item, enchant_items, category, iv_lookup, en_lookup):
+    """Enchanted refined resources are separate simpleitems named
+    T{tier}_{RES}_LEVEL{k}. `enchant_items` maps level (1-4) -> that item's
+    dict, already looked up by the caller from the full item catalog."""
+    rows = []
+    for level, enchant_item in sorted(enchant_items.items()):
+        row = extract_base_row(enchant_item, category, iv_lookup, en_lookup)
+        if row is None:
+            continue
+        row["enchant"] = level
+        row["item_id"] = base_item["@uniquename"] + f"_LEVEL{level}"
+        row["name"] = resolve_english_name(base_item["@uniquename"], en_lookup, enchant=level)
+        rows.append(row)
+    return rows
+
+
+def extract_enchant_rows_for_equipment(base_item, category, iv_lookup, en_lookup):
+    """Enchanted equipment/consumables/mounts live under
+    enchantments.enchantment[], each with its own craftingrequirements using
+    the enchanted resource."""
+    rows = []
+    enchantments = normalize_to_list(
+        (base_item.get("enchantments") or {}).get("enchantment")
+    )
+    for ench in enchantments:
+        level = int(ench.get("@enchantmentlevel", 0))
+        if level == 0:
+            continue
+        crafting_requirements = ench.get("craftingrequirements")
+        if not crafting_requirements:
+            continue
+        variant = select_standard_variant(crafting_requirements)
+        if variant is None:
+            continue
+        resources = normalize_to_list(variant.get("craftresource"))
+        materials = [
+            {"id": r["@uniquename"], "count": float(r.get("@count", 1))}
+            for r in resources
+        ]
+        item_value, is_estimate = compute_item_value(base_item, variant, iv_lookup)
+        unique_name = base_item["@uniquename"]
+        rows.append({
+            "item_id": f"{unique_name}@{level}",
+            "name": resolve_english_name(unique_name, en_lookup, enchant=level),
+            "tier": int(base_item.get("@tier", 0)),
+            "enchant": level,
+            "category": category,
+            "shop_category": base_item.get("@shopcategory", ""),
+            "shop_subcategory": base_item.get("@shopsubcategory1", ""),
+            "output_amount": int(float(variant.get("@amountcrafted", 1))),
+            "item_value": item_value,
+            "item_value_is_estimate": is_estimate,
+            "focus_cost": float(variant.get("@craftingfocus", 0) or 0),
+            "materials": materials,
+        })
+    return rows

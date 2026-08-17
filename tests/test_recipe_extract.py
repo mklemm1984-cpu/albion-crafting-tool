@@ -1,4 +1,4 @@
-from recipe_extract import normalize_to_list, select_standard_variant, compute_item_value, resolve_english_name, extract_base_row
+from recipe_extract import normalize_to_list, select_standard_variant, compute_item_value, resolve_english_name, extract_base_row, extract_enchant_rows_for_resource, extract_enchant_rows_for_equipment
 
 
 def test_normalize_to_list_wraps_dict():
@@ -110,3 +110,66 @@ def test_extract_base_row_t4_cloth():
 def test_extract_base_row_returns_none_for_uncraftable_item():
     item = {"@uniquename": "T4_QUESTITEM", "@tier": "4"}
     assert extract_base_row(item, "simpleitem", {}, {}) is None
+
+
+T4_CLOTH_LEVEL1_ITEM = {
+    "@uniquename": "T4_CLOTH_LEVEL1",
+    "@tier": "4",
+    "@itemvalue": "32",
+    "@shopcategory": "crafting",
+    "@shopsubcategory1": "refinedresources",
+    "craftingrequirements": {
+        "@craftingfocus": "62",
+        "craftresource": [
+            {"@uniquename": "T4_FIBER_LEVEL1", "@count": "2"},
+            {"@uniquename": "T3_CLOTH", "@count": "1"},
+        ],
+    },
+}
+
+
+def test_extract_enchant_rows_for_resource():
+    siblings = {1: T4_CLOTH_LEVEL1_ITEM}
+    en_lookup = {"T4_CLOTH": "Fine Cloth"}
+    rows = extract_enchant_rows_for_resource(T4_CLOTH_ITEM, siblings, "simpleitem", iv_lookup={}, en_lookup=en_lookup)
+    assert len(rows) == 1
+    assert rows[0]["item_id"] == "T4_CLOTH_LEVEL1"
+    assert rows[0]["name"] == "Fine Cloth .1"
+    assert rows[0]["enchant"] == 1
+    assert rows[0]["item_value"] == 32.0  # doubled per enchant level, direct from the dump
+
+
+T4_HEAD_CLOTH_SET1_ITEM = {
+    "@uniquename": "T4_HEAD_CLOTH_SET1",
+    "@tier": "4",
+    "@shopcategory": "crafting",
+    "@shopsubcategory1": "cloth_helmet",
+    "craftingrequirements": {
+        "@craftingfocus": "429",
+        "craftresource": {"@uniquename": "T4_CLOTH", "@count": "8"},
+    },
+    "enchantments": {
+        "enchantment": {
+            "@enchantmentlevel": "1",
+            "craftingrequirements": {
+                "@craftingfocus": "429",
+                "craftresource": {"@uniquename": "T4_CLOTH_LEVEL1", "@count": "8"},
+            },
+        }
+    },
+}
+
+
+def test_extract_enchant_rows_for_equipment():
+    iv_lookup = {"T4_CLOTH_LEVEL1": 32.0}
+    en_lookup = {"T4_HEAD_CLOTH_SET1": "Adept's Scholar Cowl"}
+    rows = extract_enchant_rows_for_equipment(T4_HEAD_CLOTH_SET1_ITEM, "equipmentitem", iv_lookup, en_lookup)
+    assert len(rows) == 1
+    row = rows[0]
+    assert row["item_id"] == "T4_HEAD_CLOTH_SET1@1"
+    assert row["name"] == "Adept's Scholar Cowl .1"
+    assert row["enchant"] == 1
+    assert row["shop_subcategory"] == "cloth_helmet"
+    assert row["materials"] == [{"id": "T4_CLOTH_LEVEL1", "count": 8.0}]
+    assert row["item_value"] == 256.0
+    assert row["item_value_is_estimate"] is True
