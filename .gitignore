@@ -1,3 +1,12 @@
-# Worktrees (superpowers subagent-driven-development)
-.worktrees/
-.superpowers/
+# Python
+pipeline/.cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node
+app/node_modules/
+app/dist/
+
+# OS
+.DS_Store
