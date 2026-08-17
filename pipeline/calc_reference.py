@@ -37,3 +37,11 @@ def resource_return_rate(
     if use_focus:
         bonus += FOCUS_BONUS
     return bonus / (1 + bonus)
+
+
+def station_fee(item_value: float, fee_per_100_nutrition: float, tier: int) -> float:
+    """Crafting station usage fee for one craft action. No fee for T1/T2."""
+    if tier <= 2:
+        return 0.0
+    nutrition = item_value * 0.1125
+    return nutrition * (fee_per_100_nutrition / 100)
