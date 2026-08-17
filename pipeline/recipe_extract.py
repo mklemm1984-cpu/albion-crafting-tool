@@ -55,3 +55,37 @@ def resolve_english_name(unique_name, en_lookup, enchant=0):
     if enchant:
         return f"{base_name} .{enchant}"
     return base_name
+
+
+def extract_base_row(item, category, iv_lookup, en_lookup):
+    """Extract the base (.0) recipe row for a craftable item. Returns None
+    if the item has no craftingrequirements (uncraftable)."""
+    crafting_requirements = item.get("craftingrequirements")
+    if not crafting_requirements:
+        return None
+    variant = select_standard_variant(crafting_requirements)
+    if variant is None:
+        return None
+
+    resources = normalize_to_list(variant.get("craftresource"))
+    materials = [
+        {"id": r["@uniquename"], "count": float(r.get("@count", 1))}
+        for r in resources
+    ]
+    item_value, is_estimate = compute_item_value(item, variant, iv_lookup)
+    unique_name = item["@uniquename"]
+
+    return {
+        "item_id": unique_name,
+        "name": resolve_english_name(unique_name, en_lookup, enchant=0),
+        "tier": int(item.get("@tier", 0)),
+        "enchant": 0,
+        "category": category,
+        "shop_category": item.get("@shopcategory", ""),
+        "shop_subcategory": item.get("@shopsubcategory1", ""),
+        "output_amount": int(float(variant.get("@amountcrafted", 1))),
+        "item_value": item_value,
+        "item_value_is_estimate": is_estimate,
+        "focus_cost": float(variant.get("@craftingfocus", 0) or 0),
+        "materials": materials,
+    }

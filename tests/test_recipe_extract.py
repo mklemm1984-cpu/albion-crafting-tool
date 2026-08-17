@@ -1,4 +1,4 @@
-from recipe_extract import normalize_to_list, select_standard_variant, compute_item_value, resolve_english_name
+from recipe_extract import normalize_to_list, select_standard_variant, compute_item_value, resolve_english_name, extract_base_row
 
 
 def test_normalize_to_list_wraps_dict():
@@ -70,3 +70,43 @@ def test_resolve_english_name_enchant_suffix():
 
 def test_resolve_english_name_missing_falls_back_to_id():
     assert resolve_english_name("T4_UNKNOWN", {}, enchant=0) == "T4_UNKNOWN"
+
+
+T4_CLOTH_ITEM = {
+    "@uniquename": "T4_CLOTH",
+    "@tier": "4",
+    "@itemvalue": "16",
+    "@shopcategory": "crafting",
+    "@shopsubcategory1": "refinedresources",
+    "craftingrequirements": {
+        "@craftingfocus": "54",
+        "craftresource": [
+            {"@uniquename": "T4_FIBER", "@count": "2"},
+            {"@uniquename": "T3_CLOTH", "@count": "1"},
+        ],
+    },
+}
+
+
+def test_extract_base_row_t4_cloth():
+    row = extract_base_row(T4_CLOTH_ITEM, "simpleitem", iv_lookup={}, en_lookup={"T4_CLOTH": "Fine Cloth"})
+    assert row["item_id"] == "T4_CLOTH"
+    assert row["name"] == "Fine Cloth"
+    assert row["tier"] == 4
+    assert row["enchant"] == 0
+    assert row["category"] == "simpleitem"
+    assert row["shop_category"] == "crafting"
+    assert row["shop_subcategory"] == "refinedresources"
+    assert row["output_amount"] == 1
+    assert row["item_value"] == 16.0
+    assert row["item_value_is_estimate"] is False
+    assert row["focus_cost"] == 54.0
+    assert row["materials"] == [
+        {"id": "T4_FIBER", "count": 2.0},
+        {"id": "T3_CLOTH", "count": 1.0},
+    ]
+
+
+def test_extract_base_row_returns_none_for_uncraftable_item():
+    item = {"@uniquename": "T4_QUESTITEM", "@tier": "4"}
+    assert extract_base_row(item, "simpleitem", {}, {}) is None
