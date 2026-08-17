@@ -1,3 +1,7 @@
+# Worktrees (superpowers subagent-driven-development)
+.worktrees/
+.superpowers/
+
 # Python
 pipeline/.cache/
 __pycache__/
