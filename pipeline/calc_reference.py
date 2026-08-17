@@ -45,3 +45,19 @@ def station_fee(item_value: float, fee_per_100_nutrition: float, tier: int) -> f
         return 0.0
     nutrition = item_value * 0.1125
     return nutrition * (fee_per_100_nutrition / 100)
+
+
+def material_cost(materials: list[dict], rrr: float) -> float:
+    """Total material cost for one craft action (whole batch), after RRR.
+
+    materials: list of {"id": str, "count": float, "price": float}
+    Artifacts/runes/souls/relics/tokens are excluded from the RRR refund.
+    """
+    total = 0.0
+    for mat in materials:
+        raw_cost = mat["price"] * mat["count"]
+        if is_non_returnable(mat["id"]):
+            total += raw_cost
+        else:
+            total += raw_cost * (1 - rrr)
+    return total

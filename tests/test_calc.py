@@ -35,3 +35,21 @@ def test_station_fee_t4_cloth():
 def test_station_fee_zero_for_t1_t2():
     assert station_fee(item_value=999, fee_per_100_nutrition=150, tier=1) == 0
     assert station_fee(item_value=999, fee_per_100_nutrition=150, tier=2) == 0
+
+
+from calc_reference import material_cost
+
+
+def test_material_cost_applies_rrr():
+    materials = [
+        {"id": "T4_FIBER", "count": 2, "price": 200},
+        {"id": "T3_CLOTH", "count": 1, "price": 150},
+    ]
+    cost = material_cost(materials, rrr=0.4350)
+    assert cost == pytest.approx(310.75, abs=1e-2)
+
+
+def test_material_cost_full_price_for_non_returnable():
+    materials = [{"id": "T4_FACTION_TOKEN_MARTLOCK", "count": 3, "price": 100}]
+    cost = material_cost(materials, rrr=0.9)
+    assert cost == 300
