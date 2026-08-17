@@ -61,3 +61,17 @@ def material_cost(materials: list[dict], rrr: float) -> float:
         else:
             total += raw_cost * (1 - rrr)
     return total
+
+
+def net_revenue_per_unit(sell_price: float, sales_tax: float, setup_fee: float) -> float:
+    return sell_price * (1 - sales_tax - setup_fee)
+
+
+def profit(cost_per_unit: float, net_revenue: float) -> float:
+    return net_revenue - cost_per_unit
+
+
+def silver_per_focus(profit_per_batch: float, base_focus_cost: float) -> float | None:
+    if not base_focus_cost:
+        return None
+    return profit_per_batch / base_focus_cost

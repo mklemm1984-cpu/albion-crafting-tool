@@ -53,3 +53,22 @@ def test_material_cost_full_price_for_non_returnable():
     materials = [{"id": "T4_FACTION_TOKEN_MARTLOCK", "count": 3, "price": 100}]
     cost = material_cost(materials, rrr=0.9)
     assert cost == 300
+
+
+from calc_reference import net_revenue_per_unit, profit, silver_per_focus
+
+
+def test_net_revenue_per_unit():
+    assert net_revenue_per_unit(600, sales_tax=0.04, setup_fee=0.025) == pytest.approx(561.0, abs=1e-2)
+
+
+def test_profit():
+    assert profit(cost_per_unit=313.45, net_revenue=561.0) == pytest.approx(247.55, abs=1e-2)
+
+
+def test_silver_per_focus():
+    assert silver_per_focus(247.55, 54) == pytest.approx(4.584, abs=1e-3)
+
+
+def test_silver_per_focus_zero_focus_cost_returns_none():
+    assert silver_per_focus(100.0, 0) is None
