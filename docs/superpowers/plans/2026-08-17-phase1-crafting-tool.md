@@ -428,7 +428,14 @@ Append to `tests/test_calc.py`:
 ```python
 from calc_reference import craft_profit
 
-SHARED_RRR = resource_return_rate(base_city_bonus=0.18, use_focus=True)
+# Rounded to 4 dp to match how docs/MECHANICS_SOURCE.md §8 computed its
+# shared worked-example config ("RRR = 0.77/1.77 = 0.4350 (4 dp)"). The raw
+# unrounded division (0.43502824...) is off by more than the abs=1e-2
+# tolerance below once multiplied through a materials sum of a few hundred
+# silver — resource_return_rate() itself still returns full precision for
+# production use; this rounding is specific to reproducing the master
+# prompt's manually-computed acceptance numbers.
+SHARED_RRR = round(resource_return_rate(base_city_bonus=0.18, use_focus=True), 4)
 
 
 def test_craft_profit_refining_t4_cloth():
@@ -2002,7 +2009,11 @@ describe('netRevenuePerUnit / profit / silverPerFocus', () => {
   });
 });
 
-const SHARED_RRR = resourceReturnRate({ baseCityBonus: 0.18, useFocus: true });
+// Rounded to 4 dp to match docs/MECHANICS_SOURCE.md §8's shared worked-example
+// config ("RRR = 0.77/1.77 = 0.4350 (4 dp)"). The raw unrounded division
+// (0.43502824...) is off by more than the 2-3 decimal toBeCloseTo tolerance
+// below once multiplied through a materials sum of a few hundred silver.
+const SHARED_RRR = Math.round(resourceReturnRate({ baseCityBonus: 0.18, useFocus: true }) * 10000) / 10000;
 
 describe('craftProfit', () => {
   it('matches the refining acceptance example (T4_CLOTH)', () => {
@@ -3627,7 +3638,7 @@ describe('Dashboard', () => {
     expect(screen.getByText('NO PRICE DATA')).toBeInTheDocument();
   });
 
-  it('computes profit matching the master-prompt acceptance example once prices are cached', () => {
+  it('computes profit once prices are cached, using the same formulas as the acceptance tests', () => {
     savePrices([
       { itemId: 'T4_FIBER', city: 'Caerleon', sellPriceMin: 200, sellPriceMinDate: '', buyPriceMax: 0, buyPriceMaxDate: '' },
       { itemId: 'T3_CLOTH', city: 'Caerleon', sellPriceMin: 150, sellPriceMinDate: '', buyPriceMax: 0, buyPriceMaxDate: '' },
@@ -3636,7 +3647,14 @@ describe('Dashboard', () => {
 
     render(<Dashboard recipes={[CLOTH_RECIPE]} config={DEFAULT_CONFIG} filters={DEFAULT_FILTERS} />);
 
-    expect(screen.getByText('247.55')).toBeInTheDocument();
+    // NOTE: this is 247.57, not the master-prompt doc's 247.55 — the doc's
+    // worked example manually rounded RRR to 4dp before multiplying through
+    // the materials sum (see calc_reference.py's SHARED_RRR comment in Task
+    // 6). The Dashboard, like resourceReturnRate() itself, intentionally
+    // keeps full float precision for real money math, so it lands 0.02
+    // silver away from the hand-rounded documentation example — both are
+    // "correct" for what they're each doing.
+    expect(screen.getByText('247.57')).toBeInTheDocument();
   });
 
   it('marks estimated item values (e.g. potions/food) so the fee is understood as approximate', () => {
