@@ -46,3 +46,12 @@ def compute_item_value(item, variant, iv_lookup):
         count = float(r.get("@count", 1))
         total += iv_lookup.get(mat_id, 0.0) * count
     return total, True
+
+
+def resolve_english_name(unique_name, en_lookup, enchant=0):
+    """Resolve the EN-US localized name. Enchant rows use the base item's
+    name with a '.k' suffix (e.g. "Adept's Scholar Cowl .1")."""
+    base_name = en_lookup.get(unique_name, unique_name)
+    if enchant:
+        return f"{base_name} .{enchant}"
+    return base_name

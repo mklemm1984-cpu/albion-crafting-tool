@@ -1,4 +1,4 @@
-from recipe_extract import normalize_to_list, select_standard_variant, compute_item_value
+from recipe_extract import normalize_to_list, select_standard_variant, compute_item_value, resolve_english_name
 
 
 def test_normalize_to_list_wraps_dict():
@@ -58,3 +58,15 @@ def test_compute_item_value_sums_ingredients_when_no_direct_value():
     value, is_estimate = compute_item_value(item, variant, iv_lookup)
     assert value == 128.0
     assert is_estimate is True
+
+
+def test_resolve_english_name_base():
+    assert resolve_english_name("T4_CLOTH", {"T4_CLOTH": "Fine Cloth"}, enchant=0) == "Fine Cloth"
+
+
+def test_resolve_english_name_enchant_suffix():
+    assert resolve_english_name("T4_CLOTH", {"T4_CLOTH": "Fine Cloth"}, enchant=2) == "Fine Cloth .2"
+
+
+def test_resolve_english_name_missing_falls_back_to_id():
+    assert resolve_english_name("T4_UNKNOWN", {}, enchant=0) == "T4_UNKNOWN"
