@@ -75,3 +75,59 @@ def silver_per_focus(profit_per_batch: float, base_focus_cost: float) -> float |
     if not base_focus_cost:
         return None
     return profit_per_batch / base_focus_cost
+
+
+def craft_profit(
+    *,
+    materials: list[dict],
+    output_amount: int,
+    item_value: float,
+    focus_cost: float,
+    tier: int,
+    sell_price: float | None,
+    rrr: float,
+    fee_per_100_nutrition: float,
+    sales_tax: float,
+    setup_fee: float,
+) -> dict:
+    """Full profit calculation for one recipe under a resolved config.
+
+    Returns a dict with keys: material_cost, fee, cost_per_unit, net_revenue,
+    profit_per_unit, margin_pct, profit_per_batch, silver_per_focus,
+    no_price_data (bool).
+    """
+    missing_material_price = any(m["price"] in (None, 0) for m in materials)
+    if missing_material_price or sell_price in (None, 0):
+        return {
+            "material_cost": None,
+            "fee": None,
+            "cost_per_unit": None,
+            "net_revenue": None,
+            "profit_per_unit": None,
+            "margin_pct": None,
+            "profit_per_batch": None,
+            "silver_per_focus": None,
+            "no_price_data": True,
+        }
+
+    mat_cost = material_cost(materials, rrr)
+    fee = station_fee(item_value, fee_per_100_nutrition, tier)
+    total_cost = mat_cost + fee
+    cost_per_unit = total_cost / output_amount
+    net_revenue = net_revenue_per_unit(sell_price, sales_tax, setup_fee)
+    profit_per_unit = profit(cost_per_unit, net_revenue)
+    profit_per_batch = profit_per_unit * output_amount
+    margin_pct = (profit_per_unit / cost_per_unit) if cost_per_unit else None
+    spf = silver_per_focus(profit_per_batch, focus_cost)
+
+    return {
+        "material_cost": mat_cost,
+        "fee": fee,
+        "cost_per_unit": cost_per_unit,
+        "net_revenue": net_revenue,
+        "profit_per_unit": profit_per_unit,
+        "margin_pct": margin_pct,
+        "profit_per_batch": profit_per_batch,
+        "silver_per_focus": spf,
+        "no_price_data": False,
+    }
