@@ -1,4 +1,4 @@
-from recipe_extract import normalize_to_list, select_standard_variant
+from recipe_extract import normalize_to_list, select_standard_variant, compute_item_value
 
 
 def test_normalize_to_list_wraps_dict():
@@ -42,3 +42,19 @@ def test_select_standard_variant_returns_none_if_all_faction():
         {"craftresource": {"@uniquename": "T4_FACTION_TOKEN_MARTLOCK", "@count": "1"}},
     ]
     assert select_standard_variant(crafting_requirements) is None
+
+
+def test_compute_item_value_uses_direct_itemvalue():
+    item = {"@uniquename": "T4_CLOTH", "@itemvalue": "16"}
+    value, is_estimate = compute_item_value(item, variant={}, iv_lookup={})
+    assert value == 16.0
+    assert is_estimate is False
+
+
+def test_compute_item_value_sums_ingredients_when_no_direct_value():
+    item = {"@uniquename": "T4_HEAD_CLOTH_SET1"}
+    variant = {"craftresource": {"@uniquename": "T4_CLOTH", "@count": "8"}}
+    iv_lookup = {"T4_CLOTH": 16.0}
+    value, is_estimate = compute_item_value(item, variant, iv_lookup)
+    assert value == 128.0
+    assert is_estimate is True

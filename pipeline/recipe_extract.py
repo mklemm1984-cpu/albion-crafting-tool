@@ -27,3 +27,22 @@ def select_standard_variant(crafting_requirements):
         ):
             return variant
     return None
+
+
+def compute_item_value(item, variant, iv_lookup):
+    """Item value used for the station fee. Refined resources/raws expose
+    @itemvalue directly; equipment/consumables sum their ingredients'
+    item values (approximate for consumables, per MECHANICS_SOURCE.md §2.5).
+    Returns (value, is_estimate).
+    """
+    direct = item.get("@itemvalue")
+    if direct is not None:
+        return float(direct), False
+
+    resources = normalize_to_list(variant.get("craftresource"))
+    total = 0.0
+    for r in resources:
+        mat_id = r["@uniquename"]
+        count = float(r.get("@count", 1))
+        total += iv_lookup.get(mat_id, 0.0) * count
+    return total, True
