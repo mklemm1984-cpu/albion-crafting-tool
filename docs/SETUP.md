@@ -55,14 +55,16 @@ Der Workflow `.github/workflows/deploy.yml` baut, testet und deployed automatisc
 bei jedem Push auf `main` oder `master` (dieses Repo nutzt aktuell `master`).
 Einmalig in den Repo-Einstellungen aktivieren:
 
-1. GitHub Repo → Settings → Pages → Source: "GitHub Actions".
-2. `app/vite.config.ts`: `base` muss exakt dem Repo-Namen entsprechen (inkl.
-   Sonderzeichen wie einem Bindestrich am Ende). Für dieses Repo
-   (`github.com/mklemm1984-cpu/albion-crafting-tool-`) ist
-   `base: '/albion-crafting-tool-/'` bereits korrekt gesetzt. Bei einem
+1. Repo muss public sein (GitHub Pages ist bei privaten Repos nur mit
+   GitHub Pro/Team/Enterprise verfügbar) — Settings → Danger Zone → Change
+   visibility → Public.
+2. GitHub Repo → Settings → Pages → Source: "GitHub Actions".
+3. `app/vite.config.ts`: `base` muss exakt dem Repo-Namen entsprechen. Für
+   dieses Repo (`github.com/mklemm1984-cpu/albion-crafting-tool`) ist
+   `base: '/albion-crafting-tool/'` bereits korrekt gesetzt. Bei einem
    Repo-Rename hier anpassen.
-3. Push auf `main`/`master` → die App ist danach unter
-   `https://mklemm1984-cpu.github.io/albion-crafting-tool-/` erreichbar.
+4. Push auf `main`/`master` → die App ist danach unter
+   `https://mklemm1984-cpu.github.io/albion-crafting-tool/` erreichbar.
 
 ## Rezepte aktualisieren (nach einem Spiel-Patch)
 
