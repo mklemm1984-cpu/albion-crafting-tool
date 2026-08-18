@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import pathlib
+import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
@@ -24,6 +25,11 @@ from recipe_extract import (  # noqa: E402
 
 DATA_DIR = pathlib.Path(__file__).parent.parent / "app" / "public" / "data"
 CRAFTABLE_CATEGORIES = ["simpleitem", "equipmentitem", "weapon", "consumableitem", "mount"]
+
+# Matches the exact T{tier}_{RES}_LEVELk sibling suffix (k in 1-4) that
+# find_resource_enchant_siblings looks for -- anchored so ids that merely
+# contain the substring "_LEVEL" for unrelated reasons aren't caught.
+_LEVEL_SUFFIX_RE = re.compile(r"_LEVEL[1-4]$")
 
 # Core subset from the original prototype: all 5 refining lines T2-T8 incl.
 # .1-.4, the cloth armor set T4-T8 incl. enchants, and the heal potion line
@@ -74,12 +80,30 @@ def find_resource_enchant_siblings(base_item_id: str, simple_items_by_id: dict) 
     return siblings
 
 
+def _is_attached_level_sibling(item_id: str, craftable_base_ids: set) -> bool:
+    """True if item_id is a T{tier}_{RES}_LEVELk item whose base resource is
+    itself craftable -- such items are skipped from top-level processing
+    because they're already emitted as that base's enchant row. A LEVELk
+    item whose base is missing or uncraftable falls through to normal
+    top-level processing instead of silently vanishing."""
+    match = _LEVEL_SUFFIX_RE.search(item_id)
+    if not match:
+        return False
+    base_id = item_id[: match.start()]
+    return base_id in craftable_base_ids
+
+
 def generate(items_data: dict, localized_names: list) -> tuple[list, dict]:
     """Returns (rows, summary)."""
     simple_items = normalize_to_list(items_data.get("simpleitem"))
     iv_lookup = build_iv_lookup(simple_items)
     en_lookup = build_en_lookup(localized_names)
     simple_items_by_id = {i["@uniquename"]: i for i in simple_items}
+    craftable_base_ids = {
+        i["@uniquename"]
+        for i in simple_items
+        if not _LEVEL_SUFFIX_RE.search(i.get("@uniquename", "")) and i.get("craftingrequirements")
+    }
 
     rows = []
     summary = {"per_category": {}, "skipped": []}
@@ -88,11 +112,16 @@ def generate(items_data: dict, localized_names: list) -> tuple[list, dict]:
         items = normalize_to_list(items_data.get(category))
         if category == "simpleitem":
             # Enchanted refined resources (T{tier}_{RES}_LEVELk) are listed
-            # as their own simpleitem entries in the dump, but they're
-            # emitted as enchant rows of their base resource (via
-            # find_resource_enchant_siblings) rather than as standalone
-            # base rows, to avoid duplicate item_ids.
-            items = [i for i in items if "_LEVEL" not in i.get("@uniquename", "")]
+            # as their own simpleitem entries in the dump, but when their
+            # base resource is craftable, they're emitted as an enchant row
+            # of that base (via find_resource_enchant_siblings) rather than
+            # as a standalone base row, to avoid duplicate item_ids. A
+            # LEVELk item whose base is missing/uncraftable is NOT excluded
+            # here, so it still gets normal top-level processing.
+            items = [
+                i for i in items
+                if not _is_attached_level_sibling(i.get("@uniquename", ""), craftable_base_ids)
+            ]
         emitted = 0
         for item in items:
             item_id = item.get("@uniquename", "<unknown>")

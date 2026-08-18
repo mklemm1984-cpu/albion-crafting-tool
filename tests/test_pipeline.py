@@ -78,6 +78,47 @@ LOCALIZED_NAMES = [
     {"UniqueName": "T4_HEAD_CLOTH_SET1", "LocalizedNames": {"EN-US": "Adept's Scholar Cowl"}},
 ]
 
+# --- Fixtures for the _LEVELk sibling filter regression tests ---
+
+T5_ORE_ITEM_UNCRAFTABLE = {
+    "@uniquename": "T5_ORE",
+    "@tier": "5",
+    "@itemvalue": "20",
+    # no craftingrequirements: raw-gathered resource, not craftable
+}
+
+T5_ORE_LEVEL1_ITEM = {
+    "@uniquename": "T5_ORE_LEVEL1",
+    "@tier": "5",
+    "@itemvalue": "40",
+    "@shopcategory": "crafting",
+    "@shopsubcategory1": "rawresources",
+    "craftingrequirements": {
+        "@craftingfocus": "10",
+        "craftresource": [{"@uniquename": "T5_ORE", "@count": "2"}],
+    },
+}
+
+ITEMS_DATA_UNCRAFTABLE_BASE = {
+    "simpleitem": [T5_ORE_ITEM_UNCRAFTABLE, T5_ORE_LEVEL1_ITEM],
+    "equipmentitem": [],
+    "weapon": [],
+    "consumableitem": [],
+    "mount": [],
+}
+
+T4_LEVELING_TOME_ITEM = {
+    "@uniquename": "T4_LEVELING_TOME",
+    "@tier": "4",
+    "@itemvalue": "5",
+    "@shopcategory": "crafting",
+    "@shopsubcategory1": "tomes",
+    "craftingrequirements": {
+        "@craftingfocus": "5",
+        "craftresource": [{"@uniquename": "T4_CLOTH", "@count": "1"}],
+    },
+}
+
 
 def test_generate_is_deterministic():
     from generate_recipes import generate
@@ -134,3 +175,55 @@ def test_main_writes_recipes_and_core_files(tmp_path):
     core = json.loads((tmp_path / "recipes_core.json").read_text(encoding="utf-8"))
     assert len(recipes) == 5
     assert any(r["item_id"] == "T4_CLOTH" for r in core)
+
+
+def test_generate_keeps_levelk_item_when_base_uncraftable():
+    """A _LEVELk item whose base has no craftingrequirements must NOT be
+    silently dropped -- it should fall through to normal top-level
+    processing and appear as its own row, not be swallowed as a
+    (nonexistent) enchant row of an uncraftable base."""
+    from generate_recipes import generate
+
+    rows, summary = generate(ITEMS_DATA_UNCRAFTABLE_BASE, [])
+    item_ids = {r["item_id"] for r in rows}
+    assert "T5_ORE_LEVEL1" in item_ids
+    assert not any(item_id == "T5_ORE_LEVEL1" for item_id, _reason in summary["skipped"])
+    # The uncraftable base itself is correctly skipped and logged.
+    assert any(item_id == "T5_ORE" for item_id, _reason in summary["skipped"])
+    # Only one row total: T5_ORE produced none (uncraftable), T5_ORE_LEVEL1
+    # produced exactly one base row (never excluded from top-level
+    # processing, since its base isn't craftable).
+    assert len(rows) == 1
+
+
+def test_generate_still_dedupes_attached_level_sibling():
+    """Regression: a _LEVELk item whose base IS craftable must still be
+    excluded from top-level processing and only appear via the base's
+    enchant-row extraction (no duplicate item_id) -- confirms the new
+    regex-based _is_attached_level_sibling logic preserves the original
+    double-counting fix."""
+    from generate_recipes import generate
+
+    rows, summary = generate(ITEMS_DATA, LOCALIZED_NAMES)
+    cloth_level1_rows = [r for r in rows if r["item_id"] == "T4_CLOTH_LEVEL1"]
+    assert len(cloth_level1_rows) == 1
+    assert cloth_level1_rows[0]["enchant"] == 1
+    assert summary["per_category"]["simpleitem"] == 2
+
+
+def test_generate_does_not_exclude_unrelated_level_substring():
+    """An id that merely contains the substring "_LEVEL" without matching
+    the exact _LEVEL[1-4] suffix (e.g. "_LEVELING_TOME") must not be
+    excluded by the suffix-anchored regex."""
+    from generate_recipes import generate
+
+    items_data = {
+        "simpleitem": [T4_CLOTH_ITEM, T4_LEVELING_TOME_ITEM],
+        "equipmentitem": [],
+        "weapon": [],
+        "consumableitem": [],
+        "mount": [],
+    }
+    rows, _summary = generate(items_data, LOCALIZED_NAMES)
+    item_ids = {r["item_id"] for r in rows}
+    assert "T4_LEVELING_TOME" in item_ids
