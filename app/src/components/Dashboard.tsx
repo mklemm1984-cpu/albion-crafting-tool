@@ -12,6 +12,7 @@ interface DashboardRow {
   recipe: Recipe;
   result: CraftProfitResult;
   priceAgeHours: number | null;
+  sellPrice: number | null;
 }
 
 function buildRow(recipe: Recipe, config: CalcConfig): DashboardRow {
@@ -53,7 +54,7 @@ function buildRow(recipe: Recipe, config: CalcConfig): DashboardRow {
 
   const priceAgeHours = getPriceAgeHours(recipe.itemId, config.sellCity);
 
-  return { recipe, result, priceAgeHours };
+  return { recipe, result, priceAgeHours, sellPrice: sellPrice ?? null };
 }
 
 function applyFilters(rows: DashboardRow[], filters: Filters): DashboardRow[] {
@@ -94,11 +95,15 @@ export function Dashboard({ recipes, config, filters }: { recipes: Recipe[]; con
           <th>Item</th>
           <th>Tier</th>
           <th>Enchant</th>
+          <th>Materialkosten</th>
+          <th>Stationsgebühr</th>
           <th>Kosten/Einheit</th>
+          <th>Verkaufspreis</th>
           <th>Nettoerlös/Einheit</th>
           <th>Profit/Einheit</th>
           <th>Marge %</th>
           <th>Profit/Craft</th>
+          <th>Fokuskosten</th>
           <th>Silber/Fokus</th>
           <th>Preis-Alter (h)</th>
         </tr>
@@ -118,14 +123,18 @@ export function Dashboard({ recipes, config, filters }: { recipes: Recipe[]; con
             <td>{row.recipe.tier}</td>
             <td>{row.recipe.enchant}</td>
             {row.result.noPriceData ? (
-              <td colSpan={7}>NO PRICE DATA</td>
+              <td colSpan={11}>NO PRICE DATA</td>
             ) : (
               <>
+                <td>{row.result.materialCost!.toFixed(2)}</td>
+                <td>{row.result.fee!.toFixed(2)}</td>
                 <td>{row.result.costPerUnit!.toFixed(2)}</td>
+                <td>{row.sellPrice !== null ? row.sellPrice.toFixed(2) : '—'}</td>
                 <td>{row.result.netRevenue!.toFixed(2)}</td>
                 <td>{row.result.profitPerUnit!.toFixed(2)}</td>
                 <td>{(row.result.marginPct! * 100).toFixed(1)}%</td>
                 <td>{row.result.profitPerBatch!.toFixed(2)}</td>
+                <td>{row.recipe.focusCost.toFixed(0)}</td>
                 <td>{row.result.silverPerFocus?.toFixed(3) ?? '—'}</td>
                 <td>{row.priceAgeHours !== null ? row.priceAgeHours.toFixed(1) : '—'}</td>
               </>

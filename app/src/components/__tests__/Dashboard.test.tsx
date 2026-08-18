@@ -73,4 +73,22 @@ describe('Dashboard', () => {
 
     expect(screen.getByTitle('Item-Value geschätzt (Summe der Zutaten) — Gebühr ist approximativ')).toBeInTheDocument();
   });
+
+  it('applies the refining specialization bonus when buyCity matches (higher RRR -> lower material cost)', () => {
+    savePrices([
+      { itemId: 'T4_FIBER', city: 'Lymhurst', sellPriceMin: 200, sellPriceMinDate: '', buyPriceMax: 0, buyPriceMaxDate: '' },
+      { itemId: 'T3_CLOTH', city: 'Lymhurst', sellPriceMin: 150, sellPriceMinDate: '', buyPriceMax: 0, buyPriceMaxDate: '' },
+      { itemId: 'T4_CLOTH', city: 'Caerleon', sellPriceMin: 600, sellPriceMinDate: '', buyPriceMax: 0, buyPriceMaxDate: '' },
+    ]);
+    const configWithLymhurstBuy = { ...DEFAULT_CONFIG, buyCity: 'Lymhurst' };
+
+    render(<Dashboard recipes={[CLOTH_RECIPE]} config={configWithLymhurstBuy} filters={DEFAULT_FILTERS} />);
+
+    // Lymhurst is T4_CLOTH's refining spec city -> specBonus 0.40.
+    // bonus = 0.18+0.40+0.59 = 1.17, RRR = 1.17/2.17 ≈ 0.53917.
+    // materialCost = 550*(1-0.53917) ≈ 253.46 — visibly lower than the
+    // 310.75/310.73 seen in the zero-bonus test, proving the spec bonus
+    // is actually applied (not hardcoded to 0).
+    expect(screen.getByText('253.46')).toBeInTheDocument();
+  });
 });
