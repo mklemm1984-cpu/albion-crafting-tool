@@ -3545,9 +3545,13 @@ export function PriceRefreshBar({ visibleRecipes, allRecipes, config, onDone }: 
   async function refresh(recipes: Recipe[]) {
     setError(null);
     setIsRefreshing(true);
-    const itemIds = collectItemIds(recipes);
-    const cities = Array.from(new Set([config.buyCity, config.sellCity]));
+    // itemIds/cities are computed inside the try, not before it: if either
+    // throws (e.g. malformed recipe data), the exception must still reach
+    // catch/finally so isRefreshing gets reset -- otherwise both buttons
+    // get stuck permanently disabled with no error shown.
     try {
+      const itemIds = collectItemIds(recipes);
+      const cities = Array.from(new Set([config.buyCity, config.sellCity]));
       const quotes = await fetchPrices({
         itemIds,
         cities,
@@ -3589,6 +3593,10 @@ Expected: PASS (2 tests)
 - [ ] **Step 4b: Regression test for the double-submit race (found during Task 25 review)**
 
 Add a third test asserting the disabled state flips synchronously on click, before the mocked `fetchPrices` promise resolves (e.g. via a controllable/never-resolving promise), so a fast double-click cannot start two concurrent refreshes. Re-run `npm run test -- PriceRefreshBar` — expect PASS (3 tests).
+
+- [ ] **Step 4c: Regression test for the stuck-disabled edge case (found during Task 25 re-review)**
+
+Moving `itemIds`/`cities` computation inside the `try` (already reflected in Step 3's code above) closes a second bug: if that computation throws, the exception must still reach `catch`/`finally` so `isRefreshing` resets — otherwise both buttons get stuck permanently disabled with no error shown. Add a fourth test that triggers a throw from within the `try` block (e.g. a recipe whose `materials` field breaks `collectItemIds`'s iteration) and asserts `isRefreshing` resolves back to `false` afterward. Re-run `npm run test -- PriceRefreshBar` — expect PASS (4 tests).
 
 - [ ] **Step 5: Commit**
 
