@@ -52,13 +52,16 @@ describe('Dashboard', () => {
     // "correct" for what they're each doing.
     //
     // DEVIATION FROM BRIEF: outputAmount is 1 for CLOTH_RECIPE, so
-    // profitPerBatch === profitPerUnit and the value "247.57" legitimately
+    // profitPerBatch === profitPerUnit and the value "247,57" legitimately
     // renders in both the Profit/Einheit and Profit/Craft cells. That makes
-    // screen.getByText('247.57') throw ("multiple elements found") even
+    // screen.getByText('247,57') throw ("multiple elements found") even
     // though the computed number is exactly right. Using getAllByText here
     // (instead of the brief's getByText) fixes the query without touching
     // the asserted value or any calc/display logic.
-    expect(screen.getAllByText('247.57').length).toBeGreaterThan(0);
+    //
+    // German-locale formatting (de-DE, comma as decimal separator, dot as
+    // thousands separator) via Intl.NumberFormat, not raw toFixed().
+    expect(screen.getAllByText('247,57').length).toBeGreaterThan(0);
   });
 
   it('marks estimated item values (e.g. potions/food) so the fee is understood as approximate', () => {
@@ -88,7 +91,23 @@ describe('Dashboard', () => {
     // bonus = 0.18+0.40+0.59 = 1.17, RRR = 1.17/2.17 ≈ 0.53917.
     // materialCost = 550*(1-0.53917) ≈ 253.46 — visibly lower than the
     // 310.75/310.73 seen in the zero-bonus test, proving the spec bonus
-    // is actually applied (not hardcoded to 0).
-    expect(screen.getByText('253.46')).toBeInTheDocument();
+    // is actually applied (not hardcoded to 0). German-locale format: ","
+    // as decimal separator.
+    expect(screen.getByText('253,46')).toBeInTheDocument();
+  });
+
+  it('formats large silver amounts with German thousands separators', () => {
+    const bigPriceRecipe: Recipe = { ...CLOTH_RECIPE, itemId: 'T8_BIGITEM', name: 'Big Item' };
+    savePrices([
+      { itemId: 'T4_FIBER', city: 'Caerleon', sellPriceMin: 200000, sellPriceMinDate: '', buyPriceMax: 0, buyPriceMaxDate: '' },
+      { itemId: 'T3_CLOTH', city: 'Caerleon', sellPriceMin: 150000, sellPriceMinDate: '', buyPriceMax: 0, buyPriceMaxDate: '' },
+      { itemId: 'T8_BIGITEM', city: 'Caerleon', sellPriceMin: 600000, sellPriceMinDate: '', buyPriceMax: 0, buyPriceMaxDate: '' },
+    ]);
+
+    render(<Dashboard recipes={[bigPriceRecipe]} config={DEFAULT_CONFIG} filters={DEFAULT_FILTERS} />);
+
+    // materialCost = (400000+150000)*(1-0.4350282...) ≈ 310734.46
+    // -> "310.734,46" (dot every 3 digits, comma for decimals)
+    expect(screen.getByText('310.734,46')).toBeInTheDocument();
   });
 });

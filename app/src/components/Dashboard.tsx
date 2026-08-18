@@ -8,6 +8,34 @@ import { resourceReturnRate } from '../calc/returnRate';
 import { craftProfit, CraftProfitResult } from '../calc/profit';
 import { matchesStructuralFilters, type Filters } from './FilterSortControls';
 
+// German-locale number formatting for silver amounts: thousands separated
+// by '.', decimals by ',' (e.g. 1.234.567,89) -- matches how Albion players
+// read prices in-game, instead of raw JS toFixed() output like "1234567.89".
+const SILVER_FORMAT = new Intl.NumberFormat('de-DE', {
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2,
+});
+const INT_FORMAT = new Intl.NumberFormat('de-DE', {
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
+});
+const RATIO_FORMAT = new Intl.NumberFormat('de-DE', {
+  minimumFractionDigits: 3,
+  maximumFractionDigits: 3,
+});
+
+function formatSilver(value: number): string {
+  return SILVER_FORMAT.format(value);
+}
+
+function formatInt(value: number): string {
+  return INT_FORMAT.format(value);
+}
+
+function formatRatio(value: number): string {
+  return RATIO_FORMAT.format(value);
+}
+
 interface DashboardRow {
   recipe: Recipe;
   result: CraftProfitResult;
@@ -125,16 +153,16 @@ export function Dashboard({ recipes, config, filters }: { recipes: Recipe[]; con
               <td colSpan={11}>NO PRICE DATA</td>
             ) : (
               <>
-                <td>{row.result.materialCost!.toFixed(2)}</td>
-                <td>{row.result.fee!.toFixed(2)}</td>
-                <td>{row.result.costPerUnit!.toFixed(2)}</td>
-                <td>{row.sellPrice !== null ? row.sellPrice.toFixed(2) : '—'}</td>
-                <td>{row.result.netRevenue!.toFixed(2)}</td>
-                <td>{row.result.profitPerUnit!.toFixed(2)}</td>
+                <td>{formatSilver(row.result.materialCost!)}</td>
+                <td>{formatSilver(row.result.fee!)}</td>
+                <td>{formatSilver(row.result.costPerUnit!)}</td>
+                <td>{row.sellPrice !== null ? formatSilver(row.sellPrice) : '—'}</td>
+                <td>{formatSilver(row.result.netRevenue!)}</td>
+                <td>{formatSilver(row.result.profitPerUnit!)}</td>
                 <td>{(row.result.marginPct! * 100).toFixed(1)}%</td>
-                <td>{row.result.profitPerBatch!.toFixed(2)}</td>
-                <td>{row.recipe.focusCost.toFixed(0)}</td>
-                <td>{row.result.silverPerFocus?.toFixed(3) ?? '—'}</td>
+                <td>{formatSilver(row.result.profitPerBatch!)}</td>
+                <td>{formatInt(row.recipe.focusCost)}</td>
+                <td>{row.result.silverPerFocus !== null ? formatRatio(row.result.silverPerFocus!) : '—'}</td>
                 <td>{row.priceAgeHours !== null ? row.priceAgeHours.toFixed(1) : '—'}</td>
               </>
             )}
