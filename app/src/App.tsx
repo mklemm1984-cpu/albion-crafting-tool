@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ConfigProvider, useConfig } from './state/ConfigContext';
 import { ConfigPanel } from './components/ConfigPanel';
-import { FilterSortControls, DEFAULT_FILTERS, Filters } from './components/FilterSortControls';
+import { FilterSortControls, DEFAULT_FILTERS, Filters, matchesStructuralFilters } from './components/FilterSortControls';
 import { PriceRefreshBar } from './components/PriceRefreshBar';
 import { Dashboard } from './components/Dashboard';
 import { loadRecipes } from './data/loadRecipes';
@@ -21,12 +21,7 @@ function AppContent() {
       .catch((e) => setError(e instanceof Error ? e.message : 'Rezepte konnten nicht geladen werden'));
   }, []);
 
-  const visibleRecipes = recipes.filter((r) => {
-    if (filters.category && r.category !== filters.category) return false;
-    if (filters.tier !== '' && r.tier !== filters.tier) return false;
-    if (filters.enchant !== '' && r.enchant !== filters.enchant) return false;
-    return true;
-  });
+  const visibleRecipes = recipes.filter((r) => matchesStructuralFilters(r, filters));
 
   return (
     <div className="app-layout">

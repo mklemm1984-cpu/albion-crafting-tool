@@ -55,3 +55,26 @@ export function getPriceAgeHours(itemId: string, city: string, now: Date = new D
 export function clearPriceCache(): void {
   localStorage.removeItem(STORAGE_KEY);
 }
+
+/** A pre-parsed, read-only view over the price cache, for callers (like
+ * Dashboard) that need to look up many prices in one pass without paying
+ * for a fresh localStorage read + JSON.parse on every single lookup. */
+export interface PriceCacheSnapshot {
+  get(itemId: string, city: string): PriceQuote | null;
+  getAgeHours(itemId: string, city: string, now?: Date): number | null;
+}
+
+export function readPriceCacheSnapshot(): PriceCacheSnapshot {
+  const cache = readCache();
+  return {
+    get(itemId: string, city: string): PriceQuote | null {
+      return cache[cacheKey(itemId, city)]?.quote ?? null;
+    },
+    getAgeHours(itemId: string, city: string, now: Date = new Date()): number | null {
+      const entry = cache[cacheKey(itemId, city)];
+      if (!entry) return null;
+      const fetchedAt = new Date(entry.fetchedAt).getTime();
+      return (now.getTime() - fetchedAt) / (1000 * 60 * 60);
+    },
+  };
+}

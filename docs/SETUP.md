@@ -9,6 +9,9 @@
 
 ## 1. Rezepte generieren
 
+Für den lokalen Dev-Server (`npm run dev`) müssen die Rezepte manuell erzeugt
+werden:
+
 ```bash
 cd pipeline
 pip install -r requirements.txt
@@ -22,6 +25,12 @@ einem neuen Spiel-Patch):
 ```bash
 python generate_recipes.py --refresh
 ```
+
+Für den GitHub-Pages-Deploy ist dieser Schritt **nicht** nötig — der Workflow
+(`.github/workflows/deploy.yml`) führt `generate_recipes.py` automatisch vor
+`npm run build` aus, sodass ein frischer Clone/Deploy immer mit aktuellen
+Rezeptdaten ausgeliefert wird. Der lokale Lauf ist nur für `npm run dev`
+erforderlich.
 
 ## 2. App lokal starten
 

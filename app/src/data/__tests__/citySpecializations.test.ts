@@ -30,6 +30,12 @@ describe('craftingSpecCity', () => {
     expect(craftingSpecCity({ category: 'equipmentitem', shopCategory: 'crafting', shopSubCategory: 'plate_shoes' })).toBe('Martlock');
   });
 
+  it('matches shapeshifter staves via shopSubCategory', () => {
+    expect(
+      craftingSpecCity({ category: 'weapon', shopCategory: 'weapons', shopSubCategory: 'shapeshifterstaff' })
+    ).toBe('Caerleon');
+  });
+
   it('matches food and potions', () => {
     expect(craftingSpecCity({ category: 'consumableitem', shopCategory: 'consumables', shopSubCategory: 'food' })).toBe('Caerleon');
     expect(craftingSpecCity({ category: 'consumableitem', shopCategory: 'consumables', shopSubCategory: 'potions' })).toBe('Brecilien');

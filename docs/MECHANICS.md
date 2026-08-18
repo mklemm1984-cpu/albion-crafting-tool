@@ -24,7 +24,7 @@ zurückerstattet — sie werden immer zum vollen Preis berechnet.
 | Bridgewatch | Armbrust, Dolch, Cursed Staff, Plattenrüstung, Stoffschuhe | Stein→Blöcke |
 | Martlock | Axt, Quarterstaff, Frost Staff, Plattenschuhe, alle Off-Hands | Haut→Leder |
 | Thetford | Streitkolben, Fire Staff, Nature Staff, Lederrüstung, Stoffhelm | Erz→Barren |
-| Caerleon | Essen, Sammel-Gear/Tools, Fäuste (Knuckles) | — |
+| Caerleon | Essen, Sammel-Gear/Tools, Fäuste (Knuckles), Shapeshifter Staff | — |
 | Brecilien | Capes, Taschen, Tränke | — |
 
 Die App ermittelt die passende Stadt automatisch anhand der `@shopsubcategory1`/

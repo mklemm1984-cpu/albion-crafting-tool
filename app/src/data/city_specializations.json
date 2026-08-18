@@ -1,6 +1,6 @@
 {
   "lastVerified": "2026-08-17",
-  "sourceNote": "Derived from @shopsubcategory1/@shopcategory fields in ao-bin-dumps items.json, cross-checked against wiki.albiononline.com/wiki/Resource_return_rate.",
+  "sourceNote": "Derived from @shopsubcategory1/@shopcategory fields in ao-bin-dumps items.json, cross-checked against wiki.albiononline.com/wiki/Resource_return_rate. shapeshifterstaff (Shapeshifter Staff, @shopcategory=weapons) confirmed by fetching the live items.json and inspecting the T3-T8_2H_SHAPESHIFTER_* transformationweapon entries directly (2026-08-18).",
   "craftingBySubcategory": {
     "hammer": "Fort Sterling",
     "spear": "Fort Sterling",
@@ -32,6 +32,7 @@
     "cloth_helmet": "Thetford",
     "knuckles": "Caerleon",
     "food": "Caerleon",
+    "shapeshifterstaff": "Caerleon",
     "potions": "Brecilien",
     "bags": "Brecilien",
     "satchels": "Brecilien"

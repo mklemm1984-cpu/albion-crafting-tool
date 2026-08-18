@@ -3,10 +3,10 @@ import type { Recipe } from '../data/types';
 import type { CalcConfig } from '../state/ConfigContext';
 import { BASE_CITY_BONUS } from '../state/ConfigContext';
 import { craftingSpecCity, refiningSpecCity } from '../data/citySpecializations';
-import { getPrice, getPriceAgeHours } from '../data/priceCache';
+import { readPriceCacheSnapshot, PriceCacheSnapshot } from '../data/priceCache';
 import { resourceReturnRate } from '../calc/returnRate';
 import { craftProfit, CraftProfitResult } from '../calc/profit';
-import type { Filters } from './FilterSortControls';
+import { matchesStructuralFilters, type Filters } from './FilterSortControls';
 
 interface DashboardRow {
   recipe: Recipe;
@@ -15,7 +15,7 @@ interface DashboardRow {
   sellPrice: number | null;
 }
 
-function buildRow(recipe: Recipe, config: CalcConfig): DashboardRow {
+function buildRow(recipe: Recipe, config: CalcConfig, snapshot: PriceCacheSnapshot): DashboardRow {
   const specCity = recipe.category === 'simpleitem' ? refiningSpecCity(recipe) : craftingSpecCity(recipe);
   const specBonus = specCity && specCity === config.buyCity ? (recipe.category === 'simpleitem' ? 0.4 : 0.15) : 0;
 
@@ -28,12 +28,12 @@ function buildRow(recipe: Recipe, config: CalcConfig): DashboardRow {
   });
 
   const materialsWithPrices = recipe.materials.map((m) => {
-    const quote = getPrice(m.id, config.buyCity);
+    const quote = snapshot.get(m.id, config.buyCity);
     const price = config.buyMode === 'instant' ? quote?.sellPriceMin : quote?.buyPriceMax;
     return { id: m.id, count: m.count, price: price ?? null };
   });
 
-  const sellQuote = getPrice(recipe.itemId, config.sellCity);
+  const sellQuote = snapshot.get(recipe.itemId, config.sellCity);
   const sellPrice = config.sellMode === 'order' ? sellQuote?.sellPriceMin : sellQuote?.buyPriceMax;
 
   const salesTax = config.premium ? 0.04 : 0.08;
@@ -52,16 +52,14 @@ function buildRow(recipe: Recipe, config: CalcConfig): DashboardRow {
     setupFee,
   });
 
-  const priceAgeHours = getPriceAgeHours(recipe.itemId, config.sellCity);
+  const priceAgeHours = snapshot.getAgeHours(recipe.itemId, config.sellCity);
 
   return { recipe, result, priceAgeHours, sellPrice: sellPrice ?? null };
 }
 
 function applyFilters(rows: DashboardRow[], filters: Filters): DashboardRow[] {
   return rows.filter((row) => {
-    if (filters.category && row.recipe.category !== filters.category) return false;
-    if (filters.tier !== '' && row.recipe.tier !== filters.tier) return false;
-    if (filters.enchant !== '' && row.recipe.enchant !== filters.enchant) return false;
+    if (!matchesStructuralFilters(row.recipe, filters)) return false;
     if (filters.onlyProfitable) {
       if (row.result.noPriceData) return false;
       if ((row.result.profitPerUnit ?? 0) <= 0) return false;
@@ -83,7 +81,8 @@ function sortRows(rows: DashboardRow[], sortKey: Filters['sortKey']): DashboardR
 
 export function Dashboard({ recipes, config, filters }: { recipes: Recipe[]; config: CalcConfig; filters: Filters }) {
   const rows = useMemo(() => {
-    const built = recipes.map((r) => buildRow(r, config));
+    const snapshot = readPriceCacheSnapshot();
+    const built = recipes.map((r) => buildRow(r, config, snapshot));
     const filtered = applyFilters(built, filters);
     return sortRows(filtered, filters.sortKey);
   }, [recipes, config, filters]);

@@ -20,6 +20,21 @@ export const DEFAULT_FILTERS: Filters = {
 
 const CATEGORIES = ['simpleitem', 'equipmentitem', 'weapon', 'consumableitem', 'mount'];
 
+/** Shared category/tier/enchant predicate used by both App.tsx (for the
+ * PriceRefreshBar's "filtered view" recipe list) and Dashboard.tsx's
+ * applyFilters, so the two stay in sync by construction instead of by
+ * copy-paste. `onlyProfitable` is handled separately by Dashboard, since it
+ * depends on computed profit data that App.tsx doesn't have. */
+export function matchesStructuralFilters(
+  recipe: { category: string; tier: number; enchant: number },
+  filters: Filters
+): boolean {
+  if (filters.category && recipe.category !== filters.category) return false;
+  if (filters.tier !== '' && recipe.tier !== filters.tier) return false;
+  if (filters.enchant !== '' && recipe.enchant !== filters.enchant) return false;
+  return true;
+}
+
 export function FilterSortControls({
   filters,
   onChange,
