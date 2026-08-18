@@ -1,0 +1,6461 @@
+[
+  {
+    "item_id": "T4_POTION_HEAL",
+    "name": "Healing Potion",
+    "tier": 4,
+    "enchant": 0,
+    "category": "consumableitem",
+    "shop_category": "consumables",
+    "shop_subcategory": "potions",
+    "output_amount": 5,
+    "item_value": 1200.0,
+    "item_value_is_estimate": true,
+    "focus_cost": 210.0,
+    "materials": [
+      {
+        "id": "T4_BURDOCK",
+        "count": 24.0
+      },
+      {
+        "id": "T3_EGG",
+        "count": 6.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_POTION_HEAL@1",
+    "name": "Healing Potion .1",
+    "tier": 4,
+    "enchant": 1,
+    "category": "consumableitem",
+    "shop_category": "consumables",
+    "shop_subcategory": "potions",
+    "output_amount": 5,
+    "item_value": 1200.0,
+    "item_value_is_estimate": true,
+    "focus_cost": 277.0,
+    "materials": [
+      {
+        "id": "T4_BURDOCK",
+        "count": 24.0
+      },
+      {
+        "id": "T3_EGG",
+        "count": 6.0
+      },
+      {
+        "id": "T1_ALCHEMY_EXTRACT_LEVEL1",
+        "count": 15.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_POTION_HEAL@2",
+    "name": "Healing Potion .2",
+    "tier": 4,
+    "enchant": 2,
+    "category": "consumableitem",
+    "shop_category": "consumables",
+    "shop_subcategory": "potions",
+    "output_amount": 5,
+    "item_value": 1200.0,
+    "item_value_is_estimate": true,
+    "focus_cost": 411.0,
+    "materials": [
+      {
+        "id": "T4_BURDOCK",
+        "count": 24.0
+      },
+      {
+        "id": "T3_EGG",
+        "count": 6.0
+      },
+      {
+        "id": "T1_ALCHEMY_EXTRACT_LEVEL2",
+        "count": 15.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_POTION_HEAL@3",
+    "name": "Healing Potion .3",
+    "tier": 4,
+    "enchant": 3,
+    "category": "consumableitem",
+    "shop_category": "consumables",
+    "shop_subcategory": "potions",
+    "output_amount": 5,
+    "item_value": 1200.0,
+    "item_value_is_estimate": true,
+    "focus_cost": 811.0,
+    "materials": [
+      {
+        "id": "T4_BURDOCK",
+        "count": 24.0
+      },
+      {
+        "id": "T3_EGG",
+        "count": 6.0
+      },
+      {
+        "id": "T1_ALCHEMY_EXTRACT_LEVEL3",
+        "count": 15.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_POTION_HEAL",
+    "name": "Major Healing Potion",
+    "tier": 6,
+    "enchant": 0,
+    "category": "consumableitem",
+    "shop_category": "consumables",
+    "shop_subcategory": "potions",
+    "output_amount": 5,
+    "item_value": 3600.0,
+    "item_value_is_estimate": true,
+    "focus_cost": 768.0,
+    "materials": [
+      {
+        "id": "T6_FOXGLOVE",
+        "count": 72.0
+      },
+      {
+        "id": "T5_EGG",
+        "count": 18.0
+      },
+      {
+        "id": "T6_ALCOHOL",
+        "count": 18.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_POTION_HEAL@1",
+    "name": "Major Healing Potion .1",
+    "tier": 6,
+    "enchant": 1,
+    "category": "consumableitem",
+    "shop_category": "consumables",
+    "shop_subcategory": "potions",
+    "output_amount": 5,
+    "item_value": 3600.0,
+    "item_value_is_estimate": true,
+    "focus_cost": 968.0,
+    "materials": [
+      {
+        "id": "T6_FOXGLOVE",
+        "count": 72.0
+      },
+      {
+        "id": "T5_EGG",
+        "count": 18.0
+      },
+      {
+        "id": "T6_ALCOHOL",
+        "count": 18.0
+      },
+      {
+        "id": "T1_ALCHEMY_EXTRACT_LEVEL1",
+        "count": 45.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_POTION_HEAL@2",
+    "name": "Major Healing Potion .2",
+    "tier": 6,
+    "enchant": 2,
+    "category": "consumableitem",
+    "shop_category": "consumables",
+    "shop_subcategory": "potions",
+    "output_amount": 5,
+    "item_value": 3600.0,
+    "item_value_is_estimate": true,
+    "focus_cost": 1369.0,
+    "materials": [
+      {
+        "id": "T6_FOXGLOVE",
+        "count": 72.0
+      },
+      {
+        "id": "T5_EGG",
+        "count": 18.0
+      },
+      {
+        "id": "T6_ALCOHOL",
+        "count": 18.0
+      },
+      {
+        "id": "T1_ALCHEMY_EXTRACT_LEVEL2",
+        "count": 45.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_POTION_HEAL@3",
+    "name": "Major Healing Potion .3",
+    "tier": 6,
+    "enchant": 3,
+    "category": "consumableitem",
+    "shop_category": "consumables",
+    "shop_subcategory": "potions",
+    "output_amount": 5,
+    "item_value": 3600.0,
+    "item_value_is_estimate": true,
+    "focus_cost": 2570.0,
+    "materials": [
+      {
+        "id": "T6_FOXGLOVE",
+        "count": 72.0
+      },
+      {
+        "id": "T5_EGG",
+        "count": 18.0
+      },
+      {
+        "id": "T6_ALCOHOL",
+        "count": 18.0
+      },
+      {
+        "id": "T1_ALCHEMY_EXTRACT_LEVEL3",
+        "count": 45.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_ARMOR_CLOTH_SET1",
+    "name": "Adept's Scholar Robe",
+    "tier": 4,
+    "enchant": 0,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 858.0,
+    "materials": [
+      {
+        "id": "T4_CLOTH",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_ARMOR_CLOTH_SET1@1",
+    "name": "Adept's Scholar Robe .1",
+    "tier": 4,
+    "enchant": 1,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1501.0,
+    "materials": [
+      {
+        "id": "T4_CLOTH_LEVEL1",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_ARMOR_CLOTH_SET1@2",
+    "name": "Adept's Scholar Robe .2",
+    "tier": 4,
+    "enchant": 2,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2626.0,
+    "materials": [
+      {
+        "id": "T4_CLOTH_LEVEL2",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_ARMOR_CLOTH_SET1@3",
+    "name": "Adept's Scholar Robe .3",
+    "tier": 4,
+    "enchant": 3,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 4596.0,
+    "materials": [
+      {
+        "id": "T4_CLOTH_LEVEL3",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_ARMOR_CLOTH_SET1@4",
+    "name": "Adept's Scholar Robe .4",
+    "tier": 4,
+    "enchant": 4,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 4096.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 8042.0,
+    "materials": [
+      {
+        "id": "T4_CLOTH_LEVEL4",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_HEAD_CLOTH_SET1",
+    "name": "Adept's Scholar Cowl",
+    "tier": 4,
+    "enchant": 0,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 429.0,
+    "materials": [
+      {
+        "id": "T4_CLOTH",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_HEAD_CLOTH_SET1@1",
+    "name": "Adept's Scholar Cowl .1",
+    "tier": 4,
+    "enchant": 1,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 750.0,
+    "materials": [
+      {
+        "id": "T4_CLOTH_LEVEL1",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_HEAD_CLOTH_SET1@2",
+    "name": "Adept's Scholar Cowl .2",
+    "tier": 4,
+    "enchant": 2,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1313.0,
+    "materials": [
+      {
+        "id": "T4_CLOTH_LEVEL2",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_HEAD_CLOTH_SET1@3",
+    "name": "Adept's Scholar Cowl .3",
+    "tier": 4,
+    "enchant": 3,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2298.0,
+    "materials": [
+      {
+        "id": "T4_CLOTH_LEVEL3",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_HEAD_CLOTH_SET1@4",
+    "name": "Adept's Scholar Cowl .4",
+    "tier": 4,
+    "enchant": 4,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 4021.0,
+    "materials": [
+      {
+        "id": "T4_CLOTH_LEVEL4",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_SHOES_CLOTH_SET1",
+    "name": "Adept's Scholar Sandals",
+    "tier": 4,
+    "enchant": 0,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 429.0,
+    "materials": [
+      {
+        "id": "T4_CLOTH",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_SHOES_CLOTH_SET1@1",
+    "name": "Adept's Scholar Sandals .1",
+    "tier": 4,
+    "enchant": 1,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 750.0,
+    "materials": [
+      {
+        "id": "T4_CLOTH_LEVEL1",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_SHOES_CLOTH_SET1@2",
+    "name": "Adept's Scholar Sandals .2",
+    "tier": 4,
+    "enchant": 2,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1313.0,
+    "materials": [
+      {
+        "id": "T4_CLOTH_LEVEL2",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_SHOES_CLOTH_SET1@3",
+    "name": "Adept's Scholar Sandals .3",
+    "tier": 4,
+    "enchant": 3,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2298.0,
+    "materials": [
+      {
+        "id": "T4_CLOTH_LEVEL3",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_SHOES_CLOTH_SET1@4",
+    "name": "Adept's Scholar Sandals .4",
+    "tier": 4,
+    "enchant": 4,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 4021.0,
+    "materials": [
+      {
+        "id": "T4_CLOTH_LEVEL4",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_ARMOR_CLOTH_SET1",
+    "name": "Expert's Scholar Robe",
+    "tier": 5,
+    "enchant": 0,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1501.0,
+    "materials": [
+      {
+        "id": "T5_CLOTH",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_ARMOR_CLOTH_SET1@1",
+    "name": "Expert's Scholar Robe .1",
+    "tier": 5,
+    "enchant": 1,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2626.0,
+    "materials": [
+      {
+        "id": "T5_CLOTH_LEVEL1",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_ARMOR_CLOTH_SET1@2",
+    "name": "Expert's Scholar Robe .2",
+    "tier": 5,
+    "enchant": 2,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 4596.0,
+    "materials": [
+      {
+        "id": "T5_CLOTH_LEVEL2",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_ARMOR_CLOTH_SET1@3",
+    "name": "Expert's Scholar Robe .3",
+    "tier": 5,
+    "enchant": 3,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 4096.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 8042.0,
+    "materials": [
+      {
+        "id": "T5_CLOTH_LEVEL3",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_ARMOR_CLOTH_SET1@4",
+    "name": "Expert's Scholar Robe .4",
+    "tier": 5,
+    "enchant": 4,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 8192.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 14074.0,
+    "materials": [
+      {
+        "id": "T5_CLOTH_LEVEL4",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_HEAD_CLOTH_SET1",
+    "name": "Expert's Scholar Cowl",
+    "tier": 5,
+    "enchant": 0,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 750.0,
+    "materials": [
+      {
+        "id": "T5_CLOTH",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_HEAD_CLOTH_SET1@1",
+    "name": "Expert's Scholar Cowl .1",
+    "tier": 5,
+    "enchant": 1,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1313.0,
+    "materials": [
+      {
+        "id": "T5_CLOTH_LEVEL1",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_HEAD_CLOTH_SET1@2",
+    "name": "Expert's Scholar Cowl .2",
+    "tier": 5,
+    "enchant": 2,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2298.0,
+    "materials": [
+      {
+        "id": "T5_CLOTH_LEVEL2",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_HEAD_CLOTH_SET1@3",
+    "name": "Expert's Scholar Cowl .3",
+    "tier": 5,
+    "enchant": 3,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 4021.0,
+    "materials": [
+      {
+        "id": "T5_CLOTH_LEVEL3",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_HEAD_CLOTH_SET1@4",
+    "name": "Expert's Scholar Cowl .4",
+    "tier": 5,
+    "enchant": 4,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 4096.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 7037.0,
+    "materials": [
+      {
+        "id": "T5_CLOTH_LEVEL4",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_SHOES_CLOTH_SET1",
+    "name": "Expert's Scholar Sandals",
+    "tier": 5,
+    "enchant": 0,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 750.0,
+    "materials": [
+      {
+        "id": "T5_CLOTH",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_SHOES_CLOTH_SET1@1",
+    "name": "Expert's Scholar Sandals .1",
+    "tier": 5,
+    "enchant": 1,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1313.0,
+    "materials": [
+      {
+        "id": "T5_CLOTH_LEVEL1",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_SHOES_CLOTH_SET1@2",
+    "name": "Expert's Scholar Sandals .2",
+    "tier": 5,
+    "enchant": 2,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2298.0,
+    "materials": [
+      {
+        "id": "T5_CLOTH_LEVEL2",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_SHOES_CLOTH_SET1@3",
+    "name": "Expert's Scholar Sandals .3",
+    "tier": 5,
+    "enchant": 3,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 4021.0,
+    "materials": [
+      {
+        "id": "T5_CLOTH_LEVEL3",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_SHOES_CLOTH_SET1@4",
+    "name": "Expert's Scholar Sandals .4",
+    "tier": 5,
+    "enchant": 4,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 4096.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 7037.0,
+    "materials": [
+      {
+        "id": "T5_CLOTH_LEVEL4",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_ARMOR_CLOTH_SET1",
+    "name": "Master's Scholar Robe",
+    "tier": 6,
+    "enchant": 0,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2626.0,
+    "materials": [
+      {
+        "id": "T6_CLOTH",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_ARMOR_CLOTH_SET1@1",
+    "name": "Master's Scholar Robe .1",
+    "tier": 6,
+    "enchant": 1,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 4596.0,
+    "materials": [
+      {
+        "id": "T6_CLOTH_LEVEL1",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_ARMOR_CLOTH_SET1@2",
+    "name": "Master's Scholar Robe .2",
+    "tier": 6,
+    "enchant": 2,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 4096.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 8042.0,
+    "materials": [
+      {
+        "id": "T6_CLOTH_LEVEL2",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_ARMOR_CLOTH_SET1@3",
+    "name": "Master's Scholar Robe .3",
+    "tier": 6,
+    "enchant": 3,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 8192.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 14074.0,
+    "materials": [
+      {
+        "id": "T6_CLOTH_LEVEL3",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_ARMOR_CLOTH_SET1@4",
+    "name": "Master's Scholar Robe .4",
+    "tier": 6,
+    "enchant": 4,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 16384.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 24630.0,
+    "materials": [
+      {
+        "id": "T6_CLOTH_LEVEL4",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_HEAD_CLOTH_SET1",
+    "name": "Master's Scholar Cowl",
+    "tier": 6,
+    "enchant": 0,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1313.0,
+    "materials": [
+      {
+        "id": "T6_CLOTH",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_HEAD_CLOTH_SET1@1",
+    "name": "Master's Scholar Cowl .1",
+    "tier": 6,
+    "enchant": 1,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2298.0,
+    "materials": [
+      {
+        "id": "T6_CLOTH_LEVEL1",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_HEAD_CLOTH_SET1@2",
+    "name": "Master's Scholar Cowl .2",
+    "tier": 6,
+    "enchant": 2,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 4021.0,
+    "materials": [
+      {
+        "id": "T6_CLOTH_LEVEL2",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_HEAD_CLOTH_SET1@3",
+    "name": "Master's Scholar Cowl .3",
+    "tier": 6,
+    "enchant": 3,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 4096.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 7037.0,
+    "materials": [
+      {
+        "id": "T6_CLOTH_LEVEL3",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_HEAD_CLOTH_SET1@4",
+    "name": "Master's Scholar Cowl .4",
+    "tier": 6,
+    "enchant": 4,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 8192.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 12315.0,
+    "materials": [
+      {
+        "id": "T6_CLOTH_LEVEL4",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_SHOES_CLOTH_SET1",
+    "name": "Master's Scholar Sandals",
+    "tier": 6,
+    "enchant": 0,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1313.0,
+    "materials": [
+      {
+        "id": "T6_CLOTH",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_SHOES_CLOTH_SET1@1",
+    "name": "Master's Scholar Sandals .1",
+    "tier": 6,
+    "enchant": 1,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2298.0,
+    "materials": [
+      {
+        "id": "T6_CLOTH_LEVEL1",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_SHOES_CLOTH_SET1@2",
+    "name": "Master's Scholar Sandals .2",
+    "tier": 6,
+    "enchant": 2,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 4021.0,
+    "materials": [
+      {
+        "id": "T6_CLOTH_LEVEL2",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_SHOES_CLOTH_SET1@3",
+    "name": "Master's Scholar Sandals .3",
+    "tier": 6,
+    "enchant": 3,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 4096.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 7037.0,
+    "materials": [
+      {
+        "id": "T6_CLOTH_LEVEL3",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_SHOES_CLOTH_SET1@4",
+    "name": "Master's Scholar Sandals .4",
+    "tier": 6,
+    "enchant": 4,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 8192.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 12315.0,
+    "materials": [
+      {
+        "id": "T6_CLOTH_LEVEL4",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_ARMOR_CLOTH_SET1",
+    "name": "Grandmaster's Scholar Robe",
+    "tier": 7,
+    "enchant": 0,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 4596.0,
+    "materials": [
+      {
+        "id": "T7_CLOTH",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_ARMOR_CLOTH_SET1@1",
+    "name": "Grandmaster's Scholar Robe .1",
+    "tier": 7,
+    "enchant": 1,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 4096.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 8042.0,
+    "materials": [
+      {
+        "id": "T7_CLOTH_LEVEL1",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_ARMOR_CLOTH_SET1@2",
+    "name": "Grandmaster's Scholar Robe .2",
+    "tier": 7,
+    "enchant": 2,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 8192.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 14074.0,
+    "materials": [
+      {
+        "id": "T7_CLOTH_LEVEL2",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_ARMOR_CLOTH_SET1@3",
+    "name": "Grandmaster's Scholar Robe .3",
+    "tier": 7,
+    "enchant": 3,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 16384.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 24630.0,
+    "materials": [
+      {
+        "id": "T7_CLOTH_LEVEL3",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_ARMOR_CLOTH_SET1@4",
+    "name": "Grandmaster's Scholar Robe .4",
+    "tier": 7,
+    "enchant": 4,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 32768.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 43102.0,
+    "materials": [
+      {
+        "id": "T7_CLOTH_LEVEL4",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_HEAD_CLOTH_SET1",
+    "name": "Grandmaster's Scholar Cowl",
+    "tier": 7,
+    "enchant": 0,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2298.0,
+    "materials": [
+      {
+        "id": "T7_CLOTH",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_HEAD_CLOTH_SET1@1",
+    "name": "Grandmaster's Scholar Cowl .1",
+    "tier": 7,
+    "enchant": 1,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 4021.0,
+    "materials": [
+      {
+        "id": "T7_CLOTH_LEVEL1",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_HEAD_CLOTH_SET1@2",
+    "name": "Grandmaster's Scholar Cowl .2",
+    "tier": 7,
+    "enchant": 2,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 4096.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 7037.0,
+    "materials": [
+      {
+        "id": "T7_CLOTH_LEVEL2",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_HEAD_CLOTH_SET1@3",
+    "name": "Grandmaster's Scholar Cowl .3",
+    "tier": 7,
+    "enchant": 3,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 8192.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 12315.0,
+    "materials": [
+      {
+        "id": "T7_CLOTH_LEVEL3",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_HEAD_CLOTH_SET1@4",
+    "name": "Grandmaster's Scholar Cowl .4",
+    "tier": 7,
+    "enchant": 4,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 16384.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 21551.0,
+    "materials": [
+      {
+        "id": "T7_CLOTH_LEVEL4",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_SHOES_CLOTH_SET1",
+    "name": "Grandmaster's Scholar Sandals",
+    "tier": 7,
+    "enchant": 0,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2298.0,
+    "materials": [
+      {
+        "id": "T7_CLOTH",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_SHOES_CLOTH_SET1@1",
+    "name": "Grandmaster's Scholar Sandals .1",
+    "tier": 7,
+    "enchant": 1,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 4021.0,
+    "materials": [
+      {
+        "id": "T7_CLOTH_LEVEL1",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_SHOES_CLOTH_SET1@2",
+    "name": "Grandmaster's Scholar Sandals .2",
+    "tier": 7,
+    "enchant": 2,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 4096.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 7037.0,
+    "materials": [
+      {
+        "id": "T7_CLOTH_LEVEL2",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_SHOES_CLOTH_SET1@3",
+    "name": "Grandmaster's Scholar Sandals .3",
+    "tier": 7,
+    "enchant": 3,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 8192.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 12315.0,
+    "materials": [
+      {
+        "id": "T7_CLOTH_LEVEL3",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_SHOES_CLOTH_SET1@4",
+    "name": "Grandmaster's Scholar Sandals .4",
+    "tier": 7,
+    "enchant": 4,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 16384.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 21551.0,
+    "materials": [
+      {
+        "id": "T7_CLOTH_LEVEL4",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_ARMOR_CLOTH_SET1",
+    "name": "Elder's Scholar Robe",
+    "tier": 8,
+    "enchant": 0,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 4096.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 8042.0,
+    "materials": [
+      {
+        "id": "T8_CLOTH",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_ARMOR_CLOTH_SET1@1",
+    "name": "Elder's Scholar Robe .1",
+    "tier": 8,
+    "enchant": 1,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 8192.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 14074.0,
+    "materials": [
+      {
+        "id": "T8_CLOTH_LEVEL1",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_ARMOR_CLOTH_SET1@2",
+    "name": "Elder's Scholar Robe .2",
+    "tier": 8,
+    "enchant": 2,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 16384.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 24630.0,
+    "materials": [
+      {
+        "id": "T8_CLOTH_LEVEL2",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_ARMOR_CLOTH_SET1@3",
+    "name": "Elder's Scholar Robe .3",
+    "tier": 8,
+    "enchant": 3,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 32768.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 43102.0,
+    "materials": [
+      {
+        "id": "T8_CLOTH_LEVEL3",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_ARMOR_CLOTH_SET1@4",
+    "name": "Elder's Scholar Robe .4",
+    "tier": 8,
+    "enchant": 4,
+    "category": "equipmentitem",
+    "shop_category": "armors",
+    "shop_subcategory": "cloth_armor",
+    "output_amount": 1,
+    "item_value": 65536.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 75429.0,
+    "materials": [
+      {
+        "id": "T8_CLOTH_LEVEL4",
+        "count": 16.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_HEAD_CLOTH_SET1",
+    "name": "Elder's Scholar Cowl",
+    "tier": 8,
+    "enchant": 0,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 4021.0,
+    "materials": [
+      {
+        "id": "T8_CLOTH",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_HEAD_CLOTH_SET1@1",
+    "name": "Elder's Scholar Cowl .1",
+    "tier": 8,
+    "enchant": 1,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 4096.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 7037.0,
+    "materials": [
+      {
+        "id": "T8_CLOTH_LEVEL1",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_HEAD_CLOTH_SET1@2",
+    "name": "Elder's Scholar Cowl .2",
+    "tier": 8,
+    "enchant": 2,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 8192.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 12315.0,
+    "materials": [
+      {
+        "id": "T8_CLOTH_LEVEL2",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_HEAD_CLOTH_SET1@3",
+    "name": "Elder's Scholar Cowl .3",
+    "tier": 8,
+    "enchant": 3,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 16384.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 21551.0,
+    "materials": [
+      {
+        "id": "T8_CLOTH_LEVEL3",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_HEAD_CLOTH_SET1@4",
+    "name": "Elder's Scholar Cowl .4",
+    "tier": 8,
+    "enchant": 4,
+    "category": "equipmentitem",
+    "shop_category": "head",
+    "shop_subcategory": "cloth_helmet",
+    "output_amount": 1,
+    "item_value": 32768.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 37715.0,
+    "materials": [
+      {
+        "id": "T8_CLOTH_LEVEL4",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_SHOES_CLOTH_SET1",
+    "name": "Elder's Scholar Sandals",
+    "tier": 8,
+    "enchant": 0,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 4021.0,
+    "materials": [
+      {
+        "id": "T8_CLOTH",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_SHOES_CLOTH_SET1@1",
+    "name": "Elder's Scholar Sandals .1",
+    "tier": 8,
+    "enchant": 1,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 4096.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 7037.0,
+    "materials": [
+      {
+        "id": "T8_CLOTH_LEVEL1",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_SHOES_CLOTH_SET1@2",
+    "name": "Elder's Scholar Sandals .2",
+    "tier": 8,
+    "enchant": 2,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 8192.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 12315.0,
+    "materials": [
+      {
+        "id": "T8_CLOTH_LEVEL2",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_SHOES_CLOTH_SET1@3",
+    "name": "Elder's Scholar Sandals .3",
+    "tier": 8,
+    "enchant": 3,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 16384.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 21551.0,
+    "materials": [
+      {
+        "id": "T8_CLOTH_LEVEL3",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_SHOES_CLOTH_SET1@4",
+    "name": "Elder's Scholar Sandals .4",
+    "tier": 8,
+    "enchant": 4,
+    "category": "equipmentitem",
+    "shop_category": "shoes",
+    "shop_subcategory": "cloth_shoes",
+    "output_amount": 1,
+    "item_value": 32768.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 37715.0,
+    "materials": [
+      {
+        "id": "T8_CLOTH_LEVEL4",
+        "count": 8.0
+      }
+    ]
+  },
+  {
+    "item_id": "T2_CLOTH",
+    "name": "Simple Cloth",
+    "tier": 2,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 4.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 18.0,
+    "materials": [
+      {
+        "id": "T2_FIBER",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T2_LEATHER",
+    "name": "Stiff Leather",
+    "tier": 2,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 4.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 18.0,
+    "materials": [
+      {
+        "id": "T2_HIDE",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T2_METALBAR",
+    "name": "Copper Bar",
+    "tier": 2,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 4.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 18.0,
+    "materials": [
+      {
+        "id": "T2_ORE",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T2_PLANKS",
+    "name": "Birch Planks",
+    "tier": 2,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 4.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 18.0,
+    "materials": [
+      {
+        "id": "T2_WOOD",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T2_STONEBLOCK",
+    "name": "Limestone Block",
+    "tier": 2,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 4.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 18.0,
+    "materials": [
+      {
+        "id": "T2_ROCK",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T3_CLOTH",
+    "name": "Neat Cloth",
+    "tier": 3,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 8.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 31.0,
+    "materials": [
+      {
+        "id": "T3_FIBER",
+        "count": 2.0
+      },
+      {
+        "id": "T2_CLOTH",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T3_LEATHER",
+    "name": "Thick Leather",
+    "tier": 3,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 8.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 31.0,
+    "materials": [
+      {
+        "id": "T3_HIDE",
+        "count": 2.0
+      },
+      {
+        "id": "T2_LEATHER",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T3_METALBAR",
+    "name": "Bronze Bar",
+    "tier": 3,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 8.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 31.0,
+    "materials": [
+      {
+        "id": "T3_ORE",
+        "count": 2.0
+      },
+      {
+        "id": "T2_METALBAR",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T3_PLANKS",
+    "name": "Chestnut Planks",
+    "tier": 3,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 8.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 31.0,
+    "materials": [
+      {
+        "id": "T3_WOOD",
+        "count": 2.0
+      },
+      {
+        "id": "T2_PLANKS",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T3_STONEBLOCK",
+    "name": "Sandstone Block",
+    "tier": 3,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 8.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 31.0,
+    "materials": [
+      {
+        "id": "T3_ROCK",
+        "count": 2.0
+      },
+      {
+        "id": "T2_STONEBLOCK",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_CLOTH",
+    "name": "Fine Cloth",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 16.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 54.0,
+    "materials": [
+      {
+        "id": "T4_FIBER",
+        "count": 2.0
+      },
+      {
+        "id": "T3_CLOTH",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_CLOTH_LEVEL1",
+    "name": "Fine Cloth .1",
+    "tier": 4,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 32.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 94.0,
+    "materials": [
+      {
+        "id": "T4_FIBER_LEVEL1",
+        "count": 2.0
+      },
+      {
+        "id": "T3_CLOTH",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_CLOTH_LEVEL2",
+    "name": "Fine Cloth .2",
+    "tier": 4,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 64.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 164.0,
+    "materials": [
+      {
+        "id": "T4_FIBER_LEVEL2",
+        "count": 2.0
+      },
+      {
+        "id": "T3_CLOTH",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_CLOTH_LEVEL3",
+    "name": "Fine Cloth .3",
+    "tier": 4,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 287.0,
+    "materials": [
+      {
+        "id": "T4_FIBER_LEVEL3",
+        "count": 2.0
+      },
+      {
+        "id": "T3_CLOTH",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_CLOTH_LEVEL4",
+    "name": "Fine Cloth .4",
+    "tier": 4,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T4_FIBER_LEVEL4",
+        "count": 2.0
+      },
+      {
+        "id": "T3_CLOTH",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_FIBER_LEVEL1",
+    "name": "T4_FIBER_LEVEL1",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 12.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_FIBER",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_FIBER_LEVEL2",
+    "name": "T4_FIBER_LEVEL2",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 28.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_FIBER_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_FIBER_LEVEL3",
+    "name": "T4_FIBER_LEVEL3",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 60.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_FIBER_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_FIBER_LEVEL4",
+    "name": "T4_FIBER_LEVEL4",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 124.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_FIBER_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_HIDE_LEVEL1",
+    "name": "T4_HIDE_LEVEL1",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 12.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_HIDE",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_HIDE_LEVEL2",
+    "name": "T4_HIDE_LEVEL2",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 28.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_HIDE_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_HIDE_LEVEL3",
+    "name": "T4_HIDE_LEVEL3",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 60.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_HIDE_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_HIDE_LEVEL4",
+    "name": "T4_HIDE_LEVEL4",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 124.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_HIDE_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_LEATHER",
+    "name": "Worked Leather",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 16.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 54.0,
+    "materials": [
+      {
+        "id": "T4_HIDE",
+        "count": 2.0
+      },
+      {
+        "id": "T3_LEATHER",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_LEATHER_LEVEL1",
+    "name": "Worked Leather .1",
+    "tier": 4,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 32.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 94.0,
+    "materials": [
+      {
+        "id": "T4_HIDE_LEVEL1",
+        "count": 2.0
+      },
+      {
+        "id": "T3_LEATHER",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_LEATHER_LEVEL2",
+    "name": "Worked Leather .2",
+    "tier": 4,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 64.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 164.0,
+    "materials": [
+      {
+        "id": "T4_HIDE_LEVEL2",
+        "count": 2.0
+      },
+      {
+        "id": "T3_LEATHER",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_LEATHER_LEVEL3",
+    "name": "Worked Leather .3",
+    "tier": 4,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 287.0,
+    "materials": [
+      {
+        "id": "T4_HIDE_LEVEL3",
+        "count": 2.0
+      },
+      {
+        "id": "T3_LEATHER",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_LEATHER_LEVEL4",
+    "name": "Worked Leather .4",
+    "tier": 4,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T4_HIDE_LEVEL4",
+        "count": 2.0
+      },
+      {
+        "id": "T3_LEATHER",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_METALBAR",
+    "name": "Steel Bar",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 16.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 54.0,
+    "materials": [
+      {
+        "id": "T4_ORE",
+        "count": 2.0
+      },
+      {
+        "id": "T3_METALBAR",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_METALBAR_LEVEL1",
+    "name": "Steel Bar .1",
+    "tier": 4,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 32.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 94.0,
+    "materials": [
+      {
+        "id": "T4_ORE_LEVEL1",
+        "count": 2.0
+      },
+      {
+        "id": "T3_METALBAR",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_METALBAR_LEVEL2",
+    "name": "Steel Bar .2",
+    "tier": 4,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 64.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 164.0,
+    "materials": [
+      {
+        "id": "T4_ORE_LEVEL2",
+        "count": 2.0
+      },
+      {
+        "id": "T3_METALBAR",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_METALBAR_LEVEL3",
+    "name": "Steel Bar .3",
+    "tier": 4,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 287.0,
+    "materials": [
+      {
+        "id": "T4_ORE_LEVEL3",
+        "count": 2.0
+      },
+      {
+        "id": "T3_METALBAR",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_METALBAR_LEVEL4",
+    "name": "Steel Bar .4",
+    "tier": 4,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T4_ORE_LEVEL4",
+        "count": 2.0
+      },
+      {
+        "id": "T3_METALBAR",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_ORE_LEVEL1",
+    "name": "T4_ORE_LEVEL1",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 12.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_ORE",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_ORE_LEVEL2",
+    "name": "T4_ORE_LEVEL2",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 28.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_ORE_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_ORE_LEVEL3",
+    "name": "T4_ORE_LEVEL3",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 60.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_ORE_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_ORE_LEVEL4",
+    "name": "T4_ORE_LEVEL4",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 124.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_ORE_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_PLANKS",
+    "name": "Pine Planks",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 16.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 54.0,
+    "materials": [
+      {
+        "id": "T4_WOOD",
+        "count": 2.0
+      },
+      {
+        "id": "T3_PLANKS",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_PLANKS_LEVEL1",
+    "name": "Pine Planks .1",
+    "tier": 4,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 32.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 94.0,
+    "materials": [
+      {
+        "id": "T4_WOOD_LEVEL1",
+        "count": 2.0
+      },
+      {
+        "id": "T3_PLANKS",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_PLANKS_LEVEL2",
+    "name": "Pine Planks .2",
+    "tier": 4,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 64.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 164.0,
+    "materials": [
+      {
+        "id": "T4_WOOD_LEVEL2",
+        "count": 2.0
+      },
+      {
+        "id": "T3_PLANKS",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_PLANKS_LEVEL3",
+    "name": "Pine Planks .3",
+    "tier": 4,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 287.0,
+    "materials": [
+      {
+        "id": "T4_WOOD_LEVEL3",
+        "count": 2.0
+      },
+      {
+        "id": "T3_PLANKS",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_PLANKS_LEVEL4",
+    "name": "Pine Planks .4",
+    "tier": 4,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T4_WOOD_LEVEL4",
+        "count": 2.0
+      },
+      {
+        "id": "T3_PLANKS",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_ROCK_LEVEL1",
+    "name": "T4_ROCK_LEVEL1",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 12.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_ROCK",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_ROCK_LEVEL2",
+    "name": "T4_ROCK_LEVEL2",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 28.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_ROCK_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_ROCK_LEVEL3",
+    "name": "T4_ROCK_LEVEL3",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 60.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_ROCK_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_STONEBLOCK",
+    "name": "Travertine Block",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 16.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 54.0,
+    "materials": [
+      {
+        "id": "T4_ROCK",
+        "count": 2.0
+      },
+      {
+        "id": "T3_STONEBLOCK",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_WOOD_LEVEL1",
+    "name": "T4_WOOD_LEVEL1",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 12.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_WOOD",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_WOOD_LEVEL2",
+    "name": "T4_WOOD_LEVEL2",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 28.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_WOOD_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_WOOD_LEVEL3",
+    "name": "T4_WOOD_LEVEL3",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 60.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_WOOD_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T4_WOOD_LEVEL4",
+    "name": "T4_WOOD_LEVEL4",
+    "tier": 4,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 124.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_WOOD_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_CLOTH",
+    "name": "Ornate Cloth",
+    "tier": 5,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 32.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 94.0,
+    "materials": [
+      {
+        "id": "T5_FIBER",
+        "count": 3.0
+      },
+      {
+        "id": "T4_CLOTH",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_CLOTH_LEVEL1",
+    "name": "Ornate Cloth .1",
+    "tier": 5,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 64.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 164.0,
+    "materials": [
+      {
+        "id": "T5_FIBER_LEVEL1",
+        "count": 3.0
+      },
+      {
+        "id": "T4_CLOTH_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_CLOTH_LEVEL2",
+    "name": "Ornate Cloth .2",
+    "tier": 5,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 287.0,
+    "materials": [
+      {
+        "id": "T5_FIBER_LEVEL2",
+        "count": 3.0
+      },
+      {
+        "id": "T4_CLOTH_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_CLOTH_LEVEL3",
+    "name": "Ornate Cloth .3",
+    "tier": 5,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T5_FIBER_LEVEL3",
+        "count": 3.0
+      },
+      {
+        "id": "T4_CLOTH_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_CLOTH_LEVEL4",
+    "name": "Ornate Cloth .4",
+    "tier": 5,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 880.0,
+    "materials": [
+      {
+        "id": "T5_FIBER_LEVEL4",
+        "count": 3.0
+      },
+      {
+        "id": "T4_CLOTH_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_FIBER",
+    "name": "Skyflower",
+    "tier": 5,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 5.34,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_FIBER",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_FIBER_LEVEL1",
+    "name": "Skyflower .1",
+    "tier": 5,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 10.66,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_FIBER_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_FIBER_LEVEL2",
+    "name": "Skyflower .2",
+    "tier": 5,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 21.34,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_FIBER_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_FIBER_LEVEL3",
+    "name": "Skyflower .3",
+    "tier": 5,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 42.66,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_FIBER_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_FIBER_LEVEL4",
+    "name": "Skyflower .4",
+    "tier": 5,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 85.34,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_FIBER_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_HIDE",
+    "name": "Heavy Hide",
+    "tier": 5,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 5.34,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_HIDE",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_HIDE_LEVEL1",
+    "name": "Heavy Hide .1",
+    "tier": 5,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 10.66,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_HIDE_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_HIDE_LEVEL2",
+    "name": "Heavy Hide .2",
+    "tier": 5,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 21.34,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_HIDE_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_HIDE_LEVEL3",
+    "name": "Heavy Hide .3",
+    "tier": 5,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 42.66,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_HIDE_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_HIDE_LEVEL4",
+    "name": "Heavy Hide .4",
+    "tier": 5,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 85.34,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_HIDE_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_LEATHER",
+    "name": "Cured Leather",
+    "tier": 5,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 32.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 94.0,
+    "materials": [
+      {
+        "id": "T5_HIDE",
+        "count": 3.0
+      },
+      {
+        "id": "T4_LEATHER",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_LEATHER_LEVEL1",
+    "name": "Cured Leather .1",
+    "tier": 5,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 64.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 164.0,
+    "materials": [
+      {
+        "id": "T5_HIDE_LEVEL1",
+        "count": 3.0
+      },
+      {
+        "id": "T4_LEATHER_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_LEATHER_LEVEL2",
+    "name": "Cured Leather .2",
+    "tier": 5,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 287.0,
+    "materials": [
+      {
+        "id": "T5_HIDE_LEVEL2",
+        "count": 3.0
+      },
+      {
+        "id": "T4_LEATHER_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_LEATHER_LEVEL3",
+    "name": "Cured Leather .3",
+    "tier": 5,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T5_HIDE_LEVEL3",
+        "count": 3.0
+      },
+      {
+        "id": "T4_LEATHER_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_LEATHER_LEVEL4",
+    "name": "Cured Leather .4",
+    "tier": 5,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 880.0,
+    "materials": [
+      {
+        "id": "T5_HIDE_LEVEL4",
+        "count": 3.0
+      },
+      {
+        "id": "T4_LEATHER_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_METALBAR",
+    "name": "Titanium Steel Bar",
+    "tier": 5,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 32.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 94.0,
+    "materials": [
+      {
+        "id": "T5_ORE",
+        "count": 3.0
+      },
+      {
+        "id": "T4_METALBAR",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_METALBAR_LEVEL1",
+    "name": "Titanium Steel Bar .1",
+    "tier": 5,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 64.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 164.0,
+    "materials": [
+      {
+        "id": "T5_ORE_LEVEL1",
+        "count": 3.0
+      },
+      {
+        "id": "T4_METALBAR_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_METALBAR_LEVEL2",
+    "name": "Titanium Steel Bar .2",
+    "tier": 5,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 287.0,
+    "materials": [
+      {
+        "id": "T5_ORE_LEVEL2",
+        "count": 3.0
+      },
+      {
+        "id": "T4_METALBAR_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_METALBAR_LEVEL3",
+    "name": "Titanium Steel Bar .3",
+    "tier": 5,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T5_ORE_LEVEL3",
+        "count": 3.0
+      },
+      {
+        "id": "T4_METALBAR_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_METALBAR_LEVEL4",
+    "name": "Titanium Steel Bar .4",
+    "tier": 5,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 880.0,
+    "materials": [
+      {
+        "id": "T5_ORE_LEVEL4",
+        "count": 3.0
+      },
+      {
+        "id": "T4_METALBAR_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_ORE",
+    "name": "Titanium Ore",
+    "tier": 5,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 5.34,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_ORE",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_ORE_LEVEL1",
+    "name": "Titanium Ore .1",
+    "tier": 5,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 10.66,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_ORE_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_ORE_LEVEL2",
+    "name": "Titanium Ore .2",
+    "tier": 5,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 21.34,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_ORE_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_ORE_LEVEL3",
+    "name": "Titanium Ore .3",
+    "tier": 5,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 42.66,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_ORE_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_ORE_LEVEL4",
+    "name": "Titanium Ore .4",
+    "tier": 5,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 85.34,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_ORE_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_PLANKS",
+    "name": "Cedar Planks",
+    "tier": 5,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 32.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 94.0,
+    "materials": [
+      {
+        "id": "T5_WOOD",
+        "count": 3.0
+      },
+      {
+        "id": "T4_PLANKS",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_PLANKS_LEVEL1",
+    "name": "Cedar Planks .1",
+    "tier": 5,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 64.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 164.0,
+    "materials": [
+      {
+        "id": "T5_WOOD_LEVEL1",
+        "count": 3.0
+      },
+      {
+        "id": "T4_PLANKS_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_PLANKS_LEVEL2",
+    "name": "Cedar Planks .2",
+    "tier": 5,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 287.0,
+    "materials": [
+      {
+        "id": "T5_WOOD_LEVEL2",
+        "count": 3.0
+      },
+      {
+        "id": "T4_PLANKS_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_PLANKS_LEVEL3",
+    "name": "Cedar Planks .3",
+    "tier": 5,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T5_WOOD_LEVEL3",
+        "count": 3.0
+      },
+      {
+        "id": "T4_PLANKS_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_PLANKS_LEVEL4",
+    "name": "Cedar Planks .4",
+    "tier": 5,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 880.0,
+    "materials": [
+      {
+        "id": "T5_WOOD_LEVEL4",
+        "count": 3.0
+      },
+      {
+        "id": "T4_PLANKS_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_ROCK",
+    "name": "Granite",
+    "tier": 5,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 5.34,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_ROCK",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_ROCK_LEVEL1",
+    "name": "Granite .1",
+    "tier": 5,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 10.66,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_ROCK_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_ROCK_LEVEL2",
+    "name": "Granite .2",
+    "tier": 5,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 21.34,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_ROCK_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_ROCK_LEVEL3",
+    "name": "Granite .3",
+    "tier": 5,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 42.66,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_ROCK_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_STONEBLOCK",
+    "name": "Granite Block",
+    "tier": 5,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 32.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 94.0,
+    "materials": [
+      {
+        "id": "T5_ROCK",
+        "count": 3.0
+      },
+      {
+        "id": "T4_STONEBLOCK",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_WOOD",
+    "name": "Cedar Logs",
+    "tier": 5,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 5.34,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_WOOD",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_WOOD_LEVEL1",
+    "name": "Cedar Logs .1",
+    "tier": 5,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 10.66,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_WOOD_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_WOOD_LEVEL2",
+    "name": "Cedar Logs .2",
+    "tier": 5,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 21.34,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_WOOD_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_WOOD_LEVEL3",
+    "name": "Cedar Logs .3",
+    "tier": 5,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 42.66,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_WOOD_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T5_WOOD_LEVEL4",
+    "name": "Cedar Logs .4",
+    "tier": 5,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 85.34,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T4_WOOD_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_CLOTH",
+    "name": "Lavish Cloth",
+    "tier": 6,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 64.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 164.0,
+    "materials": [
+      {
+        "id": "T6_FIBER",
+        "count": 4.0
+      },
+      {
+        "id": "T5_CLOTH",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_CLOTH_LEVEL1",
+    "name": "Lavish Cloth .1",
+    "tier": 6,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 287.0,
+    "materials": [
+      {
+        "id": "T6_FIBER_LEVEL1",
+        "count": 4.0
+      },
+      {
+        "id": "T5_CLOTH_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_CLOTH_LEVEL2",
+    "name": "Lavish Cloth .2",
+    "tier": 6,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T6_FIBER_LEVEL2",
+        "count": 4.0
+      },
+      {
+        "id": "T5_CLOTH_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_CLOTH_LEVEL3",
+    "name": "Lavish Cloth .3",
+    "tier": 6,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 880.0,
+    "materials": [
+      {
+        "id": "T6_FIBER_LEVEL3",
+        "count": 4.0
+      },
+      {
+        "id": "T5_CLOTH_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_CLOTH_LEVEL4",
+    "name": "Lavish Cloth .4",
+    "tier": 6,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1539.0,
+    "materials": [
+      {
+        "id": "T6_FIBER_LEVEL4",
+        "count": 4.0
+      },
+      {
+        "id": "T5_CLOTH_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_FIBER",
+    "name": "Amberleaf Cotton",
+    "tier": 6,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 8.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_FIBER",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_FIBER_LEVEL1",
+    "name": "Amberleaf Cotton .1",
+    "tier": 6,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 16.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_FIBER_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_FIBER_LEVEL2",
+    "name": "Amberleaf Cotton .2",
+    "tier": 6,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 32.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_FIBER_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_FIBER_LEVEL3",
+    "name": "Amberleaf Cotton .3",
+    "tier": 6,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 64.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_FIBER_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_FIBER_LEVEL4",
+    "name": "Amberleaf Cotton .4",
+    "tier": 6,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_FIBER_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_HIDE",
+    "name": "Robust Hide",
+    "tier": 6,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 8.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_HIDE",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_HIDE_LEVEL1",
+    "name": "Robust Hide .1",
+    "tier": 6,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 16.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_HIDE_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_HIDE_LEVEL2",
+    "name": "Robust Hide .2",
+    "tier": 6,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 32.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_HIDE_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_HIDE_LEVEL3",
+    "name": "Robust Hide .3",
+    "tier": 6,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 64.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_HIDE_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_HIDE_LEVEL4",
+    "name": "Robust Hide .4",
+    "tier": 6,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_HIDE_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_LEATHER",
+    "name": "Hardened Leather",
+    "tier": 6,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 64.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 164.0,
+    "materials": [
+      {
+        "id": "T6_HIDE",
+        "count": 4.0
+      },
+      {
+        "id": "T5_LEATHER",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_LEATHER_LEVEL1",
+    "name": "Hardened Leather .1",
+    "tier": 6,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 287.0,
+    "materials": [
+      {
+        "id": "T6_HIDE_LEVEL1",
+        "count": 4.0
+      },
+      {
+        "id": "T5_LEATHER_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_LEATHER_LEVEL2",
+    "name": "Hardened Leather .2",
+    "tier": 6,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T6_HIDE_LEVEL2",
+        "count": 4.0
+      },
+      {
+        "id": "T5_LEATHER_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_LEATHER_LEVEL3",
+    "name": "Hardened Leather .3",
+    "tier": 6,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 880.0,
+    "materials": [
+      {
+        "id": "T6_HIDE_LEVEL3",
+        "count": 4.0
+      },
+      {
+        "id": "T5_LEATHER_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_LEATHER_LEVEL4",
+    "name": "Hardened Leather .4",
+    "tier": 6,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1539.0,
+    "materials": [
+      {
+        "id": "T6_HIDE_LEVEL4",
+        "count": 4.0
+      },
+      {
+        "id": "T5_LEATHER_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_METALBAR",
+    "name": "Runite Steel Bar",
+    "tier": 6,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 64.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 164.0,
+    "materials": [
+      {
+        "id": "T6_ORE",
+        "count": 4.0
+      },
+      {
+        "id": "T5_METALBAR",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_METALBAR_LEVEL1",
+    "name": "Runite Steel Bar .1",
+    "tier": 6,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 287.0,
+    "materials": [
+      {
+        "id": "T6_ORE_LEVEL1",
+        "count": 4.0
+      },
+      {
+        "id": "T5_METALBAR_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_METALBAR_LEVEL2",
+    "name": "Runite Steel Bar .2",
+    "tier": 6,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T6_ORE_LEVEL2",
+        "count": 4.0
+      },
+      {
+        "id": "T5_METALBAR_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_METALBAR_LEVEL3",
+    "name": "Runite Steel Bar .3",
+    "tier": 6,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 880.0,
+    "materials": [
+      {
+        "id": "T6_ORE_LEVEL3",
+        "count": 4.0
+      },
+      {
+        "id": "T5_METALBAR_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_METALBAR_LEVEL4",
+    "name": "Runite Steel Bar .4",
+    "tier": 6,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1539.0,
+    "materials": [
+      {
+        "id": "T6_ORE_LEVEL4",
+        "count": 4.0
+      },
+      {
+        "id": "T5_METALBAR_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_ORE",
+    "name": "Runite Ore",
+    "tier": 6,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 8.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_ORE",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_ORE_LEVEL1",
+    "name": "Runite Ore .1",
+    "tier": 6,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 16.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_ORE_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_ORE_LEVEL2",
+    "name": "Runite Ore .2",
+    "tier": 6,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 32.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_ORE_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_ORE_LEVEL3",
+    "name": "Runite Ore .3",
+    "tier": 6,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 64.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_ORE_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_ORE_LEVEL4",
+    "name": "Runite Ore .4",
+    "tier": 6,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_ORE_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_PLANKS",
+    "name": "Bloodoak Planks",
+    "tier": 6,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 64.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 164.0,
+    "materials": [
+      {
+        "id": "T6_WOOD",
+        "count": 4.0
+      },
+      {
+        "id": "T5_PLANKS",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_PLANKS_LEVEL1",
+    "name": "Bloodoak Planks .1",
+    "tier": 6,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 287.0,
+    "materials": [
+      {
+        "id": "T6_WOOD_LEVEL1",
+        "count": 4.0
+      },
+      {
+        "id": "T5_PLANKS_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_PLANKS_LEVEL2",
+    "name": "Bloodoak Planks .2",
+    "tier": 6,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T6_WOOD_LEVEL2",
+        "count": 4.0
+      },
+      {
+        "id": "T5_PLANKS_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_PLANKS_LEVEL3",
+    "name": "Bloodoak Planks .3",
+    "tier": 6,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 880.0,
+    "materials": [
+      {
+        "id": "T6_WOOD_LEVEL3",
+        "count": 4.0
+      },
+      {
+        "id": "T5_PLANKS_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_PLANKS_LEVEL4",
+    "name": "Bloodoak Planks .4",
+    "tier": 6,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1539.0,
+    "materials": [
+      {
+        "id": "T6_WOOD_LEVEL4",
+        "count": 4.0
+      },
+      {
+        "id": "T5_PLANKS_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_ROCK",
+    "name": "Slate",
+    "tier": 6,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 8.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_ROCK",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_ROCK_LEVEL1",
+    "name": "Slate .1",
+    "tier": 6,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 16.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_ROCK_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_ROCK_LEVEL2",
+    "name": "Slate .2",
+    "tier": 6,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 32.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_ROCK_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_ROCK_LEVEL3",
+    "name": "Slate .3",
+    "tier": 6,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 64.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_ROCK_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_STONEBLOCK",
+    "name": "Slate Block",
+    "tier": 6,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 64.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 164.0,
+    "materials": [
+      {
+        "id": "T6_ROCK",
+        "count": 4.0
+      },
+      {
+        "id": "T5_STONEBLOCK",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_WOOD",
+    "name": "Bloodoak Logs",
+    "tier": 6,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 8.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_WOOD",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_WOOD_LEVEL1",
+    "name": "Bloodoak Logs .1",
+    "tier": 6,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 16.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_WOOD_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_WOOD_LEVEL2",
+    "name": "Bloodoak Logs .2",
+    "tier": 6,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 32.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_WOOD_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_WOOD_LEVEL3",
+    "name": "Bloodoak Logs .3",
+    "tier": 6,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 64.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_WOOD_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T6_WOOD_LEVEL4",
+    "name": "Bloodoak Logs .4",
+    "tier": 6,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T5_WOOD_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_CLOTH",
+    "name": "Opulent Cloth",
+    "tier": 7,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 287.0,
+    "materials": [
+      {
+        "id": "T7_FIBER",
+        "count": 5.0
+      },
+      {
+        "id": "T6_CLOTH",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_CLOTH_LEVEL1",
+    "name": "Opulent Cloth .1",
+    "tier": 7,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T7_FIBER_LEVEL1",
+        "count": 5.0
+      },
+      {
+        "id": "T6_CLOTH_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_CLOTH_LEVEL2",
+    "name": "Opulent Cloth .2",
+    "tier": 7,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 880.0,
+    "materials": [
+      {
+        "id": "T7_FIBER_LEVEL2",
+        "count": 5.0
+      },
+      {
+        "id": "T6_CLOTH_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_CLOTH_LEVEL3",
+    "name": "Opulent Cloth .3",
+    "tier": 7,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1539.0,
+    "materials": [
+      {
+        "id": "T7_FIBER_LEVEL3",
+        "count": 5.0
+      },
+      {
+        "id": "T6_CLOTH_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_CLOTH_LEVEL4",
+    "name": "Opulent Cloth .4",
+    "tier": 7,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2694.0,
+    "materials": [
+      {
+        "id": "T7_FIBER_LEVEL4",
+        "count": 5.0
+      },
+      {
+        "id": "T6_CLOTH_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_FIBER",
+    "name": "Sunflax",
+    "tier": 7,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 12.8,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_FIBER",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_FIBER_LEVEL1",
+    "name": "Sunflax .1",
+    "tier": 7,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 25.6,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_FIBER_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_FIBER_LEVEL2",
+    "name": "Sunflax .2",
+    "tier": 7,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 51.2,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_FIBER_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_FIBER_LEVEL3",
+    "name": "Sunflax .3",
+    "tier": 7,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 102.4,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_FIBER_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_FIBER_LEVEL4",
+    "name": "Sunflax .4",
+    "tier": 7,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 204.8,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_FIBER_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_HIDE",
+    "name": "Thick Hide",
+    "tier": 7,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 12.8,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_HIDE",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_HIDE_LEVEL1",
+    "name": "Thick Hide .1",
+    "tier": 7,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 25.6,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_HIDE_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_HIDE_LEVEL2",
+    "name": "Thick Hide .2",
+    "tier": 7,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 51.2,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_HIDE_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_HIDE_LEVEL3",
+    "name": "Thick Hide .3",
+    "tier": 7,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 102.4,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_HIDE_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_HIDE_LEVEL4",
+    "name": "Thick Hide .4",
+    "tier": 7,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 204.8,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_HIDE_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_LEATHER",
+    "name": "Reinforced Leather",
+    "tier": 7,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 287.0,
+    "materials": [
+      {
+        "id": "T7_HIDE",
+        "count": 5.0
+      },
+      {
+        "id": "T6_LEATHER",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_LEATHER_LEVEL1",
+    "name": "Reinforced Leather .1",
+    "tier": 7,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T7_HIDE_LEVEL1",
+        "count": 5.0
+      },
+      {
+        "id": "T6_LEATHER_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_LEATHER_LEVEL2",
+    "name": "Reinforced Leather .2",
+    "tier": 7,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 880.0,
+    "materials": [
+      {
+        "id": "T7_HIDE_LEVEL2",
+        "count": 5.0
+      },
+      {
+        "id": "T6_LEATHER_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_LEATHER_LEVEL3",
+    "name": "Reinforced Leather .3",
+    "tier": 7,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1539.0,
+    "materials": [
+      {
+        "id": "T7_HIDE_LEVEL3",
+        "count": 5.0
+      },
+      {
+        "id": "T6_LEATHER_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_LEATHER_LEVEL4",
+    "name": "Reinforced Leather .4",
+    "tier": 7,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2694.0,
+    "materials": [
+      {
+        "id": "T7_HIDE_LEVEL4",
+        "count": 5.0
+      },
+      {
+        "id": "T6_LEATHER_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_METALBAR",
+    "name": "Meteorite Steel Bar",
+    "tier": 7,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 287.0,
+    "materials": [
+      {
+        "id": "T7_ORE",
+        "count": 5.0
+      },
+      {
+        "id": "T6_METALBAR",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_METALBAR_LEVEL1",
+    "name": "Meteorite Steel Bar .1",
+    "tier": 7,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T7_ORE_LEVEL1",
+        "count": 5.0
+      },
+      {
+        "id": "T6_METALBAR_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_METALBAR_LEVEL2",
+    "name": "Meteorite Steel Bar .2",
+    "tier": 7,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 880.0,
+    "materials": [
+      {
+        "id": "T7_ORE_LEVEL2",
+        "count": 5.0
+      },
+      {
+        "id": "T6_METALBAR_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_METALBAR_LEVEL3",
+    "name": "Meteorite Steel Bar .3",
+    "tier": 7,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1539.0,
+    "materials": [
+      {
+        "id": "T7_ORE_LEVEL3",
+        "count": 5.0
+      },
+      {
+        "id": "T6_METALBAR_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_METALBAR_LEVEL4",
+    "name": "Meteorite Steel Bar .4",
+    "tier": 7,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2694.0,
+    "materials": [
+      {
+        "id": "T7_ORE_LEVEL4",
+        "count": 5.0
+      },
+      {
+        "id": "T6_METALBAR_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_ORE",
+    "name": "Meteorite Ore",
+    "tier": 7,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 12.8,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_ORE",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_ORE_LEVEL1",
+    "name": "Meteorite Ore .1",
+    "tier": 7,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 25.6,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_ORE_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_ORE_LEVEL2",
+    "name": "Meteorite Ore .2",
+    "tier": 7,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 51.2,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_ORE_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_ORE_LEVEL3",
+    "name": "Meteorite Ore .3",
+    "tier": 7,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 102.4,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_ORE_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_ORE_LEVEL4",
+    "name": "Meteorite Ore .4",
+    "tier": 7,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 204.8,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_ORE_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_PLANKS",
+    "name": "Ashenbark Planks",
+    "tier": 7,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 287.0,
+    "materials": [
+      {
+        "id": "T7_WOOD",
+        "count": 5.0
+      },
+      {
+        "id": "T6_PLANKS",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_PLANKS_LEVEL1",
+    "name": "Ashenbark Planks .1",
+    "tier": 7,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T7_WOOD_LEVEL1",
+        "count": 5.0
+      },
+      {
+        "id": "T6_PLANKS_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_PLANKS_LEVEL2",
+    "name": "Ashenbark Planks .2",
+    "tier": 7,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 880.0,
+    "materials": [
+      {
+        "id": "T7_WOOD_LEVEL2",
+        "count": 5.0
+      },
+      {
+        "id": "T6_PLANKS_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_PLANKS_LEVEL3",
+    "name": "Ashenbark Planks .3",
+    "tier": 7,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1539.0,
+    "materials": [
+      {
+        "id": "T7_WOOD_LEVEL3",
+        "count": 5.0
+      },
+      {
+        "id": "T6_PLANKS_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_PLANKS_LEVEL4",
+    "name": "Ashenbark Planks .4",
+    "tier": 7,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2694.0,
+    "materials": [
+      {
+        "id": "T7_WOOD_LEVEL4",
+        "count": 5.0
+      },
+      {
+        "id": "T6_PLANKS_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_ROCK",
+    "name": "Basalt",
+    "tier": 7,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 12.8,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_ROCK",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_ROCK_LEVEL1",
+    "name": "Basalt .1",
+    "tier": 7,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 25.6,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_ROCK_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_ROCK_LEVEL2",
+    "name": "Basalt .2",
+    "tier": 7,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 51.2,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_ROCK_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_ROCK_LEVEL3",
+    "name": "Basalt .3",
+    "tier": 7,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 102.4,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_ROCK_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_STONEBLOCK",
+    "name": "Basalt Block",
+    "tier": 7,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 128.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 287.0,
+    "materials": [
+      {
+        "id": "T7_ROCK",
+        "count": 5.0
+      },
+      {
+        "id": "T6_STONEBLOCK",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_WOOD",
+    "name": "Ashenbark Logs",
+    "tier": 7,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 12.8,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_WOOD",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_WOOD_LEVEL1",
+    "name": "Ashenbark Logs .1",
+    "tier": 7,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 25.6,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_WOOD_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_WOOD_LEVEL2",
+    "name": "Ashenbark Logs .2",
+    "tier": 7,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 51.2,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_WOOD_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_WOOD_LEVEL3",
+    "name": "Ashenbark Logs .3",
+    "tier": 7,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 102.4,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_WOOD_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T7_WOOD_LEVEL4",
+    "name": "Ashenbark Logs .4",
+    "tier": 7,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 204.8,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T6_WOOD_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_CLOTH",
+    "name": "Baroque Cloth",
+    "tier": 8,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T8_FIBER",
+        "count": 5.0
+      },
+      {
+        "id": "T7_CLOTH",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_CLOTH_LEVEL1",
+    "name": "Baroque Cloth .1",
+    "tier": 8,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 880.0,
+    "materials": [
+      {
+        "id": "T8_FIBER_LEVEL1",
+        "count": 5.0
+      },
+      {
+        "id": "T7_CLOTH_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_CLOTH_LEVEL2",
+    "name": "Baroque Cloth .2",
+    "tier": 8,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1539.0,
+    "materials": [
+      {
+        "id": "T8_FIBER_LEVEL2",
+        "count": 5.0
+      },
+      {
+        "id": "T7_CLOTH_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_CLOTH_LEVEL3",
+    "name": "Baroque Cloth .3",
+    "tier": 8,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2694.0,
+    "materials": [
+      {
+        "id": "T8_FIBER_LEVEL3",
+        "count": 5.0
+      },
+      {
+        "id": "T7_CLOTH_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_CLOTH_LEVEL4",
+    "name": "Baroque Cloth .4",
+    "tier": 8,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 4096.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 4714.0,
+    "materials": [
+      {
+        "id": "T8_FIBER_LEVEL4",
+        "count": 5.0
+      },
+      {
+        "id": "T7_CLOTH_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_FIBER",
+    "name": "Ghost Hemp",
+    "tier": 8,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 25.6,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_FIBER",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_FIBER_LEVEL1",
+    "name": "Ghost Hemp .1",
+    "tier": 8,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 51.2,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_FIBER_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_FIBER_LEVEL2",
+    "name": "Ghost Hemp .2",
+    "tier": 8,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 102.4,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_FIBER_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_FIBER_LEVEL3",
+    "name": "Ghost Hemp .3",
+    "tier": 8,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 204.8,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_FIBER_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_FIBER_LEVEL4",
+    "name": "Ghost Hemp .4",
+    "tier": 8,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 409.6,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_FIBER_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_HIDE",
+    "name": "Resilient Hide",
+    "tier": 8,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 25.6,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_HIDE",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_HIDE_LEVEL1",
+    "name": "Resilient Hide .1",
+    "tier": 8,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 51.2,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_HIDE_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_HIDE_LEVEL2",
+    "name": "Resilient Hide .2",
+    "tier": 8,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 102.4,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_HIDE_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_HIDE_LEVEL3",
+    "name": "Resilient Hide .3",
+    "tier": 8,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 204.8,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_HIDE_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_HIDE_LEVEL4",
+    "name": "Resilient Hide .4",
+    "tier": 8,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 409.6,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_HIDE_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_LEATHER",
+    "name": "Fortified Leather",
+    "tier": 8,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T8_HIDE",
+        "count": 5.0
+      },
+      {
+        "id": "T7_LEATHER",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_LEATHER_LEVEL1",
+    "name": "Fortified Leather .1",
+    "tier": 8,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 880.0,
+    "materials": [
+      {
+        "id": "T8_HIDE_LEVEL1",
+        "count": 5.0
+      },
+      {
+        "id": "T7_LEATHER_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_LEATHER_LEVEL2",
+    "name": "Fortified Leather .2",
+    "tier": 8,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1539.0,
+    "materials": [
+      {
+        "id": "T8_HIDE_LEVEL2",
+        "count": 5.0
+      },
+      {
+        "id": "T7_LEATHER_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_LEATHER_LEVEL3",
+    "name": "Fortified Leather .3",
+    "tier": 8,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2694.0,
+    "materials": [
+      {
+        "id": "T8_HIDE_LEVEL3",
+        "count": 5.0
+      },
+      {
+        "id": "T7_LEATHER_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_LEATHER_LEVEL4",
+    "name": "Fortified Leather .4",
+    "tier": 8,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 4096.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 4714.0,
+    "materials": [
+      {
+        "id": "T8_HIDE_LEVEL4",
+        "count": 5.0
+      },
+      {
+        "id": "T7_LEATHER_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_METALBAR",
+    "name": "Adamantium Steel Bar",
+    "tier": 8,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T8_ORE",
+        "count": 5.0
+      },
+      {
+        "id": "T7_METALBAR",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_METALBAR_LEVEL1",
+    "name": "Adamantium Steel Bar .1",
+    "tier": 8,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 880.0,
+    "materials": [
+      {
+        "id": "T8_ORE_LEVEL1",
+        "count": 5.0
+      },
+      {
+        "id": "T7_METALBAR_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_METALBAR_LEVEL2",
+    "name": "Adamantium Steel Bar .2",
+    "tier": 8,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1539.0,
+    "materials": [
+      {
+        "id": "T8_ORE_LEVEL2",
+        "count": 5.0
+      },
+      {
+        "id": "T7_METALBAR_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_METALBAR_LEVEL3",
+    "name": "Adamantium Steel Bar .3",
+    "tier": 8,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2694.0,
+    "materials": [
+      {
+        "id": "T8_ORE_LEVEL3",
+        "count": 5.0
+      },
+      {
+        "id": "T7_METALBAR_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_METALBAR_LEVEL4",
+    "name": "Adamantium Steel Bar .4",
+    "tier": 8,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 4096.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 4714.0,
+    "materials": [
+      {
+        "id": "T8_ORE_LEVEL4",
+        "count": 5.0
+      },
+      {
+        "id": "T7_METALBAR_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_ORE",
+    "name": "Adamantium Ore",
+    "tier": 8,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 25.6,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_ORE",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_ORE_LEVEL1",
+    "name": "Adamantium Ore .1",
+    "tier": 8,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 51.2,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_ORE_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_ORE_LEVEL2",
+    "name": "Adamantium Ore .2",
+    "tier": 8,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 102.4,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_ORE_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_ORE_LEVEL3",
+    "name": "Adamantium Ore .3",
+    "tier": 8,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 204.8,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_ORE_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_ORE_LEVEL4",
+    "name": "Adamantium Ore .4",
+    "tier": 8,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 409.6,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_ORE_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_PLANKS",
+    "name": "Whitewood Planks",
+    "tier": 8,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T8_WOOD",
+        "count": 5.0
+      },
+      {
+        "id": "T7_PLANKS",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_PLANKS_LEVEL1",
+    "name": "Whitewood Planks .1",
+    "tier": 8,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 512.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 880.0,
+    "materials": [
+      {
+        "id": "T8_WOOD_LEVEL1",
+        "count": 5.0
+      },
+      {
+        "id": "T7_PLANKS_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_PLANKS_LEVEL2",
+    "name": "Whitewood Planks .2",
+    "tier": 8,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 1024.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 1539.0,
+    "materials": [
+      {
+        "id": "T8_WOOD_LEVEL2",
+        "count": 5.0
+      },
+      {
+        "id": "T7_PLANKS_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_PLANKS_LEVEL3",
+    "name": "Whitewood Planks .3",
+    "tier": 8,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 2048.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 2694.0,
+    "materials": [
+      {
+        "id": "T8_WOOD_LEVEL3",
+        "count": 5.0
+      },
+      {
+        "id": "T7_PLANKS_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_PLANKS_LEVEL4",
+    "name": "Whitewood Planks .4",
+    "tier": 8,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 4096.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 4714.0,
+    "materials": [
+      {
+        "id": "T8_WOOD_LEVEL4",
+        "count": 5.0
+      },
+      {
+        "id": "T7_PLANKS_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_ROCK",
+    "name": "Marble",
+    "tier": 8,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 25.6,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_ROCK",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_ROCK_LEVEL1",
+    "name": "Marble .1",
+    "tier": 8,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 51.2,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_ROCK_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_ROCK_LEVEL2",
+    "name": "Marble .2",
+    "tier": 8,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 102.4,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_ROCK_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_ROCK_LEVEL3",
+    "name": "Marble .3",
+    "tier": 8,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 204.8,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_ROCK_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_STONEBLOCK",
+    "name": "Marble Block",
+    "tier": 8,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "refinedresources",
+    "output_amount": 1,
+    "item_value": 256.0,
+    "item_value_is_estimate": false,
+    "focus_cost": 503.0,
+    "materials": [
+      {
+        "id": "T8_ROCK",
+        "count": 5.0
+      },
+      {
+        "id": "T7_STONEBLOCK",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_WOOD",
+    "name": "Whitewood Logs",
+    "tier": 8,
+    "enchant": 0,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 25.6,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_WOOD",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_WOOD_LEVEL1",
+    "name": "Whitewood Logs .1",
+    "tier": 8,
+    "enchant": 1,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 51.2,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_WOOD_LEVEL1",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_WOOD_LEVEL2",
+    "name": "Whitewood Logs .2",
+    "tier": 8,
+    "enchant": 2,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 102.4,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_WOOD_LEVEL2",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_WOOD_LEVEL3",
+    "name": "Whitewood Logs .3",
+    "tier": 8,
+    "enchant": 3,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 204.8,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_WOOD_LEVEL3",
+        "count": 1.0
+      }
+    ]
+  },
+  {
+    "item_id": "T8_WOOD_LEVEL4",
+    "name": "Whitewood Logs .4",
+    "tier": 8,
+    "enchant": 4,
+    "category": "simpleitem",
+    "shop_category": "crafting",
+    "shop_subcategory": "resources",
+    "output_amount": 1,
+    "item_value": 409.6,
+    "item_value_is_estimate": false,
+    "focus_cost": 0.0,
+    "materials": [
+      {
+        "id": "T7_WOOD_LEVEL4",
+        "count": 1.0
+      }
+    ]
+  }
+]
