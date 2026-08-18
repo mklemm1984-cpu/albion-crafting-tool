@@ -51,11 +51,23 @@ def test_compute_item_value_uses_direct_itemvalue():
     assert is_estimate is False
 
 
-def test_compute_item_value_sums_ingredients_when_no_direct_value():
+def test_compute_item_value_sums_ingredients_for_gear_and_is_exact():
+    """Gear (equipment/weapon/mount) has no direct @itemvalue either, but
+    MECHANICS_SOURCE.md §2.5/§10 says the summed value is still treated as
+    exact for gear -- only consumables get flagged as approximate."""
     item = {"@uniquename": "T4_HEAD_CLOTH_SET1"}
     variant = {"craftresource": {"@uniquename": "T4_CLOTH", "@count": "8"}}
     iv_lookup = {"T4_CLOTH": 16.0}
-    value, is_estimate = compute_item_value(item, variant, iv_lookup)
+    value, is_estimate = compute_item_value(item, variant, iv_lookup, category="equipmentitem")
+    assert value == 128.0
+    assert is_estimate is False
+
+
+def test_compute_item_value_sums_ingredients_for_consumable_and_is_estimate():
+    item = {"@uniquename": "T4_POTION_HEAL"}
+    variant = {"craftresource": {"@uniquename": "T4_CLOTH", "@count": "8"}}
+    iv_lookup = {"T4_CLOTH": 16.0}
+    value, is_estimate = compute_item_value(item, variant, iv_lookup, category="consumableitem")
     assert value == 128.0
     assert is_estimate is True
 
@@ -172,4 +184,7 @@ def test_extract_enchant_rows_for_equipment():
     assert row["shop_subcategory"] == "cloth_helmet"
     assert row["materials"] == [{"id": "T4_CLOTH_LEVEL1", "count": 8.0}]
     assert row["item_value"] == 256.0
-    assert row["item_value_is_estimate"] is True
+    # Summed value for gear is treated as exact, not an estimate -- only
+    # consumables (food/potions) get the estimate flag (MECHANICS_SOURCE.md
+    # §2.5/§10: "Refining und Gear-Gebühren sind exakt").
+    assert row["item_value_is_estimate"] is False

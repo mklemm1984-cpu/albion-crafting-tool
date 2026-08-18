@@ -29,11 +29,14 @@ def select_standard_variant(crafting_requirements):
     return None
 
 
-def compute_item_value(item, variant, iv_lookup):
+def compute_item_value(item, variant, iv_lookup, category=None):
     """Item value used for the station fee. Refined resources/raws expose
-    @itemvalue directly; equipment/consumables sum their ingredients'
-    item values (approximate for consumables, per MECHANICS_SOURCE.md §2.5).
-    Returns (value, is_estimate).
+    @itemvalue directly (always exact). Equipment/weapons/mounts have no
+    direct @itemvalue either, but MECHANICS_SOURCE.md §2.5/§10 states their
+    summed value is still treated as exact ("Refining und Gear-Gebühren
+    sind exakt") -- only consumables (food/potions) are flagged as
+    approximate, because the dump's per-ingredient values don't add up
+    accurately for that category. Returns (value, is_estimate).
     """
     direct = item.get("@itemvalue")
     if direct is not None:
@@ -45,7 +48,8 @@ def compute_item_value(item, variant, iv_lookup):
         mat_id = r["@uniquename"]
         count = float(r.get("@count", 1))
         total += iv_lookup.get(mat_id, 0.0) * count
-    return total, True
+    is_estimate = category == "consumableitem"
+    return total, is_estimate
 
 
 def resolve_english_name(unique_name, en_lookup, enchant=0):
@@ -72,7 +76,7 @@ def extract_base_row(item, category, iv_lookup, en_lookup):
         {"id": r["@uniquename"], "count": float(r.get("@count", 1))}
         for r in resources
     ]
-    item_value, is_estimate = compute_item_value(item, variant, iv_lookup)
+    item_value, is_estimate = compute_item_value(item, variant, iv_lookup, category)
     unique_name = item["@uniquename"]
 
     return {
@@ -130,7 +134,7 @@ def extract_enchant_rows_for_equipment(base_item, category, iv_lookup, en_lookup
             {"id": r["@uniquename"], "count": float(r.get("@count", 1))}
             for r in resources
         ]
-        item_value, is_estimate = compute_item_value(base_item, variant, iv_lookup)
+        item_value, is_estimate = compute_item_value(base_item, variant, iv_lookup, category)
         unique_name = base_item["@uniquename"]
         rows.append({
             "item_id": f"{unique_name}@{level}",
