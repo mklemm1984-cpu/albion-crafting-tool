@@ -23,11 +23,13 @@ function collectItemIds(recipes: Recipe[]): string[] {
 }
 
 export function PriceRefreshBar({ visibleRecipes, allRecipes, config, onDone }: PriceRefreshBarProps) {
+  const [isRefreshing, setIsRefreshing] = useState(false);
   const [progress, setProgress] = useState<{ done: number; total: number } | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   async function refresh(recipes: Recipe[]) {
     setError(null);
+    setIsRefreshing(true);
     const itemIds = collectItemIds(recipes);
     const cities = Array.from(new Set([config.buyCity, config.sellCity]));
     try {
@@ -43,15 +45,16 @@ export function PriceRefreshBar({ visibleRecipes, allRecipes, config, onDone }: 
       setError(e instanceof Error ? e.message : 'Unbekannter Fehler beim Preis-Refresh');
     } finally {
       setProgress(null);
+      setIsRefreshing(false);
     }
   }
 
   return (
     <div className="price-refresh-bar">
-      <button onClick={() => refresh(visibleRecipes)} disabled={progress !== null}>
+      <button onClick={() => refresh(visibleRecipes)} disabled={isRefreshing}>
         Preise aktualisieren (gefilterte Ansicht)
       </button>
-      <button onClick={() => refresh(allRecipes)} disabled={progress !== null}>
+      <button onClick={() => refresh(allRecipes)} disabled={isRefreshing}>
         Alle laden
       </button>
       {progress && (

@@ -55,4 +55,28 @@ describe('PriceRefreshBar', () => {
 
     await waitFor(() => expect(screen.getByRole('alert')).toHaveTextContent('network down'));
   });
+
+  it('disables both buttons synchronously on click, before the fetch resolves', async () => {
+    let resolveFetch: (value: never[]) => void = () => {};
+    const pending = new Promise<never[]>((resolve) => {
+      resolveFetch = resolve;
+    });
+    vi.spyOn(aodpClient, 'fetchPrices').mockReturnValue(pending);
+    vi.spyOn(priceCache, 'savePrices').mockImplementation(() => {});
+
+    render(
+      <PriceRefreshBar visibleRecipes={[RECIPE]} allRecipes={[RECIPE]} config={DEFAULT_CONFIG} onDone={vi.fn()} />
+    );
+
+    const scopedButton = screen.getByText('Preise aktualisieren (gefilterte Ansicht)');
+    const allButton = screen.getByText('Alle laden');
+
+    fireEvent.click(scopedButton);
+
+    expect(scopedButton).toBeDisabled();
+    expect(allButton).toBeDisabled();
+
+    resolveFetch([]);
+    await waitFor(() => expect(scopedButton).not.toBeDisabled());
+  });
 });
