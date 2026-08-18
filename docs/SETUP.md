@@ -43,13 +43,14 @@ cd app && npm run test
 ## 4. Deployment auf GitHub Pages
 
 Der Workflow `.github/workflows/deploy.yml` baut, testet und deployed automatisch
-bei jedem Push auf `main`. Einmalig in den Repo-Einstellungen aktivieren:
+bei jedem Push auf `main` oder `master` (dieses Repo nutzt aktuell `master`).
+Einmalig in den Repo-Einstellungen aktivieren:
 
 1. GitHub Repo → Settings → Pages → Source: "GitHub Actions".
 2. `app/vite.config.ts`: `base` muss dem Repo-Namen entsprechen, z.B. bei
    `github.com/<user>/albion-crafting-tool` ist `base: '/albion-crafting-tool/'`
    bereits korrekt. Bei einem anderen Repo-Namen hier anpassen.
-3. Push auf `main` → die App ist danach unter
+3. Push auf `main`/`master` → die App ist danach unter
    `https://<user>.github.io/albion-crafting-tool/` erreichbar.
 
 ## Rezepte aktualisieren (nach einem Spiel-Patch)
