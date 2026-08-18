@@ -1,0 +1,52 @@
+{
+  "lastVerified": "2026-08-17",
+  "sourceNote": "Derived from @shopsubcategory1/@shopcategory fields in ao-bin-dumps items.json, cross-checked against wiki.albiononline.com/wiki/Resource_return_rate.",
+  "craftingBySubcategory": {
+    "hammer": "Fort Sterling",
+    "spear": "Fort Sterling",
+    "holystaff": "Fort Sterling",
+    "plate_helmet": "Fort Sterling",
+    "cloth_armor": "Fort Sterling",
+    "bow": "Lymhurst",
+    "sword": "Lymhurst",
+    "arcanestaff": "Lymhurst",
+    "leather_helmet": "Lymhurst",
+    "leather_shoes": "Lymhurst",
+    "crossbow": "Bridgewatch",
+    "dagger": "Bridgewatch",
+    "cursestaff": "Bridgewatch",
+    "plate_armor": "Bridgewatch",
+    "cloth_shoes": "Bridgewatch",
+    "axe": "Martlock",
+    "quarterstaff": "Martlock",
+    "froststaff": "Martlock",
+    "plate_shoes": "Martlock",
+    "booktype": "Martlock",
+    "shieldtype": "Martlock",
+    "torchtype": "Martlock",
+    "horntype": "Martlock",
+    "mace": "Thetford",
+    "firestaff": "Thetford",
+    "naturestaff": "Thetford",
+    "leather_armor": "Thetford",
+    "cloth_helmet": "Thetford",
+    "knuckles": "Caerleon",
+    "food": "Caerleon",
+    "potions": "Brecilien",
+    "bags": "Brecilien",
+    "satchels": "Brecilien"
+  },
+  "craftingByShopCategory": {
+    "gathering": "Caerleon"
+  },
+  "craftingCapesPrefix": {
+    "accessoires_capes_": "Brecilien"
+  },
+  "refiningByIdSubstring": {
+    "PLANKS": "Fort Sterling",
+    "CLOTH": "Lymhurst",
+    "STONEBLOCK": "Bridgewatch",
+    "LEATHER": "Martlock",
+    "METALBAR": "Thetford"
+  }
+}
