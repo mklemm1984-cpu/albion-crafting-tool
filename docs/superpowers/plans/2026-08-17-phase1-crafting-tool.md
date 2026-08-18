@@ -3532,11 +3532,19 @@ function collectItemIds(recipes: Recipe[]): string[] {
 }
 
 export function PriceRefreshBar({ visibleRecipes, allRecipes, config, onDone }: PriceRefreshBarProps) {
+  // isRefreshing is set synchronously at the top of refresh(), before the
+  // first `await` — unlike `progress`, which only updates once fetchPrices'
+  // onProgress callback fires after a network round-trip. Using `progress`
+  // alone for the disabled state leaves a window (click -> first network
+  // response) where both buttons stay enabled and a fast double-click
+  // starts two concurrent refreshes.
+  const [isRefreshing, setIsRefreshing] = useState(false);
   const [progress, setProgress] = useState<{ done: number; total: number } | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   async function refresh(recipes: Recipe[]) {
     setError(null);
+    setIsRefreshing(true);
     const itemIds = collectItemIds(recipes);
     const cities = Array.from(new Set([config.buyCity, config.sellCity]));
     try {
@@ -3552,15 +3560,16 @@ export function PriceRefreshBar({ visibleRecipes, allRecipes, config, onDone }: 
       setError(e instanceof Error ? e.message : 'Unbekannter Fehler beim Preis-Refresh');
     } finally {
       setProgress(null);
+      setIsRefreshing(false);
     }
   }
 
   return (
     <div className="price-refresh-bar">
-      <button onClick={() => refresh(visibleRecipes)} disabled={progress !== null}>
+      <button onClick={() => refresh(visibleRecipes)} disabled={isRefreshing}>
         Preise aktualisieren (gefilterte Ansicht)
       </button>
-      <button onClick={() => refresh(allRecipes)} disabled={progress !== null}>
+      <button onClick={() => refresh(allRecipes)} disabled={isRefreshing}>
         Alle laden
       </button>
       {progress && (
@@ -3576,6 +3585,10 @@ export function PriceRefreshBar({ visibleRecipes, allRecipes, config, onDone }: 
 
 Run: `cd app && npm run test -- PriceRefreshBar`
 Expected: PASS (2 tests)
+
+- [ ] **Step 4b: Regression test for the double-submit race (found during Task 25 review)**
+
+Add a third test asserting the disabled state flips synchronously on click, before the mocked `fetchPrices` promise resolves (e.g. via a controllable/never-resolving promise), so a fast double-click cannot start two concurrent refreshes. Re-run `npm run test -- PriceRefreshBar` — expect PASS (3 tests).
 
 - [ ] **Step 5: Commit**
 
