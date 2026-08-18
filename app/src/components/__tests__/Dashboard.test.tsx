@@ -43,25 +43,22 @@ describe('Dashboard', () => {
 
     render(<Dashboard recipes={[CLOTH_RECIPE]} config={DEFAULT_CONFIG} filters={DEFAULT_FILTERS} />);
 
-    // NOTE: this is 247.57, not the master-prompt doc's 247.55 — the doc's
-    // worked example manually rounded RRR to 4dp before multiplying through
-    // the materials sum (see calc_reference.py's SHARED_RRR comment in Task
-    // 6). The Dashboard, like resourceReturnRate() itself, intentionally
-    // keeps full float precision for real money math, so it lands 0.02
-    // silver away from the hand-rounded documentation example — both are
-    // "correct" for what they're each doing.
+    // NOTE: the underlying value is 247.565536... (247.57, not the
+    // master-prompt doc's 247.55 — the doc's worked example manually
+    // rounded RRR to 4dp before multiplying through the materials sum, see
+    // calc_reference.py's SHARED_RRR comment in Task 6; the Dashboard keeps
+    // full float precision for the actual calculation). Silver amounts have
+    // no fractional unit in Albion, so the display rounds to the nearest
+    // whole silver: 247.565536 -> "248".
     //
     // DEVIATION FROM BRIEF: outputAmount is 1 for CLOTH_RECIPE, so
-    // profitPerBatch === profitPerUnit and the value "247,57" legitimately
+    // profitPerBatch === profitPerUnit and the value "248" legitimately
     // renders in both the Profit/Einheit and Profit/Craft cells. That makes
-    // screen.getByText('247,57') throw ("multiple elements found") even
+    // screen.getByText('248') throw ("multiple elements found") even
     // though the computed number is exactly right. Using getAllByText here
     // (instead of the brief's getByText) fixes the query without touching
     // the asserted value or any calc/display logic.
-    //
-    // German-locale formatting (de-DE, comma as decimal separator, dot as
-    // thousands separator) via Intl.NumberFormat, not raw toFixed().
-    expect(screen.getAllByText('247,57').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('248').length).toBeGreaterThan(0);
   });
 
   it('marks estimated item values (e.g. potions/food) so the fee is understood as approximate', () => {
@@ -89,14 +86,14 @@ describe('Dashboard', () => {
 
     // Lymhurst is T4_CLOTH's refining spec city -> specBonus 0.40.
     // bonus = 0.18+0.40+0.59 = 1.17, RRR = 1.17/2.17 ≈ 0.53917.
-    // materialCost = 550*(1-0.53917) ≈ 253.46 — visibly lower than the
-    // 310.75/310.73 seen in the zero-bonus test, proving the spec bonus
-    // is actually applied (not hardcoded to 0). German-locale format: ","
-    // as decimal separator.
-    expect(screen.getByText('253,46')).toBeInTheDocument();
+    // materialCost = 550*(1-0.53917) ≈ 253.46 -> rounds to "253" (no
+    // fractional silver) — visibly lower than the ~311 seen in the
+    // zero-bonus test, proving the spec bonus is actually applied (not
+    // hardcoded to 0).
+    expect(screen.getByText('253')).toBeInTheDocument();
   });
 
-  it('formats large silver amounts with German thousands separators', () => {
+  it('formats large silver amounts with German thousands separators and no decimals', () => {
     const bigPriceRecipe: Recipe = { ...CLOTH_RECIPE, itemId: 'T8_BIGITEM', name: 'Big Item' };
     savePrices([
       { itemId: 'T4_FIBER', city: 'Caerleon', sellPriceMin: 200000, sellPriceMinDate: '', buyPriceMax: 0, buyPriceMaxDate: '' },
@@ -106,8 +103,9 @@ describe('Dashboard', () => {
 
     render(<Dashboard recipes={[bigPriceRecipe]} config={DEFAULT_CONFIG} filters={DEFAULT_FILTERS} />);
 
-    // materialCost = (400000+150000)*(1-0.4350282...) ≈ 310734.46
-    // -> "310.734,46" (dot every 3 digits, comma for decimals)
-    expect(screen.getByText('310.734,46')).toBeInTheDocument();
+    // materialCost = (400000+150000)*(1-0.4350282...) ≈ 310734.46, rounded
+    // to the nearest whole silver -> "310.734" (dot every 3 digits, no
+    // decimals -- Albion silver has no fractional unit).
+    expect(screen.getByText('310.734')).toBeInTheDocument();
   });
 });

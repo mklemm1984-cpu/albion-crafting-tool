@@ -8,13 +8,11 @@ import { resourceReturnRate } from '../calc/returnRate';
 import { craftProfit, CraftProfitResult } from '../calc/profit';
 import { matchesStructuralFilters, type Filters } from './FilterSortControls';
 
-// German-locale number formatting for silver amounts: thousands separated
-// by '.', decimals by ',' (e.g. 1.234.567,89) -- matches how Albion players
-// read prices in-game, instead of raw JS toFixed() output like "1234567.89".
-const SILVER_FORMAT = new Intl.NumberFormat('de-DE', {
-  minimumFractionDigits: 2,
-  maximumFractionDigits: 2,
-});
+// German-locale number formatting. Silver amounts get no decimals -- Albion
+// silver has no fractional unit, 1 silver is the smallest denomination in
+// the game -- just thousands grouped with '.' (e.g. "1.234.567" instead of
+// raw JS toFixed() output like "1234567.89"). Silver-per-focus is a ratio,
+// not a silver amount, so it keeps decimal precision.
 const INT_FORMAT = new Intl.NumberFormat('de-DE', {
   minimumFractionDigits: 0,
   maximumFractionDigits: 0,
@@ -25,7 +23,7 @@ const RATIO_FORMAT = new Intl.NumberFormat('de-DE', {
 });
 
 function formatSilver(value: number): string {
-  return SILVER_FORMAT.format(value);
+  return INT_FORMAT.format(Math.round(value));
 }
 
 function formatInt(value: number): string {
