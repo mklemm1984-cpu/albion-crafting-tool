@@ -24,7 +24,11 @@ from recipe_extract import (  # noqa: E402
 )
 
 DATA_DIR = pathlib.Path(__file__).parent.parent / "app" / "public" / "data"
-CRAFTABLE_CATEGORIES = ["simpleitem", "equipmentitem", "weapon", "consumableitem", "mount"]
+# "transformationweapon" is a separate top-level category from "weapon" in
+# the real dump -- it's where shapeshifter staves live (all 41 entries in
+# the live 2026-08-18 dump have craftingrequirements and
+# @shopsubcategory1="shapeshifterstaff", confirmed against the real data).
+CRAFTABLE_CATEGORIES = ["simpleitem", "equipmentitem", "weapon", "consumableitem", "mount", "transformationweapon"]
 
 # Matches the exact T{tier}_{RES}_LEVELk sibling suffix (k in 1-4) that
 # find_resource_enchant_siblings looks for -- anchored so ids that merely
@@ -63,7 +67,11 @@ def build_iv_lookup(simple_items: list) -> dict:
 def build_en_lookup(localized_names: list) -> dict:
     lookup = {}
     for entry in localized_names:
-        name = entry.get("LocalizedNames", {}).get("EN-US")
+        # Some real dump entries have "LocalizedNames": null (not just a
+        # missing key) -- `.get(..., {})` doesn't catch an explicit None,
+        # only a missing key, so `or {}` is needed too.
+        localized = entry.get("LocalizedNames") or {}
+        name = localized.get("EN-US")
         if name:
             lookup[entry["UniqueName"]] = name
     return lookup

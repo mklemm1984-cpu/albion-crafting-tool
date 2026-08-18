@@ -227,3 +227,49 @@ def test_generate_does_not_exclude_unrelated_level_substring():
     rows, _summary = generate(items_data, LOCALIZED_NAMES)
     item_ids = {r["item_id"] for r in rows}
     assert "T4_LEVELING_TOME" in item_ids
+
+
+def test_generate_extracts_transformationweapon_category():
+    """Shapeshifter staves live under the separate top-level
+    "transformationweapon" category in the real dump (not "weapon") --
+    confirmed against the live 2026-08-18 data, all entries there are
+    craftable with @shopsubcategory1="shapeshifterstaff"."""
+    from generate_recipes import generate
+
+    shapeshifter_item = {
+        "@uniquename": "T4_2H_SHAPESHIFTER_SET1",
+        "@tier": "4",
+        "@shopcategory": "weapons",
+        "@shopsubcategory1": "shapeshifterstaff",
+        "craftingrequirements": {
+            "@craftingfocus": "300",
+            "craftresource": [{"@uniquename": "T4_METALBAR", "@count": "16"}],
+        },
+    }
+    items_data = {
+        "simpleitem": [],
+        "equipmentitem": [],
+        "weapon": [],
+        "consumableitem": [],
+        "mount": [],
+        "transformationweapon": [shapeshifter_item],
+    }
+    rows, summary = generate(items_data, LOCALIZED_NAMES)
+    assert summary["per_category"]["transformationweapon"] == 1
+    row = next(r for r in rows if r["item_id"] == "T4_2H_SHAPESHIFTER_SET1")
+    assert row["category"] == "transformationweapon"
+    assert row["shop_subcategory"] == "shapeshifterstaff"
+
+
+def test_build_en_lookup_skips_entries_with_null_localized_names():
+    """Some real ao-bin-dumps entries have "LocalizedNames": null (not just
+    a missing key) -- build_en_lookup must not crash on those and should
+    just skip them (falling back to the raw unique_name elsewhere)."""
+    from generate_recipes import build_en_lookup
+
+    localized_names = [
+        {"UniqueName": "T4_CLOTH", "LocalizedNames": {"EN-US": "Fine Cloth"}},
+        {"UniqueName": "T4_BROKEN_ENTRY", "LocalizedNames": None},
+    ]
+    lookup = build_en_lookup(localized_names)
+    assert lookup == {"T4_CLOTH": "Fine Cloth"}
