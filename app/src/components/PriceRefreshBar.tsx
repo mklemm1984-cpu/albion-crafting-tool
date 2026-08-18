@@ -30,9 +30,9 @@ export function PriceRefreshBar({ visibleRecipes, allRecipes, config, onDone }: 
   async function refresh(recipes: Recipe[]) {
     setError(null);
     setIsRefreshing(true);
-    const itemIds = collectItemIds(recipes);
-    const cities = Array.from(new Set([config.buyCity, config.sellCity]));
     try {
+      const itemIds = collectItemIds(recipes);
+      const cities = Array.from(new Set([config.buyCity, config.sellCity]));
       const quotes = await fetchPrices({
         itemIds,
         cities,

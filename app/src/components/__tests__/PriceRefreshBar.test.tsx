@@ -79,4 +79,30 @@ describe('PriceRefreshBar', () => {
     resolveFetch([]);
     await waitFor(() => expect(scopedButton).not.toBeDisabled());
   });
+
+  it('re-enables the buttons instead of getting stuck when item-id collection throws', async () => {
+    // Simulates corrupt/malformed recipe data (materials not iterable), which
+    // makes collectItemIds() throw synchronously. This guards against a
+    // regression where that throw happened outside the try block and skipped
+    // catch/finally, leaving isRefreshing stuck true (buttons permanently
+    // disabled with no error shown and no recovery short of remounting).
+    const brokenRecipe = { ...RECIPE, materials: null as unknown as Recipe['materials'] };
+    const fetchSpy = vi.spyOn(aodpClient, 'fetchPrices');
+
+    render(
+      <PriceRefreshBar
+        visibleRecipes={[brokenRecipe]}
+        allRecipes={[brokenRecipe]}
+        config={DEFAULT_CONFIG}
+        onDone={vi.fn()}
+      />
+    );
+
+    const scopedButton = screen.getByText('Preise aktualisieren (gefilterte Ansicht)');
+    fireEvent.click(scopedButton);
+
+    await waitFor(() => expect(scopedButton).not.toBeDisabled());
+    expect(screen.getByRole('alert')).toBeInTheDocument();
+    expect(fetchSpy).not.toHaveBeenCalled();
+  });
 });
