@@ -1,0 +1,90 @@
+:root {
+  --bg: #0f1115;
+  --panel-bg: #171a21;
+  --border: #2a2e37;
+  --text: #e6e8eb;
+  --text-dim: #9aa1ac;
+  --profit: #2fbf71;
+  --loss: #e5484d;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f5f6f8;
+    --panel-bg: #ffffff;
+    --border: #dde1e6;
+    --text: #1a1d21;
+    --text-dim: #5c636e;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.app-layout header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.app-body {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.config-panel, .filter-sort-controls {
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.config-panel label, .filter-sort-controls label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.config-panel select, .config-panel input,
+.filter-sort-controls select {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.4rem;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dashboard-table th, .dashboard-table td {
+  padding: 0.5rem 0.75rem;
+  text-align: right;
+  border-bottom: 1px solid var(--border);
+}
+
+.dashboard-table th:first-child, .dashboard-table td:first-child {
+  text-align: left;
+}
+
+.row-profit { background: rgba(47, 191, 113, 0.12); }
+.row-loss { background: rgba(229, 72, 77, 0.12); }
+.row-no-price-data { color: var(--text-dim); font-style: italic; }
