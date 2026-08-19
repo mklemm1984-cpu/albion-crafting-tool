@@ -74,6 +74,23 @@ describe('deriveMaterial', () => {
     expect(deriveMaterial({ category: 'mount', shopSubCategory: 'basemounts', itemId: 'T3_MOUNT_HORSE' })).toBeNull();
     expect(deriveMaterial({ category: 'farmableitem', shopSubCategory: 'farm', itemId: 'T1_FARM_CARROT_SEED' })).toBeNull();
   });
+
+  it('returns null for simpleitem artefacts whose itemId happens to contain a refined-material substring but whose shopSubCategory is not refinedresources', () => {
+    // Regression for finding #3: T4_ARTEFACT_ARMOR_CLOTH_AVALON's itemId
+    // contains "CLOTH" and used to be mis-bucketed as the refined material
+    // CLOTH. Real shopSubCategory for these rows is "armors", confirmed
+    // against app/public/data/recipes.json.
+    expect(
+      deriveMaterial({ category: 'simpleitem', shopSubCategory: 'armors', itemId: 'T4_ARTEFACT_ARMOR_CLOTH_AVALON' })
+    ).toBeNull();
+    expect(
+      deriveMaterial({ category: 'simpleitem', shopSubCategory: 'armors', itemId: 'T4_ARTEFACT_ARMOR_LEATHER_AVALON' })
+    ).toBeNull();
+    // The genuine refined-resource case must still resolve correctly.
+    expect(
+      deriveMaterial({ category: 'simpleitem', shopSubCategory: 'refinedresources', itemId: 'T4_CLOTH' })
+    ).toBe('CLOTH');
+  });
 });
 
 describe('deriveSlotOrType', () => {

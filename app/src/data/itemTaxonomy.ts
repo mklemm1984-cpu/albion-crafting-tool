@@ -67,6 +67,15 @@ export function deriveMaterial(recipe: Pick<Recipe, 'category' | 'shopSubCategor
     return prefix ?? null;
   }
   if (recipe.category === 'simpleitem') {
+    // simpleitem (1125 rows in real data) also contains artefacts
+    // (T4_ARTEFACT_ARMOR_CLOTH_AVALON etc.), maps, alchemy items, and
+    // fragments whose itemIds happen to contain the same substrings
+    // (CLOTH, LEATHER, ...) as refined resources. Scope the substring match
+    // to shopSubCategory === 'refinedresources' so those don't get
+    // incorrectly bucketed as if they were refined materials (verified
+    // against app/public/data/recipes.json: e.g. T4_PLANKS has
+    // shopSubCategory "refinedresources").
+    if (recipe.shopSubCategory !== 'refinedresources') return null;
     const substring = REFINED_MATERIAL_SUBSTRINGS.find((s) => recipe.itemId.includes(s));
     return substring ?? null;
   }
