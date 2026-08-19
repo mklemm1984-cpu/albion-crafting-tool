@@ -1,5 +1,6 @@
 import React from 'react';
-import { deriveMaterial, deriveSlotOrType, deriveFamilyId } from '../data/itemTaxonomy';
+import { deriveMaterial, deriveSlotOrType, deriveFamilyId, deriveFamilyName } from '../data/itemTaxonomy';
+import type { Recipe } from '../data/types';
 
 export type SortKey = 'profitPerUnit' | 'silverPerFocus';
 
@@ -55,16 +56,52 @@ export function matchesStructuralFilters(
   return true;
 }
 
+type TaxonomyRecipe = Pick<Recipe, 'category' | 'tier' | 'enchant' | 'shopSubCategory' | 'itemId' | 'name'>;
+
+function recipesMatchingUpTo(recipes: TaxonomyRecipe[], filters: Filters, upTo: 'category' | 'material' | 'slot'): TaxonomyRecipe[] {
+  return recipes.filter((r) => {
+    if (filters.category && r.category !== filters.category) return false;
+    if (upTo === 'category') return true;
+    if (filters.material && deriveMaterial(r) !== filters.material) return false;
+    if (upTo === 'material') return true;
+    if (filters.slot && deriveSlotOrType(r) !== filters.slot) return false;
+    return true;
+  });
+}
+
+function distinctSorted(values: (string | null)[]): string[] {
+  return Array.from(new Set(values.filter((v): v is string => v !== null))).sort();
+}
+
 export function FilterSortControls({
   filters,
   onChange,
+  recipes,
 }: {
   filters: Filters;
   onChange: (filters: Filters) => void;
+  recipes: Recipe[];
 }) {
   function update<K extends keyof Filters>(key: K, value: Filters[K]) {
-    onChange({ ...filters, [key]: value });
+    let next: Filters = { ...filters, [key]: value };
+    if (key === 'category') next = { ...next, material: '', slot: '', family: '' };
+    if (key === 'material') next = { ...next, slot: '', family: '' };
+    if (key === 'slot') next = { ...next, family: '' };
+    onChange(next);
   }
+
+  const materialCandidates = recipesMatchingUpTo(recipes, filters, 'category');
+  const materialOptions = distinctSorted(materialCandidates.map(deriveMaterial));
+
+  const slotCandidates = recipesMatchingUpTo(recipes, filters, 'material');
+  const slotOptions = distinctSorted(slotCandidates.map(deriveSlotOrType));
+
+  const familyCandidates = recipesMatchingUpTo(recipes, filters, 'slot');
+  const familyMap = new Map<string, string>();
+  for (const r of familyCandidates) {
+    familyMap.set(deriveFamilyId(r), deriveFamilyName(r));
+  }
+  const familyOptions = Array.from(familyMap.entries()).sort((a, b) => a[1].localeCompare(b[1]));
 
   return (
     <section className="filter-sort-controls" aria-label="Filter & Sortierung">
@@ -97,6 +134,49 @@ export function FilterSortControls({
           ))}
         </select>
       </label>
+
+      {materialOptions.length > 0 && (
+        <label>
+          Material
+          <select value={filters.material} onChange={(e) => update('material', e.target.value)}>
+            <option value="">Alle</option>
+            {materialOptions.map((m) => (
+              <option key={m} value={m}>{m}</option>
+            ))}
+          </select>
+        </label>
+      )}
+
+      {slotOptions.length > 0 && (
+        <label>
+          {filters.category === 'equipmentitem' ? 'Slot' : 'Typ'}
+          <select value={filters.slot} onChange={(e) => update('slot', e.target.value)}>
+            <option value="">Alle</option>
+            {slotOptions.map((s) => (
+              <option key={s} value={s}>{s}</option>
+            ))}
+          </select>
+        </label>
+      )}
+
+      {familyOptions.length > 0 && (
+        <label>
+          Familie
+          <input
+            list="family-options"
+            defaultValue={familyMap.get(filters.family) ?? ''}
+            onChange={(e) => {
+              const match = familyOptions.find(([, name]) => name === e.target.value);
+              update('family', match ? match[0] : '');
+            }}
+          />
+          <datalist id="family-options">
+            {familyOptions.map(([id, name]) => (
+              <option key={id} value={name} />
+            ))}
+          </datalist>
+        </label>
+      )}
 
       <label>
         <input type="checkbox" checked={filters.onlyProfitable} onChange={(e) => update('onlyProfitable', e.target.checked)} />
