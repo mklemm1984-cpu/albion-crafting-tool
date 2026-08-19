@@ -261,6 +261,44 @@ def test_generate_extracts_transformationweapon_category():
     assert row["shop_subcategory"] == "shapeshifterstaff"
 
 
+def test_generate_extracts_farmableitem_category():
+    """farmableitem is a separate top-level category from the real dump
+    (seeds craftable at a station -- distinct from the actual farming/
+    growing mechanic, which this pipeline does not model). Confirmed
+    against the live 2026-08-18 data: e.g. T1_FARM_CARROT_SEED, name
+    "Carrot Seeds" (no tier honorific prefix, like most consumables),
+    @shopsubcategory1="farm"."""
+    from generate_recipes import generate
+
+    seed_item = {
+        "@uniquename": "T1_FARM_CARROT_SEED",
+        "@tier": "1",
+        "@shopcategory": "farming",
+        "@shopsubcategory1": "farm",
+        "craftingrequirements": {
+            "@craftingfocus": "10",
+            "craftresource": [{"@uniquename": "T1_CARROT", "@count": "1"}],
+        },
+    }
+    items_data = {
+        "simpleitem": [],
+        "equipmentitem": [],
+        "weapon": [],
+        "consumableitem": [],
+        "mount": [],
+        "transformationweapon": [],
+        "farmableitem": [seed_item],
+    }
+    localized_names = [{"UniqueName": "T1_FARM_CARROT_SEED", "LocalizedNames": {"EN-US": "Carrot Seeds"}}]
+
+    rows, summary = generate(items_data, localized_names)
+    assert summary["per_category"]["farmableitem"] == 1
+    row = next(r for r in rows if r["item_id"] == "T1_FARM_CARROT_SEED")
+    assert row["category"] == "farmableitem"
+    assert row["shop_subcategory"] == "farm"
+    assert row["name"] == "Carrot Seeds"
+
+
 def test_build_en_lookup_skips_entries_with_null_localized_names():
     """Some real ao-bin-dumps entries have "LocalizedNames": null (not just
     a missing key) -- build_en_lookup must not crash on those and should

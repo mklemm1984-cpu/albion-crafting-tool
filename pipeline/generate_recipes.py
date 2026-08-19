@@ -28,7 +28,16 @@ DATA_DIR = pathlib.Path(__file__).parent.parent / "app" / "public" / "data"
 # the real dump -- it's where shapeshifter staves live (all 41 entries in
 # the live 2026-08-18 dump have craftingrequirements and
 # @shopsubcategory1="shapeshifterstaff", confirmed against the real data).
-CRAFTABLE_CATEGORIES = ["simpleitem", "equipmentitem", "weapon", "consumableitem", "mount", "transformationweapon"]
+# "farmableitem" is a separate top-level category from the real dump for
+# Farming (seeds craftable at a station). This models seed-crafting-and-
+# selling only, using the exact same craft_profit() formulas as every
+# other category -- NOT the actual farming/growing yield mechanic, which
+# needs different formulas entirely (a future feature, analogous to
+# Gathering-Profit).
+CRAFTABLE_CATEGORIES = [
+    "simpleitem", "equipmentitem", "weapon", "consumableitem", "mount",
+    "transformationweapon", "farmableitem",
+]
 
 # Matches the exact T{tier}_{RES}_LEVELk sibling suffix (k in 1-4) that
 # find_resource_enchant_siblings looks for -- anchored so ids that merely
