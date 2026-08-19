@@ -33,7 +33,10 @@ export interface RawRecipeRow {
   item_value_is_estimate: boolean;
   focus_cost: number;
   materials: RecipeMaterial[];
-  silver_cost: number;
+  // Optional: absent from recipes.json rows written before the silver-cost
+  // fix (and from some minimal test fixtures) -- fromRawRecipeRow defaults
+  // it to 0, so the type must allow the field to be missing.
+  silver_cost?: number;
 }
 
 export function fromRawRecipeRow(raw: RawRecipeRow): Recipe {

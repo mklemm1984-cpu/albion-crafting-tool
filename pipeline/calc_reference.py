@@ -89,12 +89,18 @@ def craft_profit(
     fee_per_100_nutrition: float,
     sales_tax: float,
     setup_fee: float,
+    silver_cost: float = 0.0,
 ) -> dict:
     """Full profit calculation for one recipe under a resolved config.
 
     Returns a dict with keys: material_cost, fee, cost_per_unit, net_revenue,
     profit_per_unit, margin_pct, profit_per_batch, silver_per_focus,
     no_price_data (bool).
+
+    silver_cost is a flat, non-returnable acquisition cost (e.g. a
+    swaptransaction/transmute recipe's @silver price) that is added to
+    total cost directly -- it is NOT subject to the resource return rate,
+    since there is no material being wasted, only a fixed silver price.
     """
     missing_material_price = any(m["price"] in (None, 0) for m in materials)
     if missing_material_price or sell_price in (None, 0):
@@ -112,7 +118,7 @@ def craft_profit(
 
     mat_cost = material_cost(materials, rrr)
     fee = station_fee(item_value, fee_per_100_nutrition, tier)
-    total_cost = mat_cost + fee
+    total_cost = mat_cost + fee + silver_cost
     cost_per_unit = total_cost / output_amount
     net_revenue = net_revenue_per_unit(sell_price, sales_tax, setup_fee)
     profit_per_unit = profit(cost_per_unit, net_revenue)

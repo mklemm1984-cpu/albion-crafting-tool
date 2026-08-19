@@ -53,6 +53,17 @@ Vergleichen, was sich pro Fokuspunkt am meisten lohnt.
 - Verkaufen (Order): `sell_price_min` − Setup-Fee − Steuer. Verkaufen (Instant):
   `buy_price_max` − Steuer, kein Setup.
 
+## Silber-Rezepte (Swaptransaction/Transmute)
+
+Manche Rezepte (z. B. Farming-Saatgut, Ressourcen-Transmutation) haben kein
+`craftresource`, sondern nur einen festen `@silver`-Preis (Händler-Swap oder
+Transmute). Dieser Preis fließt als `silver_cost` additiv und **ohne RRR-Rabatt**
+in die Gesamtkosten ein (`Gesamtkosten = Materialkosten + Stationsgebühr +
+silver_cost`), da hier keine Materialien "verschwendet" werden können — es ist
+ein Festpreis. Rezepte ohne `craftresource` UND ohne `@silver` (z. B. manche
+Fraktions-Token-Käufe) haben aktuell `silver_cost = 0` und werden noch nicht
+vollständig kostenkorrekt abgebildet (bekannte Lücke, siehe Projekt-Notizen).
+
 ## NO PRICE DATA
 
 Fehlt der Preis für ein Material oder den Output, wird die Zeile als "NO PRICE DATA"

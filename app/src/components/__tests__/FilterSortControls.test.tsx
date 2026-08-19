@@ -120,7 +120,10 @@ describe('FilterSortControls', () => {
     render(<FilterSortControls filters={filters} onChange={onChange} recipes={enchantedRecipes} />);
     const slotSelect = screen.getByLabelText('Slot') as HTMLSelectElement;
     const optionValues = Array.from(slotSelect.options).map((o) => o.value);
-    expect(optionValues).not.toContain('leather_boots_enchant_only');
+    // deriveSlotOrType strips the material prefix ('leather_') from
+    // shopSubCategory, so the rendered option value is 'boots_enchant_only',
+    // not the raw 'leather_boots_enchant_only' shopSubCategory string.
+    expect(optionValues).not.toContain('boots_enchant_only');
   });
 
   it('hides Material/Slot/Familie when Kategorie is Alle (unset)', () => {
