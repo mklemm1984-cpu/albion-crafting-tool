@@ -17,6 +17,7 @@ function recipe(overrides: Partial<Recipe>): Recipe {
     itemValueIsEstimate: false,
     focusCost: 54,
     materials: [],
+    silverCost: 0,
     ...overrides,
   };
 }
@@ -45,6 +46,15 @@ const RECIPES: Recipe[] = [
     category: 'equipmentitem',
     shopSubCategory: 'plate_helmet',
   }),
+  // T1-only row so cascading-by-tier tests (Fix #2) have something that
+  // exists at one tier but not another.
+  recipe({
+    itemId: 'T1_HEAD_CLOTH_SET1',
+    name: "Beginner's Scholar Cowl",
+    tier: 1,
+    category: 'equipmentitem',
+    shopSubCategory: 'cloth_helmet',
+  }),
 ];
 
 describe('FilterSortControls', () => {
@@ -68,7 +78,7 @@ describe('FilterSortControls', () => {
     render(<FilterSortControls filters={filters} onChange={onChange} recipes={RECIPES} />);
     const materialSelect = screen.getByLabelText('Material') as HTMLSelectElement;
     const optionValues = Array.from(materialSelect.options).map((o) => o.value);
-    expect(optionValues).toEqual(['', 'leather', 'plate']);
+    expect(optionValues).toEqual(['', 'cloth', 'leather', 'plate']);
   });
 
   it('does not show a Material dropdown for weapon (no material axis)', () => {
@@ -76,6 +86,54 @@ describe('FilterSortControls', () => {
     const filters = { ...DEFAULT_FILTERS, category: 'weapon' };
     render(<FilterSortControls filters={filters} onChange={onChange} recipes={RECIPES} />);
     expect(screen.queryByLabelText('Material')).toBeNull();
+  });
+
+  it('scopes the Material dropdown by Tier, excluding materials only present at other tiers', () => {
+    // Regression for finding #2: Kategorie=equipmentitem + Tier=6 must not
+    // offer "cloth" as a Material option, since the only cloth row
+    // (T1_HEAD_CLOTH_SET1) exists at T1, not T6.
+    const onChange = vi.fn();
+    const filters = { ...DEFAULT_FILTERS, category: 'equipmentitem', tier: 6 as const };
+    render(<FilterSortControls filters={filters} onChange={onChange} recipes={RECIPES} />);
+    const materialSelect = screen.getByLabelText('Material') as HTMLSelectElement;
+    const optionValues = Array.from(materialSelect.options).map((o) => o.value);
+    expect(optionValues).toEqual(['', 'leather', 'plate']);
+  });
+
+  it('scopes the Slot dropdown by Enchant, excluding slots only present at other enchant levels', () => {
+    // Regression for finding #2: enchant must also narrow the cascade, not
+    // just category -- mirrors the tier case using the same T1 fixture row
+    // (enchant 0) vs. an enchant-1-only row.
+    const onChange = vi.fn();
+    const enchantedRecipes = [
+      ...RECIPES,
+      recipe({
+        itemId: 'T6_SHOES_LEATHER_MORGANA@1',
+        name: "Master's Stalker Shoes .1",
+        tier: 6,
+        enchant: 1,
+        category: 'equipmentitem',
+        shopSubCategory: 'leather_boots_enchant_only',
+      }),
+    ];
+    const filters = { ...DEFAULT_FILTERS, category: 'equipmentitem', enchant: 0 as const };
+    render(<FilterSortControls filters={filters} onChange={onChange} recipes={enchantedRecipes} />);
+    const slotSelect = screen.getByLabelText('Slot') as HTMLSelectElement;
+    const optionValues = Array.from(slotSelect.options).map((o) => o.value);
+    expect(optionValues).not.toContain('leather_boots_enchant_only');
+  });
+
+  it('hides Material/Slot/Familie when Kategorie is Alle (unset)', () => {
+    // Regression for finding #4: the default landing state (no category
+    // selected) must not render dropdowns whose option sets mix unrelated
+    // casing/meaning (uppercase refined-resource substrings vs. lowercase
+    // armor materials).
+    const onChange = vi.fn();
+    render(<FilterSortControls filters={DEFAULT_FILTERS} onChange={onChange} recipes={RECIPES} />);
+    expect(screen.queryByLabelText('Material')).toBeNull();
+    expect(screen.queryByLabelText('Slot')).toBeNull();
+    expect(screen.queryByLabelText('Typ')).toBeNull();
+    expect(screen.queryByLabelText('Familie')).toBeNull();
   });
 
   it('scopes the Slot dropdown to the selected Material', () => {
@@ -127,6 +185,22 @@ describe('FilterSortControls', () => {
     rerender(<FilterSortControls filters={nextFilters} onChange={onChange} recipes={RECIPES} />);
 
     expect((screen.getByLabelText('Familie') as HTMLInputElement).value).toBe('');
+  });
+
+  it('does not call onChange again for non-matching Familie keystrokes once family is already empty', () => {
+    // Regression for finding #5: typing text that matches no family option
+    // must not keep calling onChange with a redundant identical
+    // family: '' update on every keystroke (invalidates memoized profit
+    // computation upstream).
+    const onChange = vi.fn();
+    const filters = { ...DEFAULT_FILTERS, category: 'equipmentitem', material: 'leather', slot: 'shoes' };
+    render(<FilterSortControls filters={filters} onChange={onChange} recipes={RECIPES} />);
+    const familyInput = screen.getByLabelText('Familie');
+
+    fireEvent.change(familyInput, { target: { value: 'zz' } });
+    fireEvent.change(familyInput, { target: { value: 'zzq' } });
+
+    expect(onChange).not.toHaveBeenCalled();
   });
 
   describe('matchesStructuralFilters', () => {

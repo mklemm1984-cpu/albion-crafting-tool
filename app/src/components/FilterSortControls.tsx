@@ -29,7 +29,7 @@ export const DEFAULT_FILTERS: Filters = {
 const CATEGORIES = ['simpleitem', 'equipmentitem', 'weapon', 'transformationweapon', 'consumableitem', 'mount', 'farmableitem'];
 
 export const CATEGORY_LABELS: Record<string, string> = {
-  simpleitem: 'Rohstoff-Veredelung',
+  simpleitem: 'Ressourcen & Artefakte',
   equipmentitem: 'Rüstung',
   weapon: 'Waffen',
   transformationweapon: 'Shapeshifter Staves',
@@ -61,6 +61,8 @@ type TaxonomyRecipe = Pick<Recipe, 'category' | 'tier' | 'enchant' | 'shopSubCat
 function recipesMatchingUpTo(recipes: TaxonomyRecipe[], filters: Filters, upTo: 'category' | 'material' | 'slot'): TaxonomyRecipe[] {
   return recipes.filter((r) => {
     if (filters.category && r.category !== filters.category) return false;
+    if (filters.tier !== '' && r.tier !== filters.tier) return false;
+    if (filters.enchant !== '' && r.enchant !== filters.enchant) return false;
     if (upTo === 'category') return true;
     if (filters.material && deriveMaterial(r) !== filters.material) return false;
     if (upTo === 'material') return true;
@@ -135,7 +137,7 @@ export function FilterSortControls({
         </select>
       </label>
 
-      {materialOptions.length > 0 && (
+      {filters.category !== '' && materialOptions.length > 0 && (
         <label>
           Material
           <select value={filters.material} onChange={(e) => update('material', e.target.value)}>
@@ -147,7 +149,7 @@ export function FilterSortControls({
         </label>
       )}
 
-      {slotOptions.length > 0 && (
+      {filters.category !== '' && slotOptions.length > 0 && (
         <label>
           {filters.category === 'equipmentitem' ? 'Slot' : 'Typ'}
           <select value={filters.slot} onChange={(e) => update('slot', e.target.value)}>
@@ -159,7 +161,7 @@ export function FilterSortControls({
         </label>
       )}
 
-      {familyOptions.length > 0 && (
+      {filters.category !== '' && familyOptions.length > 0 && (
         <label>
           Familie
           <input
@@ -168,7 +170,8 @@ export function FilterSortControls({
             defaultValue={familyMap.get(filters.family) ?? ''}
             onChange={(e) => {
               const match = familyOptions.find(([, name]) => name === e.target.value);
-              update('family', match ? match[0] : '');
+              const next = match ? match[0] : '';
+              if (next !== filters.family) update('family', next);
             }}
           />
           <datalist id="family-options">
