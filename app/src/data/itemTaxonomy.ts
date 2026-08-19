@@ -51,3 +51,44 @@ export function deriveFamilyName(recipe: Pick<Recipe, 'name' | 'tier'>): string 
   }
   return recipe.name;
 }
+
+const ARMOR_MATERIAL_PREFIXES = ['plate', 'leather', 'cloth'] as const;
+
+/**
+ * Material axis: 'plate'|'leather'|'cloth' for armor (derived from
+ * shopSubCategory's prefix), the matched refined-resource substring
+ * ('PLANKS'|'CLOTH'|'METALBAR'|'LEATHER'|'STONEBLOCK') for refining, null
+ * for every other category (weapons/mounts/consumables/farming have no
+ * material axis).
+ */
+export function deriveMaterial(recipe: Pick<Recipe, 'category' | 'shopSubCategory' | 'itemId'>): string | null {
+  if (recipe.category === 'equipmentitem') {
+    const prefix = ARMOR_MATERIAL_PREFIXES.find((m) => recipe.shopSubCategory.startsWith(`${m}_`));
+    return prefix ?? null;
+  }
+  if (recipe.category === 'simpleitem') {
+    const substring = REFINED_MATERIAL_SUBSTRINGS.find((s) => recipe.itemId.includes(s));
+    return substring ?? null;
+  }
+  return null;
+}
+
+/**
+ * Slot (armor: 'helmet'|'armor'|'shoes', by stripping the matched material
+ * prefix off shopSubCategory) or type (everything else with a meaningful
+ * shopSubCategory: the raw value, e.g. 'sword', 'basemounts', 'food',
+ * 'farm'). Equipment with no plate/leather/cloth material (capes, bags,
+ * off-hands) falls back to its own raw shopSubCategory as its "type".
+ * Returns null for simpleitem (refining has no slot axis).
+ */
+export function deriveSlotOrType(recipe: Pick<Recipe, 'category' | 'shopSubCategory'>): string | null {
+  if (recipe.category === 'simpleitem') return null;
+  if (recipe.category === 'equipmentitem') {
+    const material = ARMOR_MATERIAL_PREFIXES.find((m) => recipe.shopSubCategory.startsWith(`${m}_`));
+    if (material) {
+      return recipe.shopSubCategory.slice(material.length + 1) || null;
+    }
+    return recipe.shopSubCategory || null;
+  }
+  return recipe.shopSubCategory || null;
+}

@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { TIER_HONORIFICS, deriveFamilyId, deriveFamilyName } from '../itemTaxonomy';
+import { deriveMaterial, deriveSlotOrType } from '../itemTaxonomy';
 
 describe('TIER_HONORIFICS', () => {
   it('has all 8 tiers', () => {
@@ -47,5 +48,54 @@ describe('deriveFamilyName', () => {
     // "Master's Stalker Shoes" at tier 4 (mismatched) should NOT have
     // "Master's" stripped, since TIER_HONORIFICS[4] is "Adept's".
     expect(deriveFamilyName({ name: "Master's Stalker Shoes", tier: 4 })).toBe("Master's Stalker Shoes");
+  });
+});
+
+describe('deriveMaterial', () => {
+  it('derives plate/leather/cloth for equipment from shopSubCategory', () => {
+    expect(deriveMaterial({ category: 'equipmentitem', shopSubCategory: 'leather_shoes', itemId: 'T6_SHOES_LEATHER_MORGANA' })).toBe('leather');
+    expect(deriveMaterial({ category: 'equipmentitem', shopSubCategory: 'plate_helmet', itemId: 'T4_HEAD_PLATE_SET1' })).toBe('plate');
+    expect(deriveMaterial({ category: 'equipmentitem', shopSubCategory: 'cloth_armor', itemId: 'T4_ARMOR_CLOTH_SET1' })).toBe('cloth');
+  });
+
+  it('returns null for equipment that has no plate/leather/cloth material (capes, bags, off-hands)', () => {
+    expect(deriveMaterial({ category: 'equipmentitem', shopSubCategory: 'bags', itemId: 'T4_BAG' })).toBeNull();
+    expect(deriveMaterial({ category: 'equipmentitem', shopSubCategory: 'accessoires_capes_lymhurst', itemId: 'T4_CAPE' })).toBeNull();
+  });
+
+  it('derives the refined-resource material for simpleitem via itemId substring', () => {
+    expect(deriveMaterial({ category: 'simpleitem', shopSubCategory: 'refinedresources', itemId: 'T4_CLOTH' })).toBe('CLOTH');
+    expect(deriveMaterial({ category: 'simpleitem', shopSubCategory: 'refinedresources', itemId: 'T4_METALBAR' })).toBe('METALBAR');
+    expect(deriveMaterial({ category: 'simpleitem', shopSubCategory: 'refinedresources', itemId: 'T4_PLANKS' })).toBe('PLANKS');
+  });
+
+  it('returns null for categories with no material axis (weapons, mounts, consumables, farming)', () => {
+    expect(deriveMaterial({ category: 'weapon', shopSubCategory: 'sword', itemId: 'T4_MAIN_SWORD' })).toBeNull();
+    expect(deriveMaterial({ category: 'mount', shopSubCategory: 'basemounts', itemId: 'T3_MOUNT_HORSE' })).toBeNull();
+    expect(deriveMaterial({ category: 'farmableitem', shopSubCategory: 'farm', itemId: 'T1_FARM_CARROT_SEED' })).toBeNull();
+  });
+});
+
+describe('deriveSlotOrType', () => {
+  it('derives the equipment slot by stripping the matched material prefix', () => {
+    expect(deriveSlotOrType({ category: 'equipmentitem', shopSubCategory: 'leather_shoes' })).toBe('shoes');
+    expect(deriveSlotOrType({ category: 'equipmentitem', shopSubCategory: 'plate_helmet' })).toBe('helmet');
+    expect(deriveSlotOrType({ category: 'equipmentitem', shopSubCategory: 'cloth_armor' })).toBe('armor');
+  });
+
+  it('falls back to the raw shopSubCategory for equipment with no plate/leather/cloth material', () => {
+    expect(deriveSlotOrType({ category: 'equipmentitem', shopSubCategory: 'bags' })).toBe('bags');
+  });
+
+  it('uses the raw shopSubCategory as the type for weapon/mount/consumable/farmableitem/transformationweapon', () => {
+    expect(deriveSlotOrType({ category: 'weapon', shopSubCategory: 'sword' })).toBe('sword');
+    expect(deriveSlotOrType({ category: 'mount', shopSubCategory: 'basemounts' })).toBe('basemounts');
+    expect(deriveSlotOrType({ category: 'consumableitem', shopSubCategory: 'food' })).toBe('food');
+    expect(deriveSlotOrType({ category: 'farmableitem', shopSubCategory: 'farm' })).toBe('farm');
+    expect(deriveSlotOrType({ category: 'transformationweapon', shopSubCategory: 'shapeshifterstaff' })).toBe('shapeshifterstaff');
+  });
+
+  it('returns null for simpleitem (refining has no slot axis, only material)', () => {
+    expect(deriveSlotOrType({ category: 'simpleitem', shopSubCategory: 'refinedresources' })).toBeNull();
   });
 });
