@@ -111,6 +111,24 @@ describe('FilterSortControls', () => {
     expect(onChange).toHaveBeenCalledWith({ ...filters, family: 'SHOES_LEATHER_MORGANA' });
   });
 
+  it('clears the Familie input text when a cascading reset zeroes out the family filter', () => {
+    const onChange = vi.fn();
+    const filters = {
+      ...DEFAULT_FILTERS,
+      category: 'equipmentitem',
+      material: 'leather',
+      slot: 'shoes',
+      family: 'SHOES_LEATHER_MORGANA',
+    };
+    const { rerender } = render(<FilterSortControls filters={filters} onChange={onChange} recipes={RECIPES} />);
+    expect((screen.getByLabelText('Familie') as HTMLInputElement).value).toBe('Stalker Shoes');
+
+    const nextFilters = { ...filters, material: 'plate', slot: '', family: '' };
+    rerender(<FilterSortControls filters={nextFilters} onChange={onChange} recipes={RECIPES} />);
+
+    expect((screen.getByLabelText('Familie') as HTMLInputElement).value).toBe('');
+  });
+
   describe('matchesStructuralFilters', () => {
     const clothRecipe = {
       category: 'simpleitem',

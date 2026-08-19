@@ -163,6 +163,7 @@ export function FilterSortControls({
         <label>
           Familie
           <input
+            key={`${filters.category}|${filters.material}|${filters.slot}`}
             list="family-options"
             defaultValue={familyMap.get(filters.family) ?? ''}
             onChange={(e) => {
