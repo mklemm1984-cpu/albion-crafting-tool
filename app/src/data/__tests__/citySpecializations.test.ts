@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { craftingSpecCity, refiningSpecCity } from '../citySpecializations';
+import { craftingSpecCity, refiningSpecCity, REFINED_MATERIAL_SUBSTRINGS } from '../citySpecializations';
 
 describe('craftingSpecCity', () => {
   it('matches weapon families by shopSubCategory', () => {
@@ -59,5 +59,16 @@ describe('refiningSpecCity', () => {
 
   it('returns null for non-refining categories', () => {
     expect(refiningSpecCity({ category: 'weapon', itemId: 'T4_2H_BOW' })).toBeNull();
+  });
+});
+
+describe('REFINED_MATERIAL_SUBSTRINGS', () => {
+  it('exposes the same substrings used for refining city-spec matching', () => {
+    expect(REFINED_MATERIAL_SUBSTRINGS).toContain('PLANKS');
+    expect(REFINED_MATERIAL_SUBSTRINGS).toContain('CLOTH');
+    expect(REFINED_MATERIAL_SUBSTRINGS).toContain('STONEBLOCK');
+    expect(REFINED_MATERIAL_SUBSTRINGS).toContain('LEATHER');
+    expect(REFINED_MATERIAL_SUBSTRINGS).toContain('METALBAR');
+    expect(REFINED_MATERIAL_SUBSTRINGS).toHaveLength(5);
   });
 });

@@ -9,6 +9,12 @@ export interface CitySpecializationData {
 
 const DATA = citySpecData as unknown as CitySpecializationData;
 
+/** The refined-resource ID substrings this module already matches against
+ * for city specialization (PLANKS/CLOTH/STONEBLOCK/LEATHER/METALBAR) --
+ * exported so the item-taxonomy module can reuse the same list for its
+ * "Material" filter under Rohstoff-Veredelung instead of re-typing it. */
+export const REFINED_MATERIAL_SUBSTRINGS: readonly string[] = Object.keys(DATA.refiningByIdSubstring);
+
 /**
  * Returns the city that gives a +15% crafting specialization bonus for this
  * recipe (weapon/equipment/consumable/mount), or null if none applies.
