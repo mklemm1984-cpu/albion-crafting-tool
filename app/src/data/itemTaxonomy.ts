@@ -4,6 +4,7 @@
 // recipes.json schema change -- see
 // docs/superpowers/specs/2026-08-18-granular-item-taxonomy-design.md.
 
+import type { Recipe } from './types';
 import { REFINED_MATERIAL_SUBSTRINGS } from './citySpecializations';
 
 /** Fixed, known English tier-honorific words (verified against the live
@@ -30,7 +31,7 @@ const TIER_PREFIX_RE = /^T\d+_/;
  * independent of tier and enchant level. Example: T4_SHOES_LEATHER_SET2
  * and T4_SHOES_LEATHER_SET2@1 both produce "SHOES_LEATHER_SET2".
  */
-export function deriveFamilyId(recipe: { itemId: string }): string {
+export function deriveFamilyId(recipe: Pick<Recipe, 'itemId'>): string {
   return recipe.itemId
     .replace(TIER_PREFIX_RE, '')
     .replace(ENCHANT_LEVEL_SUFFIX_RE, '')
@@ -43,7 +44,7 @@ export function deriveFamilyId(recipe: { itemId: string }): string {
  * Shoes"). Returns the name unchanged if no honorific prefix is present
  * (most consumables, mounts, and farming items don't carry one).
  */
-export function deriveFamilyName(recipe: { name: string; tier: number }): string {
+export function deriveFamilyName(recipe: Pick<Recipe, 'name' | 'tier'>): string {
   const honorific = TIER_HONORIFICS[recipe.tier];
   if (honorific && recipe.name.startsWith(`${honorific} `)) {
     return recipe.name.slice(honorific.length + 1);
