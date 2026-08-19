@@ -34,7 +34,7 @@ function AppContent() {
           <ConfigPanel />
         </aside>
         <main>
-          <FilterSortControls filters={filters} onChange={setFilters} />
+          <FilterSortControls filters={filters} onChange={setFilters} recipes={recipes} />
           <PriceRefreshBar
             visibleRecipes={visibleRecipes}
             allRecipes={recipes}
