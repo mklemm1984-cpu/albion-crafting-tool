@@ -76,6 +76,7 @@ function buildRow(recipe: Recipe, config: CalcConfig, snapshot: PriceCacheSnapsh
     feePer100Nutrition: config.feePer100Nutrition,
     salesTax,
     setupFee,
+    silverCost: recipe.silverCost,
   });
 
   const priceAgeHours = snapshot.getAgeHours(recipe.itemId, config.sellCity);

@@ -19,6 +19,7 @@ const RECIPE: Recipe = {
   itemValueIsEstimate: false,
   focusCost: 54,
   materials: [{ id: 'T4_FIBER', count: 2 }],
+  silverCost: 0,
 };
 
 beforeEach(() => {

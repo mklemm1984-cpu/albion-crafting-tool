@@ -78,6 +78,7 @@ def extract_base_row(item, category, iv_lookup, en_lookup):
     ]
     item_value, is_estimate = compute_item_value(item, variant, iv_lookup, category)
     unique_name = item["@uniquename"]
+    silver_cost = float(variant.get("@silver", 0) or 0)
 
     return {
         "item_id": unique_name,
@@ -92,6 +93,7 @@ def extract_base_row(item, category, iv_lookup, en_lookup):
         "item_value_is_estimate": is_estimate,
         "focus_cost": float(variant.get("@craftingfocus", 0) or 0),
         "materials": materials,
+        "silver_cost": silver_cost,
     }
 
 
@@ -136,6 +138,7 @@ def extract_enchant_rows_for_equipment(base_item, category, iv_lookup, en_lookup
         ]
         item_value, is_estimate = compute_item_value(base_item, variant, iv_lookup, category)
         unique_name = base_item["@uniquename"]
+        silver_cost = float(variant.get("@silver", 0) or 0)
         rows.append({
             "item_id": f"{unique_name}@{level}",
             "name": resolve_english_name(unique_name, en_lookup, enchant=level),
@@ -149,5 +152,6 @@ def extract_enchant_rows_for_equipment(base_item, category, iv_lookup, en_lookup
             "item_value_is_estimate": is_estimate,
             "focus_cost": float(variant.get("@craftingfocus", 0) or 0),
             "materials": materials,
+            "silver_cost": silver_cost,
         })
     return rows

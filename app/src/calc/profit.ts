@@ -34,6 +34,11 @@ export interface CraftProfitInput {
   feePer100Nutrition: number;
   salesTax: number;
   setupFee: number;
+  /** Flat, non-returnable silver cost (e.g. seeds/vanity items bought
+   * directly via @swaptransaction+@silver rather than crafted from
+   * materials). NOT subject to the resource-return-rate discount --
+   * see docs/MECHANICS_SOURCE.md and pipeline/recipe_extract.py. */
+  silverCost?: number;
 }
 
 export interface CraftProfitResult {
@@ -72,7 +77,8 @@ export function craftProfit(input: CraftProfitInput): CraftProfitResult {
 
   const matCost = materialCost(pricedMaterials, input.rrr);
   const fee = stationFee(input.itemValue, input.feePer100Nutrition, input.tier);
-  const totalCost = matCost + fee;
+  const silverCost = input.silverCost ?? 0;
+  const totalCost = matCost + fee + silverCost;
   const costPerUnit = totalCost / input.outputAmount;
   const netRevenue = netRevenuePerUnit(input.sellPrice, input.salesTax, input.setupFee);
   const profitPerUnit = profit(costPerUnit, netRevenue);

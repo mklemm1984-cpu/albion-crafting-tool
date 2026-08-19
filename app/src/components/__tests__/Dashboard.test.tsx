@@ -22,6 +22,7 @@ const CLOTH_RECIPE: Recipe = {
     { id: 'T4_FIBER', count: 2 },
     { id: 'T3_CLOTH', count: 1 },
   ],
+  silverCost: 0,
 };
 
 beforeEach(() => {

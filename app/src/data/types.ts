@@ -16,6 +16,7 @@ export interface Recipe {
   itemValueIsEstimate: boolean;
   focusCost: number;
   materials: RecipeMaterial[];
+  silverCost: number;
 }
 
 // Raw shape as written by pipeline/generate_recipes.py (recipes.json).
@@ -32,6 +33,7 @@ export interface RawRecipeRow {
   item_value_is_estimate: boolean;
   focus_cost: number;
   materials: RecipeMaterial[];
+  silver_cost: number;
 }
 
 export function fromRawRecipeRow(raw: RawRecipeRow): Recipe {
@@ -48,5 +50,6 @@ export function fromRawRecipeRow(raw: RawRecipeRow): Recipe {
     itemValueIsEstimate: raw.item_value_is_estimate,
     focusCost: raw.focus_cost,
     materials: raw.materials,
+    silverCost: raw.silver_cost ?? 0,
   };
 }

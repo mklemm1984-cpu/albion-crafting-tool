@@ -139,4 +139,44 @@ describe('craftProfit', () => {
     expect(result.profitPerBatch).toBeCloseTo(346.06, 1);
     expect(result.silverPerFocus).toBeCloseTo(3.4606, 3);
   });
+
+  it('includes silverCost as a flat, non-returnable cost for silver-only recipes (e.g. T1_FARM_CARROT_SEED)', () => {
+    // Regression for the Critical finding: silver-only recipes (materials: [])
+    // must not report profitPerUnit == sellPrice -- the @silver cost has to
+    // land in costPerUnit, undiscounted by RRR.
+    const result = craftProfit({
+      materials: [],
+      outputAmount: 1,
+      itemValue: 400,
+      focusCost: 0,
+      tier: 1,
+      sellPrice: 3000,
+      rrr: SHARED_RRR,
+      feePer100Nutrition: 150,
+      salesTax: 0.04,
+      setupFee: 0.025,
+      silverCost: 2000,
+    });
+    expect(result.noPriceData).toBe(false);
+    expect(result.materialCost).toBe(0);
+    // T1 -> station fee is zero, so costPerUnit is exactly the silver cost.
+    expect(result.costPerUnit).toBeCloseTo(2000, 2);
+    expect(result.profitPerUnit).not.toBeCloseTo(result.netRevenue as number, 2);
+  });
+
+  it('defaults silverCost to zero when omitted, matching prior behavior for crafted recipes', () => {
+    const withSilverCost = craftProfit({
+      materials: [{ id: 'T4_CLOTH', count: 8, price: 600 }],
+      outputAmount: 1,
+      itemValue: 128,
+      focusCost: 429,
+      tier: 4,
+      sellPrice: 4000,
+      rrr: SHARED_RRR,
+      feePer100Nutrition: 150,
+      salesTax: 0.04,
+      setupFee: 0.025,
+    });
+    expect(withSilverCost.costPerUnit).toBeCloseTo(2733.6, 2);
+  });
 });

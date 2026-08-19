@@ -299,6 +299,44 @@ def test_generate_extracts_farmableitem_category():
     assert row["name"] == "Carrot Seeds"
 
 
+def test_generate_farmableitem_swaptransaction_silver_only_has_no_materials_but_nonzero_silver_cost():
+    """Critical finding #1: most farmableitem rows (seeds) are bought
+    directly for silver via craftingrequirements.@swaptransaction +
+    @silver, not crafted from craftresource materials. Confirmed against
+    the live 2026-08-18 data: T1_FARM_CARROT_SEED costs 2000 silver, no
+    materials. The generated row must carry silver_cost so downstream
+    profit math doesn't treat it as free."""
+    from generate_recipes import generate
+
+    seed_item = {
+        "@uniquename": "T1_FARM_CARROT_SEED",
+        "@tier": "1",
+        "@itemvalue": "400",
+        "@shopcategory": "farming",
+        "@shopsubcategory1": "farm",
+        "craftingrequirements": {
+            "@silver": "2000",
+            "@time": "0",
+            "@swaptransaction": "true",
+        },
+    }
+    items_data = {
+        "simpleitem": [],
+        "equipmentitem": [],
+        "weapon": [],
+        "consumableitem": [],
+        "mount": [],
+        "transformationweapon": [],
+        "farmableitem": [seed_item],
+    }
+    localized_names = [{"UniqueName": "T1_FARM_CARROT_SEED", "LocalizedNames": {"EN-US": "Carrot Seeds"}}]
+
+    rows, _summary = generate(items_data, localized_names)
+    row = next(r for r in rows if r["item_id"] == "T1_FARM_CARROT_SEED")
+    assert row["materials"] == []
+    assert row["silver_cost"] == 2000.0
+
+
 def test_build_en_lookup_skips_entries_with_null_localized_names():
     """Some real ao-bin-dumps entries have "LocalizedNames": null (not just
     a missing key) -- build_en_lookup must not crash on those and should

@@ -124,6 +124,41 @@ def test_extract_base_row_returns_none_for_uncraftable_item():
     assert extract_base_row(item, "simpleitem", {}, {}) is None
 
 
+T1_FARM_CARROT_SEED_ITEM = {
+    "@uniquename": "T1_FARM_CARROT_SEED",
+    "@tier": "1",
+    "@itemvalue": "400",
+    "@shopcategory": "farming",
+    "@shopsubcategory1": "farm",
+    "craftingrequirements": {
+        "@silver": "2000",
+        "@time": "0",
+        "@swaptransaction": "true",
+    },
+}
+
+
+def test_extract_base_row_silver_only_swaptransaction():
+    """@swaptransaction + @silver items (e.g. farming seeds) have no
+    craftresource -- confirmed against the live 2026-08-18 dump for
+    T1_FARM_CARROT_SEED (2000 silver, no materials). The row must carry
+    materials: [] AND a non-zero silver_cost so the frontend doesn't treat
+    it as a free craft (Critical finding #1)."""
+    row = extract_base_row(
+        T1_FARM_CARROT_SEED_ITEM, "farmableitem", iv_lookup={}, en_lookup={"T1_FARM_CARROT_SEED": "Carrot Seeds"}
+    )
+    assert row["materials"] == []
+    assert row["silver_cost"] == 2000.0
+
+
+def test_extract_base_row_silver_cost_defaults_to_zero():
+    """Regular crafted rows (no @silver on the variant) must default
+    silver_cost to 0.0, not None/missing -- so existing profit math is
+    unaffected."""
+    row = extract_base_row(T4_CLOTH_ITEM, "simpleitem", iv_lookup={}, en_lookup={"T4_CLOTH": "Fine Cloth"})
+    assert row["silver_cost"] == 0.0
+
+
 T4_CLOTH_LEVEL1_ITEM = {
     "@uniquename": "T4_CLOTH_LEVEL1",
     "@tier": "4",
