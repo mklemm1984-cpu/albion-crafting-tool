@@ -20,7 +20,8 @@
         "id": "T3_EGG",
         "count": 6.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_POTION_HEAL@1",
@@ -47,7 +48,8 @@
         "id": "T1_ALCHEMY_EXTRACT_LEVEL1",
         "count": 15.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_POTION_HEAL@2",
@@ -74,7 +76,8 @@
         "id": "T1_ALCHEMY_EXTRACT_LEVEL2",
         "count": 15.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_POTION_HEAL@3",
@@ -101,7 +104,8 @@
         "id": "T1_ALCHEMY_EXTRACT_LEVEL3",
         "count": 15.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_POTION_HEAL",
@@ -128,7 +132,8 @@
         "id": "T6_ALCOHOL",
         "count": 18.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_POTION_HEAL@1",
@@ -159,7 +164,8 @@
         "id": "T1_ALCHEMY_EXTRACT_LEVEL1",
         "count": 45.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_POTION_HEAL@2",
@@ -190,7 +196,8 @@
         "id": "T1_ALCHEMY_EXTRACT_LEVEL2",
         "count": 45.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_POTION_HEAL@3",
@@ -221,7 +228,8 @@
         "id": "T1_ALCHEMY_EXTRACT_LEVEL3",
         "count": 45.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_ARMOR_CLOTH_SET1",
@@ -240,7 +248,8 @@
         "id": "T4_CLOTH",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_ARMOR_CLOTH_SET1@1",
@@ -259,7 +268,8 @@
         "id": "T4_CLOTH_LEVEL1",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_ARMOR_CLOTH_SET1@2",
@@ -278,7 +288,8 @@
         "id": "T4_CLOTH_LEVEL2",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_ARMOR_CLOTH_SET1@3",
@@ -297,7 +308,8 @@
         "id": "T4_CLOTH_LEVEL3",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_ARMOR_CLOTH_SET1@4",
@@ -316,7 +328,8 @@
         "id": "T4_CLOTH_LEVEL4",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_HEAD_CLOTH_SET1",
@@ -335,7 +348,8 @@
         "id": "T4_CLOTH",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_HEAD_CLOTH_SET1@1",
@@ -354,7 +368,8 @@
         "id": "T4_CLOTH_LEVEL1",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_HEAD_CLOTH_SET1@2",
@@ -373,7 +388,8 @@
         "id": "T4_CLOTH_LEVEL2",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_HEAD_CLOTH_SET1@3",
@@ -392,7 +408,8 @@
         "id": "T4_CLOTH_LEVEL3",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_HEAD_CLOTH_SET1@4",
@@ -411,7 +428,8 @@
         "id": "T4_CLOTH_LEVEL4",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_SHOES_CLOTH_SET1",
@@ -430,7 +448,8 @@
         "id": "T4_CLOTH",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_SHOES_CLOTH_SET1@1",
@@ -449,7 +468,8 @@
         "id": "T4_CLOTH_LEVEL1",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_SHOES_CLOTH_SET1@2",
@@ -468,7 +488,8 @@
         "id": "T4_CLOTH_LEVEL2",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_SHOES_CLOTH_SET1@3",
@@ -487,7 +508,8 @@
         "id": "T4_CLOTH_LEVEL3",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_SHOES_CLOTH_SET1@4",
@@ -506,7 +528,8 @@
         "id": "T4_CLOTH_LEVEL4",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_ARMOR_CLOTH_SET1",
@@ -525,7 +548,8 @@
         "id": "T5_CLOTH",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_ARMOR_CLOTH_SET1@1",
@@ -544,7 +568,8 @@
         "id": "T5_CLOTH_LEVEL1",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_ARMOR_CLOTH_SET1@2",
@@ -563,7 +588,8 @@
         "id": "T5_CLOTH_LEVEL2",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_ARMOR_CLOTH_SET1@3",
@@ -582,7 +608,8 @@
         "id": "T5_CLOTH_LEVEL3",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_ARMOR_CLOTH_SET1@4",
@@ -601,7 +628,8 @@
         "id": "T5_CLOTH_LEVEL4",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_HEAD_CLOTH_SET1",
@@ -620,7 +648,8 @@
         "id": "T5_CLOTH",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_HEAD_CLOTH_SET1@1",
@@ -639,7 +668,8 @@
         "id": "T5_CLOTH_LEVEL1",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_HEAD_CLOTH_SET1@2",
@@ -658,7 +688,8 @@
         "id": "T5_CLOTH_LEVEL2",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_HEAD_CLOTH_SET1@3",
@@ -677,7 +708,8 @@
         "id": "T5_CLOTH_LEVEL3",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_HEAD_CLOTH_SET1@4",
@@ -696,7 +728,8 @@
         "id": "T5_CLOTH_LEVEL4",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_SHOES_CLOTH_SET1",
@@ -715,7 +748,8 @@
         "id": "T5_CLOTH",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_SHOES_CLOTH_SET1@1",
@@ -734,7 +768,8 @@
         "id": "T5_CLOTH_LEVEL1",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_SHOES_CLOTH_SET1@2",
@@ -753,7 +788,8 @@
         "id": "T5_CLOTH_LEVEL2",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_SHOES_CLOTH_SET1@3",
@@ -772,7 +808,8 @@
         "id": "T5_CLOTH_LEVEL3",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_SHOES_CLOTH_SET1@4",
@@ -791,7 +828,8 @@
         "id": "T5_CLOTH_LEVEL4",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_ARMOR_CLOTH_SET1",
@@ -810,7 +848,8 @@
         "id": "T6_CLOTH",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_ARMOR_CLOTH_SET1@1",
@@ -829,7 +868,8 @@
         "id": "T6_CLOTH_LEVEL1",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_ARMOR_CLOTH_SET1@2",
@@ -848,7 +888,8 @@
         "id": "T6_CLOTH_LEVEL2",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_ARMOR_CLOTH_SET1@3",
@@ -867,7 +908,8 @@
         "id": "T6_CLOTH_LEVEL3",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_ARMOR_CLOTH_SET1@4",
@@ -886,7 +928,8 @@
         "id": "T6_CLOTH_LEVEL4",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_HEAD_CLOTH_SET1",
@@ -905,7 +948,8 @@
         "id": "T6_CLOTH",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_HEAD_CLOTH_SET1@1",
@@ -924,7 +968,8 @@
         "id": "T6_CLOTH_LEVEL1",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_HEAD_CLOTH_SET1@2",
@@ -943,7 +988,8 @@
         "id": "T6_CLOTH_LEVEL2",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_HEAD_CLOTH_SET1@3",
@@ -962,7 +1008,8 @@
         "id": "T6_CLOTH_LEVEL3",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_HEAD_CLOTH_SET1@4",
@@ -981,7 +1028,8 @@
         "id": "T6_CLOTH_LEVEL4",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_SHOES_CLOTH_SET1",
@@ -1000,7 +1048,8 @@
         "id": "T6_CLOTH",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_SHOES_CLOTH_SET1@1",
@@ -1019,7 +1068,8 @@
         "id": "T6_CLOTH_LEVEL1",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_SHOES_CLOTH_SET1@2",
@@ -1038,7 +1088,8 @@
         "id": "T6_CLOTH_LEVEL2",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_SHOES_CLOTH_SET1@3",
@@ -1057,7 +1108,8 @@
         "id": "T6_CLOTH_LEVEL3",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_SHOES_CLOTH_SET1@4",
@@ -1076,7 +1128,8 @@
         "id": "T6_CLOTH_LEVEL4",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_ARMOR_CLOTH_SET1",
@@ -1095,7 +1148,8 @@
         "id": "T7_CLOTH",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_ARMOR_CLOTH_SET1@1",
@@ -1114,7 +1168,8 @@
         "id": "T7_CLOTH_LEVEL1",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_ARMOR_CLOTH_SET1@2",
@@ -1133,7 +1188,8 @@
         "id": "T7_CLOTH_LEVEL2",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_ARMOR_CLOTH_SET1@3",
@@ -1152,7 +1208,8 @@
         "id": "T7_CLOTH_LEVEL3",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_ARMOR_CLOTH_SET1@4",
@@ -1171,7 +1228,8 @@
         "id": "T7_CLOTH_LEVEL4",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_HEAD_CLOTH_SET1",
@@ -1190,7 +1248,8 @@
         "id": "T7_CLOTH",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_HEAD_CLOTH_SET1@1",
@@ -1209,7 +1268,8 @@
         "id": "T7_CLOTH_LEVEL1",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_HEAD_CLOTH_SET1@2",
@@ -1228,7 +1288,8 @@
         "id": "T7_CLOTH_LEVEL2",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_HEAD_CLOTH_SET1@3",
@@ -1247,7 +1308,8 @@
         "id": "T7_CLOTH_LEVEL3",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_HEAD_CLOTH_SET1@4",
@@ -1266,7 +1328,8 @@
         "id": "T7_CLOTH_LEVEL4",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_SHOES_CLOTH_SET1",
@@ -1285,7 +1348,8 @@
         "id": "T7_CLOTH",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_SHOES_CLOTH_SET1@1",
@@ -1304,7 +1368,8 @@
         "id": "T7_CLOTH_LEVEL1",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_SHOES_CLOTH_SET1@2",
@@ -1323,7 +1388,8 @@
         "id": "T7_CLOTH_LEVEL2",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_SHOES_CLOTH_SET1@3",
@@ -1342,7 +1408,8 @@
         "id": "T7_CLOTH_LEVEL3",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_SHOES_CLOTH_SET1@4",
@@ -1361,7 +1428,8 @@
         "id": "T7_CLOTH_LEVEL4",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_ARMOR_CLOTH_SET1",
@@ -1380,7 +1448,8 @@
         "id": "T8_CLOTH",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_ARMOR_CLOTH_SET1@1",
@@ -1399,7 +1468,8 @@
         "id": "T8_CLOTH_LEVEL1",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_ARMOR_CLOTH_SET1@2",
@@ -1418,7 +1488,8 @@
         "id": "T8_CLOTH_LEVEL2",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_ARMOR_CLOTH_SET1@3",
@@ -1437,7 +1508,8 @@
         "id": "T8_CLOTH_LEVEL3",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_ARMOR_CLOTH_SET1@4",
@@ -1456,7 +1528,8 @@
         "id": "T8_CLOTH_LEVEL4",
         "count": 16.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_HEAD_CLOTH_SET1",
@@ -1475,7 +1548,8 @@
         "id": "T8_CLOTH",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_HEAD_CLOTH_SET1@1",
@@ -1494,7 +1568,8 @@
         "id": "T8_CLOTH_LEVEL1",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_HEAD_CLOTH_SET1@2",
@@ -1513,7 +1588,8 @@
         "id": "T8_CLOTH_LEVEL2",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_HEAD_CLOTH_SET1@3",
@@ -1532,7 +1608,8 @@
         "id": "T8_CLOTH_LEVEL3",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_HEAD_CLOTH_SET1@4",
@@ -1551,7 +1628,8 @@
         "id": "T8_CLOTH_LEVEL4",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_SHOES_CLOTH_SET1",
@@ -1570,7 +1648,8 @@
         "id": "T8_CLOTH",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_SHOES_CLOTH_SET1@1",
@@ -1589,7 +1668,8 @@
         "id": "T8_CLOTH_LEVEL1",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_SHOES_CLOTH_SET1@2",
@@ -1608,7 +1688,8 @@
         "id": "T8_CLOTH_LEVEL2",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_SHOES_CLOTH_SET1@3",
@@ -1627,7 +1708,8 @@
         "id": "T8_CLOTH_LEVEL3",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_SHOES_CLOTH_SET1@4",
@@ -1646,7 +1728,8 @@
         "id": "T8_CLOTH_LEVEL4",
         "count": 8.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T2_CLOTH",
@@ -1665,7 +1748,8 @@
         "id": "T2_FIBER",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T2_LEATHER",
@@ -1684,7 +1768,8 @@
         "id": "T2_HIDE",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T2_METALBAR",
@@ -1703,7 +1788,8 @@
         "id": "T2_ORE",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T2_PLANKS",
@@ -1722,7 +1808,8 @@
         "id": "T2_WOOD",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T2_STONEBLOCK",
@@ -1741,7 +1828,8 @@
         "id": "T2_ROCK",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T3_CLOTH",
@@ -1764,7 +1852,8 @@
         "id": "T2_CLOTH",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T3_LEATHER",
@@ -1787,7 +1876,8 @@
         "id": "T2_LEATHER",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T3_METALBAR",
@@ -1810,7 +1900,8 @@
         "id": "T2_METALBAR",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T3_PLANKS",
@@ -1833,7 +1924,8 @@
         "id": "T2_PLANKS",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T3_STONEBLOCK",
@@ -1856,7 +1948,8 @@
         "id": "T2_STONEBLOCK",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_CLOTH",
@@ -1879,7 +1972,8 @@
         "id": "T3_CLOTH",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_CLOTH_LEVEL1",
@@ -1902,7 +1996,8 @@
         "id": "T3_CLOTH",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_CLOTH_LEVEL2",
@@ -1925,7 +2020,8 @@
         "id": "T3_CLOTH",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_CLOTH_LEVEL3",
@@ -1948,7 +2044,8 @@
         "id": "T3_CLOTH",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_CLOTH_LEVEL4",
@@ -1971,7 +2068,8 @@
         "id": "T3_CLOTH",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_FIBER_LEVEL1",
@@ -1990,7 +2088,8 @@
         "id": "T4_FIBER",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 1500.0
   },
   {
     "item_id": "T4_FIBER_LEVEL2",
@@ -2009,7 +2108,8 @@
         "id": "T4_FIBER_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 3000.0
   },
   {
     "item_id": "T4_FIBER_LEVEL3",
@@ -2028,7 +2128,8 @@
         "id": "T4_FIBER_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 6000.0
   },
   {
     "item_id": "T4_FIBER_LEVEL4",
@@ -2047,7 +2148,8 @@
         "id": "T4_FIBER_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 24000.0
   },
   {
     "item_id": "T4_HIDE_LEVEL1",
@@ -2066,7 +2168,8 @@
         "id": "T4_HIDE",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 1500.0
   },
   {
     "item_id": "T4_HIDE_LEVEL2",
@@ -2085,7 +2188,8 @@
         "id": "T4_HIDE_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 3000.0
   },
   {
     "item_id": "T4_HIDE_LEVEL3",
@@ -2104,7 +2208,8 @@
         "id": "T4_HIDE_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 6000.0
   },
   {
     "item_id": "T4_HIDE_LEVEL4",
@@ -2123,7 +2228,8 @@
         "id": "T4_HIDE_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 24000.0
   },
   {
     "item_id": "T4_LEATHER",
@@ -2146,7 +2252,8 @@
         "id": "T3_LEATHER",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_LEATHER_LEVEL1",
@@ -2169,7 +2276,8 @@
         "id": "T3_LEATHER",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_LEATHER_LEVEL2",
@@ -2192,7 +2300,8 @@
         "id": "T3_LEATHER",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_LEATHER_LEVEL3",
@@ -2215,7 +2324,8 @@
         "id": "T3_LEATHER",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_LEATHER_LEVEL4",
@@ -2238,7 +2348,8 @@
         "id": "T3_LEATHER",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_METALBAR",
@@ -2261,7 +2372,8 @@
         "id": "T3_METALBAR",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_METALBAR_LEVEL1",
@@ -2284,7 +2396,8 @@
         "id": "T3_METALBAR",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_METALBAR_LEVEL2",
@@ -2307,7 +2420,8 @@
         "id": "T3_METALBAR",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_METALBAR_LEVEL3",
@@ -2330,7 +2444,8 @@
         "id": "T3_METALBAR",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_METALBAR_LEVEL4",
@@ -2353,7 +2468,8 @@
         "id": "T3_METALBAR",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_ORE_LEVEL1",
@@ -2372,7 +2488,8 @@
         "id": "T4_ORE",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 1500.0
   },
   {
     "item_id": "T4_ORE_LEVEL2",
@@ -2391,7 +2508,8 @@
         "id": "T4_ORE_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 3000.0
   },
   {
     "item_id": "T4_ORE_LEVEL3",
@@ -2410,7 +2528,8 @@
         "id": "T4_ORE_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 6000.0
   },
   {
     "item_id": "T4_ORE_LEVEL4",
@@ -2429,7 +2548,8 @@
         "id": "T4_ORE_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 24000.0
   },
   {
     "item_id": "T4_PLANKS",
@@ -2452,7 +2572,8 @@
         "id": "T3_PLANKS",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_PLANKS_LEVEL1",
@@ -2475,7 +2596,8 @@
         "id": "T3_PLANKS",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_PLANKS_LEVEL2",
@@ -2498,7 +2620,8 @@
         "id": "T3_PLANKS",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_PLANKS_LEVEL3",
@@ -2521,7 +2644,8 @@
         "id": "T3_PLANKS",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_PLANKS_LEVEL4",
@@ -2544,7 +2668,8 @@
         "id": "T3_PLANKS",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_ROCK_LEVEL1",
@@ -2563,7 +2688,8 @@
         "id": "T4_ROCK",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 1800.0
   },
   {
     "item_id": "T4_ROCK_LEVEL2",
@@ -2582,7 +2708,8 @@
         "id": "T4_ROCK_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 3600.0
   },
   {
     "item_id": "T4_ROCK_LEVEL3",
@@ -2601,7 +2728,8 @@
         "id": "T4_ROCK_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 7200.0
   },
   {
     "item_id": "T4_STONEBLOCK",
@@ -2624,7 +2752,8 @@
         "id": "T3_STONEBLOCK",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T4_WOOD_LEVEL1",
@@ -2643,7 +2772,8 @@
         "id": "T4_WOOD",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 1500.0
   },
   {
     "item_id": "T4_WOOD_LEVEL2",
@@ -2662,7 +2792,8 @@
         "id": "T4_WOOD_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 3000.0
   },
   {
     "item_id": "T4_WOOD_LEVEL3",
@@ -2681,7 +2812,8 @@
         "id": "T4_WOOD_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 6000.0
   },
   {
     "item_id": "T4_WOOD_LEVEL4",
@@ -2700,7 +2832,8 @@
         "id": "T4_WOOD_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 24000.0
   },
   {
     "item_id": "T5_CLOTH",
@@ -2723,7 +2856,8 @@
         "id": "T4_CLOTH",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_CLOTH_LEVEL1",
@@ -2746,7 +2880,8 @@
         "id": "T4_CLOTH_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_CLOTH_LEVEL2",
@@ -2769,7 +2904,8 @@
         "id": "T4_CLOTH_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_CLOTH_LEVEL3",
@@ -2792,7 +2928,8 @@
         "id": "T4_CLOTH_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_CLOTH_LEVEL4",
@@ -2815,7 +2952,8 @@
         "id": "T4_CLOTH_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_FIBER",
@@ -2834,7 +2972,8 @@
         "id": "T4_FIBER",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 781.0
   },
   {
     "item_id": "T5_FIBER_LEVEL1",
@@ -2853,7 +2992,8 @@
         "id": "T4_FIBER_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 1563.0
   },
   {
     "item_id": "T5_FIBER_LEVEL2",
@@ -2872,7 +3012,8 @@
         "id": "T4_FIBER_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 3125.0
   },
   {
     "item_id": "T5_FIBER_LEVEL3",
@@ -2891,7 +3032,8 @@
         "id": "T4_FIBER_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 6250.0
   },
   {
     "item_id": "T5_FIBER_LEVEL4",
@@ -2910,7 +3052,8 @@
         "id": "T4_FIBER_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 25000.0
   },
   {
     "item_id": "T5_HIDE",
@@ -2929,7 +3072,8 @@
         "id": "T4_HIDE",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 781.0
   },
   {
     "item_id": "T5_HIDE_LEVEL1",
@@ -2948,7 +3092,8 @@
         "id": "T4_HIDE_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 1563.0
   },
   {
     "item_id": "T5_HIDE_LEVEL2",
@@ -2967,7 +3112,8 @@
         "id": "T4_HIDE_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 3125.0
   },
   {
     "item_id": "T5_HIDE_LEVEL3",
@@ -2986,7 +3132,8 @@
         "id": "T4_HIDE_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 6250.0
   },
   {
     "item_id": "T5_HIDE_LEVEL4",
@@ -3005,7 +3152,8 @@
         "id": "T4_HIDE_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 25000.0
   },
   {
     "item_id": "T5_LEATHER",
@@ -3028,7 +3176,8 @@
         "id": "T4_LEATHER",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_LEATHER_LEVEL1",
@@ -3051,7 +3200,8 @@
         "id": "T4_LEATHER_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_LEATHER_LEVEL2",
@@ -3074,7 +3224,8 @@
         "id": "T4_LEATHER_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_LEATHER_LEVEL3",
@@ -3097,7 +3248,8 @@
         "id": "T4_LEATHER_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_LEATHER_LEVEL4",
@@ -3120,7 +3272,8 @@
         "id": "T4_LEATHER_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_METALBAR",
@@ -3143,7 +3296,8 @@
         "id": "T4_METALBAR",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_METALBAR_LEVEL1",
@@ -3166,7 +3320,8 @@
         "id": "T4_METALBAR_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_METALBAR_LEVEL2",
@@ -3189,7 +3344,8 @@
         "id": "T4_METALBAR_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_METALBAR_LEVEL3",
@@ -3212,7 +3368,8 @@
         "id": "T4_METALBAR_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_METALBAR_LEVEL4",
@@ -3235,7 +3392,8 @@
         "id": "T4_METALBAR_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_ORE",
@@ -3254,7 +3412,8 @@
         "id": "T4_ORE",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 781.0
   },
   {
     "item_id": "T5_ORE_LEVEL1",
@@ -3273,7 +3432,8 @@
         "id": "T4_ORE_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 1563.0
   },
   {
     "item_id": "T5_ORE_LEVEL2",
@@ -3292,7 +3452,8 @@
         "id": "T4_ORE_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 3125.0
   },
   {
     "item_id": "T5_ORE_LEVEL3",
@@ -3311,7 +3472,8 @@
         "id": "T4_ORE_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 6250.0
   },
   {
     "item_id": "T5_ORE_LEVEL4",
@@ -3330,7 +3492,8 @@
         "id": "T4_ORE_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 25000.0
   },
   {
     "item_id": "T5_PLANKS",
@@ -3353,7 +3516,8 @@
         "id": "T4_PLANKS",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_PLANKS_LEVEL1",
@@ -3376,7 +3540,8 @@
         "id": "T4_PLANKS_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_PLANKS_LEVEL2",
@@ -3399,7 +3564,8 @@
         "id": "T4_PLANKS_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_PLANKS_LEVEL3",
@@ -3422,7 +3588,8 @@
         "id": "T4_PLANKS_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_PLANKS_LEVEL4",
@@ -3445,7 +3612,8 @@
         "id": "T4_PLANKS_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_ROCK",
@@ -3464,7 +3632,8 @@
         "id": "T4_ROCK",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 1180.0
   },
   {
     "item_id": "T5_ROCK_LEVEL1",
@@ -3483,7 +3652,8 @@
         "id": "T4_ROCK_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 2130.0
   },
   {
     "item_id": "T5_ROCK_LEVEL2",
@@ -3502,7 +3672,8 @@
         "id": "T4_ROCK_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 4270.0
   },
   {
     "item_id": "T5_ROCK_LEVEL3",
@@ -3521,7 +3692,8 @@
         "id": "T4_ROCK_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 8530.0
   },
   {
     "item_id": "T5_STONEBLOCK",
@@ -3544,7 +3716,8 @@
         "id": "T4_STONEBLOCK",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T5_WOOD",
@@ -3563,7 +3736,8 @@
         "id": "T4_WOOD",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 781.0
   },
   {
     "item_id": "T5_WOOD_LEVEL1",
@@ -3582,7 +3756,8 @@
         "id": "T4_WOOD_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 1563.0
   },
   {
     "item_id": "T5_WOOD_LEVEL2",
@@ -3601,7 +3776,8 @@
         "id": "T4_WOOD_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 3125.0
   },
   {
     "item_id": "T5_WOOD_LEVEL3",
@@ -3620,7 +3796,8 @@
         "id": "T4_WOOD_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 6250.0
   },
   {
     "item_id": "T5_WOOD_LEVEL4",
@@ -3639,7 +3816,8 @@
         "id": "T4_WOOD_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 25000.0
   },
   {
     "item_id": "T6_CLOTH",
@@ -3662,7 +3840,8 @@
         "id": "T5_CLOTH",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_CLOTH_LEVEL1",
@@ -3685,7 +3864,8 @@
         "id": "T5_CLOTH_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_CLOTH_LEVEL2",
@@ -3708,7 +3888,8 @@
         "id": "T5_CLOTH_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_CLOTH_LEVEL3",
@@ -3731,7 +3912,8 @@
         "id": "T5_CLOTH_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_CLOTH_LEVEL4",
@@ -3754,7 +3936,8 @@
         "id": "T5_CLOTH_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_FIBER",
@@ -3773,7 +3956,8 @@
         "id": "T5_FIBER",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 1250.0
   },
   {
     "item_id": "T6_FIBER_LEVEL1",
@@ -3792,7 +3976,8 @@
         "id": "T5_FIBER_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 2500.0
   },
   {
     "item_id": "T6_FIBER_LEVEL2",
@@ -3811,7 +3996,8 @@
         "id": "T5_FIBER_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 5000.0
   },
   {
     "item_id": "T6_FIBER_LEVEL3",
@@ -3830,7 +4016,8 @@
         "id": "T5_FIBER_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 16500.0
   },
   {
     "item_id": "T6_FIBER_LEVEL4",
@@ -3849,7 +4036,8 @@
         "id": "T5_FIBER_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 66000.0
   },
   {
     "item_id": "T6_HIDE",
@@ -3868,7 +4056,8 @@
         "id": "T5_HIDE",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 1250.0
   },
   {
     "item_id": "T6_HIDE_LEVEL1",
@@ -3887,7 +4076,8 @@
         "id": "T5_HIDE_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 2500.0
   },
   {
     "item_id": "T6_HIDE_LEVEL2",
@@ -3906,7 +4096,8 @@
         "id": "T5_HIDE_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 5000.0
   },
   {
     "item_id": "T6_HIDE_LEVEL3",
@@ -3925,7 +4116,8 @@
         "id": "T5_HIDE_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 16500.0
   },
   {
     "item_id": "T6_HIDE_LEVEL4",
@@ -3944,7 +4136,8 @@
         "id": "T5_HIDE_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 66000.0
   },
   {
     "item_id": "T6_LEATHER",
@@ -3967,7 +4160,8 @@
         "id": "T5_LEATHER",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_LEATHER_LEVEL1",
@@ -3990,7 +4184,8 @@
         "id": "T5_LEATHER_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_LEATHER_LEVEL2",
@@ -4013,7 +4208,8 @@
         "id": "T5_LEATHER_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_LEATHER_LEVEL3",
@@ -4036,7 +4232,8 @@
         "id": "T5_LEATHER_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_LEATHER_LEVEL4",
@@ -4059,7 +4256,8 @@
         "id": "T5_LEATHER_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_METALBAR",
@@ -4082,7 +4280,8 @@
         "id": "T5_METALBAR",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_METALBAR_LEVEL1",
@@ -4105,7 +4304,8 @@
         "id": "T5_METALBAR_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_METALBAR_LEVEL2",
@@ -4128,7 +4328,8 @@
         "id": "T5_METALBAR_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_METALBAR_LEVEL3",
@@ -4151,7 +4352,8 @@
         "id": "T5_METALBAR_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_METALBAR_LEVEL4",
@@ -4174,7 +4376,8 @@
         "id": "T5_METALBAR_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_ORE",
@@ -4193,7 +4396,8 @@
         "id": "T5_ORE",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 1250.0
   },
   {
     "item_id": "T6_ORE_LEVEL1",
@@ -4212,7 +4416,8 @@
         "id": "T5_ORE_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 2500.0
   },
   {
     "item_id": "T6_ORE_LEVEL2",
@@ -4231,7 +4436,8 @@
         "id": "T5_ORE_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 5000.0
   },
   {
     "item_id": "T6_ORE_LEVEL3",
@@ -4250,7 +4456,8 @@
         "id": "T5_ORE_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 16500.0
   },
   {
     "item_id": "T6_ORE_LEVEL4",
@@ -4269,7 +4476,8 @@
         "id": "T5_ORE_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 66000.0
   },
   {
     "item_id": "T6_PLANKS",
@@ -4292,7 +4500,8 @@
         "id": "T5_PLANKS",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_PLANKS_LEVEL1",
@@ -4315,7 +4524,8 @@
         "id": "T5_PLANKS_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_PLANKS_LEVEL2",
@@ -4338,7 +4548,8 @@
         "id": "T5_PLANKS_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_PLANKS_LEVEL3",
@@ -4361,7 +4572,8 @@
         "id": "T5_PLANKS_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_PLANKS_LEVEL4",
@@ -4384,7 +4596,8 @@
         "id": "T5_PLANKS_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_ROCK",
@@ -4403,7 +4616,8 @@
         "id": "T5_ROCK",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 2640.0
   },
   {
     "item_id": "T6_ROCK_LEVEL1",
@@ -4422,7 +4636,8 @@
         "id": "T5_ROCK_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 3200.0
   },
   {
     "item_id": "T6_ROCK_LEVEL2",
@@ -4441,7 +4656,8 @@
         "id": "T5_ROCK_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 6400.0
   },
   {
     "item_id": "T6_ROCK_LEVEL3",
@@ -4460,7 +4676,8 @@
         "id": "T5_ROCK_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 12800.0
   },
   {
     "item_id": "T6_STONEBLOCK",
@@ -4483,7 +4700,8 @@
         "id": "T5_STONEBLOCK",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T6_WOOD",
@@ -4502,7 +4720,8 @@
         "id": "T5_WOOD",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 1250.0
   },
   {
     "item_id": "T6_WOOD_LEVEL1",
@@ -4521,7 +4740,8 @@
         "id": "T5_WOOD_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 2500.0
   },
   {
     "item_id": "T6_WOOD_LEVEL2",
@@ -4540,7 +4760,8 @@
         "id": "T5_WOOD_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 5000.0
   },
   {
     "item_id": "T6_WOOD_LEVEL3",
@@ -4559,7 +4780,8 @@
         "id": "T5_WOOD_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 16500.0
   },
   {
     "item_id": "T6_WOOD_LEVEL4",
@@ -4578,7 +4800,8 @@
         "id": "T5_WOOD_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 66000.0
   },
   {
     "item_id": "T7_CLOTH",
@@ -4601,7 +4824,8 @@
         "id": "T6_CLOTH",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_CLOTH_LEVEL1",
@@ -4624,7 +4848,8 @@
         "id": "T6_CLOTH_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_CLOTH_LEVEL2",
@@ -4647,7 +4872,8 @@
         "id": "T6_CLOTH_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_CLOTH_LEVEL3",
@@ -4670,7 +4896,8 @@
         "id": "T6_CLOTH_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_CLOTH_LEVEL4",
@@ -4693,7 +4920,8 @@
         "id": "T6_CLOTH_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_FIBER",
@@ -4712,7 +4940,8 @@
         "id": "T6_FIBER",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 2500.0
   },
   {
     "item_id": "T7_FIBER_LEVEL1",
@@ -4731,7 +4960,8 @@
         "id": "T6_FIBER_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 5000.0
   },
   {
     "item_id": "T7_FIBER_LEVEL2",
@@ -4750,7 +4980,8 @@
         "id": "T6_FIBER_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 15750.0
   },
   {
     "item_id": "T7_FIBER_LEVEL3",
@@ -4769,7 +5000,8 @@
         "id": "T6_FIBER_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 51975.0
   },
   {
     "item_id": "T7_FIBER_LEVEL4",
@@ -4788,7 +5020,8 @@
         "id": "T6_FIBER_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 207900.0
   },
   {
     "item_id": "T7_HIDE",
@@ -4807,7 +5040,8 @@
         "id": "T6_HIDE",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 2500.0
   },
   {
     "item_id": "T7_HIDE_LEVEL1",
@@ -4826,7 +5060,8 @@
         "id": "T6_HIDE_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 5000.0
   },
   {
     "item_id": "T7_HIDE_LEVEL2",
@@ -4845,7 +5080,8 @@
         "id": "T6_HIDE_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 15750.0
   },
   {
     "item_id": "T7_HIDE_LEVEL3",
@@ -4864,7 +5100,8 @@
         "id": "T6_HIDE_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 51975.0
   },
   {
     "item_id": "T7_HIDE_LEVEL4",
@@ -4883,7 +5120,8 @@
         "id": "T6_HIDE_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 207900.0
   },
   {
     "item_id": "T7_LEATHER",
@@ -4906,7 +5144,8 @@
         "id": "T6_LEATHER",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_LEATHER_LEVEL1",
@@ -4929,7 +5168,8 @@
         "id": "T6_LEATHER_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_LEATHER_LEVEL2",
@@ -4952,7 +5192,8 @@
         "id": "T6_LEATHER_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_LEATHER_LEVEL3",
@@ -4975,7 +5216,8 @@
         "id": "T6_LEATHER_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_LEATHER_LEVEL4",
@@ -4998,7 +5240,8 @@
         "id": "T6_LEATHER_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_METALBAR",
@@ -5021,7 +5264,8 @@
         "id": "T6_METALBAR",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_METALBAR_LEVEL1",
@@ -5044,7 +5288,8 @@
         "id": "T6_METALBAR_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_METALBAR_LEVEL2",
@@ -5067,7 +5312,8 @@
         "id": "T6_METALBAR_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_METALBAR_LEVEL3",
@@ -5090,7 +5336,8 @@
         "id": "T6_METALBAR_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_METALBAR_LEVEL4",
@@ -5113,7 +5360,8 @@
         "id": "T6_METALBAR_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_ORE",
@@ -5132,7 +5380,8 @@
         "id": "T6_ORE",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 2500.0
   },
   {
     "item_id": "T7_ORE_LEVEL1",
@@ -5151,7 +5400,8 @@
         "id": "T6_ORE_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 5000.0
   },
   {
     "item_id": "T7_ORE_LEVEL2",
@@ -5170,7 +5420,8 @@
         "id": "T6_ORE_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 15750.0
   },
   {
     "item_id": "T7_ORE_LEVEL3",
@@ -5189,7 +5440,8 @@
         "id": "T6_ORE_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 51975.0
   },
   {
     "item_id": "T7_ORE_LEVEL4",
@@ -5208,7 +5460,8 @@
         "id": "T6_ORE_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 207900.0
   },
   {
     "item_id": "T7_PLANKS",
@@ -5231,7 +5484,8 @@
         "id": "T6_PLANKS",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_PLANKS_LEVEL1",
@@ -5254,7 +5508,8 @@
         "id": "T6_PLANKS_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_PLANKS_LEVEL2",
@@ -5277,7 +5532,8 @@
         "id": "T6_PLANKS_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_PLANKS_LEVEL3",
@@ -5300,7 +5556,8 @@
         "id": "T6_PLANKS_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_PLANKS_LEVEL4",
@@ -5323,7 +5580,8 @@
         "id": "T6_PLANKS_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_ROCK",
@@ -5342,7 +5600,8 @@
         "id": "T6_ROCK",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 5640.0
   },
   {
     "item_id": "T7_ROCK_LEVEL1",
@@ -5361,7 +5620,8 @@
         "id": "T6_ROCK_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 5120.0
   },
   {
     "item_id": "T7_ROCK_LEVEL2",
@@ -5380,7 +5640,8 @@
         "id": "T6_ROCK_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 10240.0
   },
   {
     "item_id": "T7_ROCK_LEVEL3",
@@ -5399,7 +5660,8 @@
         "id": "T6_ROCK_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 20480.0
   },
   {
     "item_id": "T7_STONEBLOCK",
@@ -5422,7 +5684,8 @@
         "id": "T6_STONEBLOCK",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T7_WOOD",
@@ -5441,7 +5704,8 @@
         "id": "T6_WOOD",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 2500.0
   },
   {
     "item_id": "T7_WOOD_LEVEL1",
@@ -5460,7 +5724,8 @@
         "id": "T6_WOOD_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 5000.0
   },
   {
     "item_id": "T7_WOOD_LEVEL2",
@@ -5479,7 +5744,8 @@
         "id": "T6_WOOD_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 15750.0
   },
   {
     "item_id": "T7_WOOD_LEVEL3",
@@ -5498,7 +5764,8 @@
         "id": "T6_WOOD_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 51975.0
   },
   {
     "item_id": "T7_WOOD_LEVEL4",
@@ -5517,7 +5784,8 @@
         "id": "T6_WOOD_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 207900.0
   },
   {
     "item_id": "T8_CLOTH",
@@ -5540,7 +5808,8 @@
         "id": "T7_CLOTH",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_CLOTH_LEVEL1",
@@ -5563,7 +5832,8 @@
         "id": "T7_CLOTH_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_CLOTH_LEVEL2",
@@ -5586,7 +5856,8 @@
         "id": "T7_CLOTH_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_CLOTH_LEVEL3",
@@ -5609,7 +5880,8 @@
         "id": "T7_CLOTH_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_CLOTH_LEVEL4",
@@ -5632,7 +5904,8 @@
         "id": "T7_CLOTH_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_FIBER",
@@ -5651,7 +5924,8 @@
         "id": "T7_FIBER",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 5000.0
   },
   {
     "item_id": "T8_FIBER_LEVEL1",
@@ -5670,7 +5944,8 @@
         "id": "T7_FIBER_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 15000.0
   },
   {
     "item_id": "T8_FIBER_LEVEL2",
@@ -5689,7 +5964,8 @@
         "id": "T7_FIBER_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 47250.0
   },
   {
     "item_id": "T8_FIBER_LEVEL3",
@@ -5708,7 +5984,8 @@
         "id": "T7_FIBER_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 155925.0
   },
   {
     "item_id": "T8_FIBER_LEVEL4",
@@ -5727,7 +6004,8 @@
         "id": "T7_FIBER_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 779625.0
   },
   {
     "item_id": "T8_HIDE",
@@ -5746,7 +6024,8 @@
         "id": "T7_HIDE",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 5000.0
   },
   {
     "item_id": "T8_HIDE_LEVEL1",
@@ -5765,7 +6044,8 @@
         "id": "T7_HIDE_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 15000.0
   },
   {
     "item_id": "T8_HIDE_LEVEL2",
@@ -5784,7 +6064,8 @@
         "id": "T7_HIDE_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 47250.0
   },
   {
     "item_id": "T8_HIDE_LEVEL3",
@@ -5803,7 +6084,8 @@
         "id": "T7_HIDE_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 155925.0
   },
   {
     "item_id": "T8_HIDE_LEVEL4",
@@ -5822,7 +6104,8 @@
         "id": "T7_HIDE_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 779625.0
   },
   {
     "item_id": "T8_LEATHER",
@@ -5845,7 +6128,8 @@
         "id": "T7_LEATHER",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_LEATHER_LEVEL1",
@@ -5868,7 +6152,8 @@
         "id": "T7_LEATHER_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_LEATHER_LEVEL2",
@@ -5891,7 +6176,8 @@
         "id": "T7_LEATHER_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_LEATHER_LEVEL3",
@@ -5914,7 +6200,8 @@
         "id": "T7_LEATHER_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_LEATHER_LEVEL4",
@@ -5937,7 +6224,8 @@
         "id": "T7_LEATHER_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_METALBAR",
@@ -5960,7 +6248,8 @@
         "id": "T7_METALBAR",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_METALBAR_LEVEL1",
@@ -5983,7 +6272,8 @@
         "id": "T7_METALBAR_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_METALBAR_LEVEL2",
@@ -6006,7 +6296,8 @@
         "id": "T7_METALBAR_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_METALBAR_LEVEL3",
@@ -6029,7 +6320,8 @@
         "id": "T7_METALBAR_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_METALBAR_LEVEL4",
@@ -6052,7 +6344,8 @@
         "id": "T7_METALBAR_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_ORE",
@@ -6071,7 +6364,8 @@
         "id": "T7_ORE",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 5000.0
   },
   {
     "item_id": "T8_ORE_LEVEL1",
@@ -6090,7 +6384,8 @@
         "id": "T7_ORE_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 15000.0
   },
   {
     "item_id": "T8_ORE_LEVEL2",
@@ -6109,7 +6404,8 @@
         "id": "T7_ORE_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 47250.0
   },
   {
     "item_id": "T8_ORE_LEVEL3",
@@ -6128,7 +6424,8 @@
         "id": "T7_ORE_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 155925.0
   },
   {
     "item_id": "T8_ORE_LEVEL4",
@@ -6147,7 +6444,8 @@
         "id": "T7_ORE_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 779625.0
   },
   {
     "item_id": "T8_PLANKS",
@@ -6170,7 +6468,8 @@
         "id": "T7_PLANKS",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_PLANKS_LEVEL1",
@@ -6193,7 +6492,8 @@
         "id": "T7_PLANKS_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_PLANKS_LEVEL2",
@@ -6216,7 +6516,8 @@
         "id": "T7_PLANKS_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_PLANKS_LEVEL3",
@@ -6239,7 +6540,8 @@
         "id": "T7_PLANKS_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_PLANKS_LEVEL4",
@@ -6262,7 +6564,8 @@
         "id": "T7_PLANKS_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_ROCK",
@@ -6281,7 +6584,8 @@
         "id": "T7_ROCK",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 14080.0
   },
   {
     "item_id": "T8_ROCK_LEVEL1",
@@ -6300,7 +6604,8 @@
         "id": "T7_ROCK_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 10240.0
   },
   {
     "item_id": "T8_ROCK_LEVEL2",
@@ -6319,7 +6624,8 @@
         "id": "T7_ROCK_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 20480.0
   },
   {
     "item_id": "T8_ROCK_LEVEL3",
@@ -6338,7 +6644,8 @@
         "id": "T7_ROCK_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 40960.0
   },
   {
     "item_id": "T8_STONEBLOCK",
@@ -6361,7 +6668,8 @@
         "id": "T7_STONEBLOCK",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 0.0
   },
   {
     "item_id": "T8_WOOD",
@@ -6380,7 +6688,8 @@
         "id": "T7_WOOD",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 5000.0
   },
   {
     "item_id": "T8_WOOD_LEVEL1",
@@ -6399,7 +6708,8 @@
         "id": "T7_WOOD_LEVEL1",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 15000.0
   },
   {
     "item_id": "T8_WOOD_LEVEL2",
@@ -6418,7 +6728,8 @@
         "id": "T7_WOOD_LEVEL2",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 47250.0
   },
   {
     "item_id": "T8_WOOD_LEVEL3",
@@ -6437,7 +6748,8 @@
         "id": "T7_WOOD_LEVEL3",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 155925.0
   },
   {
     "item_id": "T8_WOOD_LEVEL4",
@@ -6456,6 +6768,7 @@
         "id": "T7_WOOD_LEVEL4",
         "count": 1.0
       }
-    ]
+    ],
+    "silver_cost": 779625.0
   }
 ]
