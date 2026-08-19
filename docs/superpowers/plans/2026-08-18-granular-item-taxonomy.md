@@ -890,6 +890,7 @@ export function FilterSortControls({
         <label>
           Familie
           <input
+            key={`${filters.category}|${filters.material}|${filters.slot}`}
             list="family-options"
             defaultValue={familyMap.get(filters.family) ?? ''}
             onChange={(e) => {
@@ -923,6 +924,8 @@ export function FilterSortControls({
 ```
 
 Note on the `Familie` input: it uses `defaultValue` (uncontrolled for the displayed text) rather than `value`, because the field displays a human name but stores a family *id* — a controlled `value={filters.family}` would show the raw id, not the name. `onChange` still fully drives filter state through the normal `update()` path, matching every other control's behavior.
+
+The `key={...}` prop on that input is required, not decorative: React only applies `defaultValue` on the initial mount of an uncontrolled input — it does NOT re-apply on a later render, even if the prop's value changes. Without the `key`, changing Material/Slot (which correctly resets `family` to `''`) would leave the Familie input still showing its previous, now-stale, selected name, because the same DOM node stays mounted (the section is still rendered, just with a fresh `''` `family`). Keying on `category|material|slot` forces React to unmount and remount the input exactly when those upstream values change — i.e. exactly when `family` gets cleared — so `defaultValue` is freshly re-applied and the stale text can never linger.
 
 - [ ] **Step 4: Run tests to verify they pass**
 
